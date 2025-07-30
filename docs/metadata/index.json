@@ -1,0 +1,384 @@
+{
+  "version": 2,
+  "updated": "2025-07-30T04:05:19.865929080+00:00",
+  "files": [
+    {
+      "path": "aix-ppc64-libc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 101562,
+      "checksum": "c29406ca0fb83d73719781744790190a0eb91f1b2a5f3b9659d70bcf6e40e7a3",
+      "last_modified": "2025-07-30T04:05:19.864284011+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 114420,
+      "checksum": "e3fc4487b7a71eadfea315bc395f918994dabfcc691dfc8951f98e38542ffaf1",
+      "last_modified": "2025-07-30T04:05:19.864656383+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 159951,
+      "checksum": "57ef2f47af327c49c3bf4ded069a05ac69e64c2bd73a69dc8904b6441189cb6f",
+      "last_modified": "2025-07-30T04:05:19.864739771+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 58739,
+      "checksum": "b4796e3d93e29b5ee88e4f7eddacef615030f16cfbc2b92b8bd264137af48d6b",
+      "last_modified": "2025-07-30T04:05:19.864773886+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 33958,
+      "checksum": "87eabec95db2161684381cb284f6c8ba812311d46d5020051cf1589fb9e462b6",
+      "last_modified": "2025-07-30T04:05:19.864797381+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 154364,
+      "checksum": "489cf44e70f17971cb919c42a66038f919c3174c6e1f45f0e3abe40517906f5c",
+      "last_modified": "2025-07-30T04:05:19.864879246+00:00"
+    },
+    {
+      "path": "linux-s390x-glibc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "s390x"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 112466,
+      "checksum": "8c9431d8a27b670812f8c4bbfddc11c1b0d3030f3a50f64dd847e33beea7a3c2",
+      "last_modified": "2025-07-30T04:05:19.864939441+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 131560,
+      "checksum": "5a931d6f3c1cb92e2884092e8f93b9638f67886b3eff73f4f88c51ab9d57ef8d",
+      "last_modified": "2025-07-30T04:05:19.865007961+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 318540,
+      "checksum": "86f04afeae65cd0442d62a78e1c63f94ceb3a1dd08e51edaf08b98102e9988ec",
+      "last_modified": "2025-07-30T04:05:19.865166532+00:00"
+    },
+    {
+      "path": "linux-x64-musl/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 104419,
+      "checksum": "ba9c9ce43b27ee1af207449305adac2447610949a09a0fc14ded6b52014368a2",
+      "last_modified": "2025-07-30T04:05:19.865222859+00:00"
+    },
+    {
+      "path": "linux-x64-musl/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 153940,
+      "checksum": "796c1855f38c98646bf2eb5f3a3377918d969b79ede3c6cf35b716ceb3caed76",
+      "last_modified": "2025-07-30T04:05:19.865302220+00:00"
+    },
+    {
+      "path": "linux-x86-glibc/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 22477,
+      "checksum": "e2b6cdeb0ef36de18be23f705e4aa2a0c6125e56306e27318e9c979e37e50886",
+      "last_modified": "2025-07-30T04:05:19.865319102+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 79030,
+      "checksum": "37749047137ebde40d4709e71ae3630115b54aa1f2c91120e7ad5c5c46017f46",
+      "last_modified": "2025-07-30T04:05:19.865362424+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 118833,
+      "checksum": "ba2924f50420abbc59596d46b1605234aa1bea3cecd9790ef498f9da39135649",
+      "last_modified": "2025-07-30T04:05:19.865425033+00:00"
+    },
+    {
+      "path": "macos-x64-libc/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 111647,
+      "checksum": "ffb5da15e3d510e45ad4b6a4eea0713a1895fe4a18091ec870f7859b6fa91582",
+      "last_modified": "2025-07-30T04:05:19.865484065+00:00"
+    },
+    {
+      "path": "macos-x64-libc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 158096,
+      "checksum": "d8969a9f094f3b83aac81ecd66a5ec3bcba5c994ec44b8f9d6b9f07c37e465ad",
+      "last_modified": "2025-07-30T04:05:19.865613761+00:00"
+    },
+    {
+      "path": "solaris-sparcv9-libc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "sparcv9"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 28455,
+      "checksum": "58a691446e94e0baec50b8ce52c971eeb850349d5b6394465dfb759bd7c460cb",
+      "last_modified": "2025-07-30T04:05:19.865636174+00:00"
+    },
+    {
+      "path": "solaris-x64-libc/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 27275,
+      "checksum": "7fd84d67e5a62f593eedc1240469a180fac05fdacf2fb9ee895545a784615126",
+      "last_modified": "2025-07-30T04:05:19.865655931+00:00"
+    },
+    {
+      "path": "windows-aarch64-c_std_lib/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 11416,
+      "checksum": "6396e13fe416a8e26397dd654e4efa0df808950ccbbe476c55a3e40e3b0ffd8e",
+      "last_modified": "2025-07-30T04:05:19.865666972+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 136478,
+      "checksum": "383f71488de4c57f2281215866784e3e2ea51d25921a9bc71944cc835aa9c573",
+      "last_modified": "2025-07-30T04:05:19.865738308+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 161938,
+      "checksum": "4a88acefc5e1b3c36cf8b8b477158dc2c7640d1bf59947373e625b7db233bb04",
+      "last_modified": "2025-07-30T04:05:19.865821365+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/corretto.json",
+      "distribution": "corretto",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 74914,
+      "checksum": "d6f6213804887c64ae201e0665a9c0bed799d64e645413fd863ef63627a123b6",
+      "last_modified": "2025-07-30T04:05:19.865862694+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/temurin.json",
+      "distribution": "temurin",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 123218,
+      "checksum": "684c394b71a7e4b2fb9c4a04029a8b76b68805b3038d22b7d00d3248c1eb265a",
+      "last_modified": "2025-07-30T04:05:19.865927357+00:00"
+    }
+  ],
+  "generator_config": {
+    "distributions": [
+      "corretto",
+      "temurin"
+    ],
+    "platforms": null,
+    "javafx_bundled": false,
+    "parallel_requests": 4,
+    "minify_json": false
+  }
+}
