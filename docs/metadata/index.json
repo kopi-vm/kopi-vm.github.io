@@ -372,10 +372,7 @@
     }
   ],
   "generator_config": {
-    "distributions": [
-      "corretto",
-      "temurin"
-    ],
+    "distributions": null,
     "platforms": null,
     "javafx_bundled": false,
     "parallel_requests": 4,
