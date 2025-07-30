@@ -1,0 +1,499 @@
+[
+  {
+    "id": "2e7076c4607b943ec68eea496ca776a0",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-240903-1155/graalvm-java23-linux-amd64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 519977073,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "5dc67511b090374b334717ae12018fd8",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-2409082136/graalvm-java23-linux-amd64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 528092982,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "74be8e9f958225c1f78116667b515d43",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-240905-2007/graalvm-java23-linux-amd64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 519939335,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d03d1a148356322bc8ea770d28748ee5",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        21,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-21.2.0-dev-20210621_1207/graalvm-svm-linux-gluon-21.2.0-dev.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 442494358,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "f23d4a31d5785cca7a02855738216a8c",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        21,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-21.2.0-dev-20210618_1215/graalvm-svm-linux-gluon-21.2.0-dev.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 442814222,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "54a048b1add8370b5c341c6c141c6c98",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        21,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/21.1.0-dev-20210412_1722/graalvm-svm-linux-21.1-gluon-latest.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 437936307,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "96dca4b532e864882954c4a51a6e7a36",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        21,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/21.1.0-dev-20210415_0700/graalvm-svm-linux-gluon-21.1.0-dev.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 436750967,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "2b86cf998dd0a2c1d9f829813955e795",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        0,
+        0,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0.3-Final/graalvm-svm-java17-linux-gluon-22.0.0.3-Final.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 487164025,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "3d8ceeb5c6e33cbfada1e8f903c1b101",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        0,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0.2-Final/graalvm-svm-java17-linux-gluon-22.0.0.2-Final.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 487091066,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d9c38301251905e89a9651ab311375c9",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0-dev-20220126_1053/graalvm-svm-java17-linux-gluon-22.0.0-dev.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 487123305,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "da3b618d477af605035eb10c82404c0b",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        1,
+        0,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.1.0.1-Final/graalvm-svm-java17-linux-gluon-22.1.0.1-Final.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 387711216,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "3edd7e664e7b319339ac8ec7c848e3cc",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        0,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0.2-Final/graalvm-svm-java11-linux-gluon-22.0.0.2-Final.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 476034003,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8c2325cd3d74e8124c222a3ba790f47b",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        1,
+        0,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.1.0.1-Final/graalvm-svm-java11-linux-gluon-22.1.0.1-Final.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 380466249,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "bd28b2230d5f510f518b5a0c7f471048",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0-dev-20220126_1053/graalvm-svm-java11-linux-gluon-22.0.0-dev.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 476005330,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c287cf14f7cb7410e02f373426190aad",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        22,
+        0,
+        0,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-22.0.0.3-Final/graalvm-svm-java11-linux-gluon-22.0.0.3-Final.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 476496885,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  }
+]

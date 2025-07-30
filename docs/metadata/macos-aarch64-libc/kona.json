@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "95e4a741552c439ed75a56d392e9fe07",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        8
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.8/TencentKona-21.0.8.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 205671462,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "3cc808d883fba6c4b90a6ff347e3b647",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.7/TencentKona-21.0.7.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 205561130,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dd9a94a5e8ecc27315d33a39b10a372d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        6
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.6/TencentKona-21.0.6.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 205470005,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c512b10d2264828b80f81d1ca9bbb381",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.5/TencentKona-21.0.5.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 205447662,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "df94dd34619dde19dc52d175aceaa28d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        4
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.4/TencentKona-21.0.4.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 206421927,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e3ed97a4fcbdb944c4506977853aa85c",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        3
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.3/TencentKona-21.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 206322841,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ee5b93d206109ba507f8807baa972bf8",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        2
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.2/TencentKona-21.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 206282810,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1345fd65274f54da26fd6fb9abbcb462",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.1/TencentKona-21.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 206101216,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cdc6004fb6aa6dd430abff6acb7012c7",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21-ga/TencentKona-21.0.0.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 206063343,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2c90728f7196319a5ea06e991efa2231",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.16/TencentKona-17.0.16.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 192118501,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "96fd1184275b32de412e3b288ccd8a75",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.15/TencentKona-17.0.15.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191843938,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cc7ba6b960756bd963f6df1495b4d461",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        14
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        14
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.14/TencentKona-17.0.14.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191752746,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "da89d5e26d9527efc9b946e648a81fd8",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        13
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        13
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.13/TencentKona-17.0.13.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191683819,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "49a6767895f83a9f6b0877dce40d5152",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        12
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.12/TencentKona-17.0.12.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 192111623,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ff8873ae6ae871963fa436efe0ef21de",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        11
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.11/TencentKona-17.0.11.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191865736,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "baa4bfb0e929f13eace5185e3539f413",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        10
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        10
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.10/TencentKona-17.0.10.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191693769,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c137621bd7323ad4b676c4e107dc5b36",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        9
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        9
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.9/TencentKona-17.0.9.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191660958,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "794a7c7c304e721994e71b6990926748",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        8
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.8/TencentKona-17.0.8.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191568885,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ab9b46396d68755cc28e8bd034c5bb1e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        7
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.7/TencentKona-17.0.7.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191217918,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0e027c52d731001f629cb517738c1a1d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        6
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.6/TencentKona-17.0.6.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191139701,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bc61c6b9741b5b0a233d90b677772342",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.5/TencentKona-17.0.5.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191084511,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "aa874774cf02eb4dacf84d11f9e8578f",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.4/TencentKona-17.0.4.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190847729,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e581df9a4071fd9ae29540743c3812a6",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.4.1/TencentKona-17.0.4.b2_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190848235,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "190bda84b5c2a01718f0df81005885c2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.28/TencentKona-11.0.28.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191504213,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "88fc62c05258f4221012d548e889ad00",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.27/TencentKona-11.0.27.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191451152,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "96301d2dc9a6978c8a9bc01bc4847e25",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.26/TencentKona-11.0.26.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191405192,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ccaf84525b3050d16d309fd8737edbd2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.25/TencentKona-11.0.25.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191426327,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ac6d0ebf9d621d2ec3a29ad20058a27b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.24/TencentKona-11.0.24.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191368763,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b026e152d43fe569fe84bd75dd9d1618",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.23/TencentKona-11.0.23.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191350472,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "882cf5cfbcf64ca006d813201dc61527",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.22/TencentKona-11.0.22.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191161775,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2efd1b3e48e8d931fcf1cb74dd413f98",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.21/TencentKona-11.0.21.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191129376,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "45745cf3c0360a3a8792ab1cfe39b9c2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.20/TencentKona-11.0.20.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 191019981,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bdde4450de90df3d4a801d0995d98d35",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.19/TencentKona-11.0.19.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190797113,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f5be77daf6db1535aaf3d26bc0742ac3",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.18/TencentKona-11.0.18.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190749710,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "be135eee836d40629b68ae9bf5efe9e2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.17/TencentKona-11.0.17.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190693700,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "239a83c0149ca053e0aa321a259eb4ab",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.16.1/TencentKona-11.0.16.b2_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190397645,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5d230e53db8032519d88abb16e24c304",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.16/TencentKona-11.0.16.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 190407252,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dc59ccf6dfed64fbc123f4ca218d6cee",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/TencentKona8.0.23.b1_jdk_macosx-aarch64_8u462_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105177753,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "13831a9476dbfb3ebdcf2cf7317a42ee",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.22-GA/TencentKona8.0.22.b1_jdk_macosx-aarch64_8u452_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105178738,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "54a6e5314556e584c9f5c4bd011ecaa5",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.21-GA/TencentKona8.0.21.b1_jdk_macosx-aarch64_8u442_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105164344,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4a0b7e96a2a7fb7b5798656c941ed1b2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.20-GA/TencentKona8.0.20.b1_jdk_macosx-aarch64_8u432_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105136948,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b090f0bab084eb2ffe183201e9993b96",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.19-GA/TencentKona8.0.19.b1_jdk_macosx-aarch64_8u422_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105112639,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "16d6c95c39563e3b5b5458b1a43a8153",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.18-GA/TencentKona8.0.18.b1_jdk_macosx-aarch64_8u412_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105112664,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7d9ecbe872ee1802447a0fd258f44690",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.17-GA/TencentKona8.0.17.b1_jdk_macosx-aarch64_8u402_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 105002756,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f496f336ec635eabd297be5ae8858c22",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.16-GA/TencentKona8.0.16.b1_jdk_macosx-aarch64_8u392_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104893182,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5f85299772ecec939c45ab20a3b5a00c",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.15-GA/TencentKona8.0.15.b1_jdk_macosx-aarch64_8u382_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104866185,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "07c4bdfbdba9085ca246704cabea3db0",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.14-GA/TencentKona8.0.14.b1_jdk_macosx-aarch64_8u372_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104854072,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "81548ebf275e87b73de459a268f50cb1",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.13-GA/TencentKona8.0.13.b1_jdk_macosx-aarch64_8u362_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104826937,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e2e77bc9d386a0a24a01f5418e00041b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.12-GA/TencentKona8.0.12.b1_jdk_macosx-aarch64_8u352_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104826433,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  }
+]

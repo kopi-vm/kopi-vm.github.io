@@ -1,0 +1,76 @@
+[
+  {
+    "id": "a1dc074582be8ddb548fdaa1bd2dfdcd",
+    "distribution": "trava",
+    "version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/dcevm-11.0.10%2B6/java11-openjdk-dcevm-linux-arm64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 191187179,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "bce2150bf272d212b25c55ada3d7cd6d",
+    "distribution": "trava",
+    "version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm-newgen/releases/download/dcevm-11.0.10%2B6/java11-openjdk-dcevm-linux-arm64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 191187179,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  }
+]

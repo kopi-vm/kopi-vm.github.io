@@ -1,0 +1,6628 @@
+[
+  {
+    "id": "ab7fda6f675db80dca6463e8a13adc06",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        13,
+        0,
+        1
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        13
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/13.0.1+10/bellsoft-jdk13.0.1+10-solaris-x64-lite.tar.gz",
+    "checksum": "cd394665d56a48bfcce8a7b88b5b6173f5033810",
+    "checksum_type": "sha1",
+    "size": 93344064,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "aead919e6ad06270953ea680d1a11cb3",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        13,
+        0,
+        1
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        13
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/13.0.1+10/bellsoft-jdk13.0.1+10-solaris-x64.tar.gz",
+    "checksum": "0a53deceddb955e8f956c09e31d0a5c66f32b07e",
+    "checksum_type": "sha1",
+    "size": 230969019,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "1e6c560d5cec9fdeb58606a7374b9973",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12,
+        0,
+        2
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12.0.2/bellsoft-jdk12.0.2-solaris-x64-lite.tar.gz",
+    "checksum": "f2f6fa799fdcccb20cb04fb33ed4974a04014a82",
+    "checksum_type": "sha1",
+    "size": 91952788,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "4f8bb5092b1ab60c9a91479cc1ff4125",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12,
+        0,
+        2
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12.0.2/bellsoft-jdk12.0.2-solaris-x64.tar.gz",
+    "checksum": "535680400b7fc3ce17b43015cbc63b33cb6f458c",
+    "checksum_type": "sha1",
+    "size": 230797277,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "862598cf5caf19930c3a24ff09fdcb2b",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12,
+        0,
+        1
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12.0.1/bellsoft-jdk12.0.1-solaris-x64-lite.tar.gz",
+    "checksum": "4c1df413632ed783d45fb9527b726f7b395bf4bd",
+    "checksum_type": "sha1",
+    "size": 91186497,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9be574e7533da215791c017ad83d8ddd",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12
+      ],
+      "build": [
+        33
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-x64.tar.gz",
+    "checksum": "536b64c9c6572b4cec3862624e4fe2144b558b14",
+    "checksum_type": "sha1",
+    "size": 229281137,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ba6e6f69188e7e7d63b2c6453dc2880a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12,
+        0,
+        1
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12.0.1/bellsoft-jdk12.0.1-solaris-x64.tar.gz",
+    "checksum": "4bd2eb18a66475cde18d70ee4ef2fbb1fd6b5b25",
+    "checksum_type": "sha1",
+    "size": 229297819,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "eb48f9fed3c86ec4a896c8992d0bb27e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        12
+      ],
+      "build": [
+        33
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/12/bellsoft-jdk12-solaris-x64-lite.tar.gz",
+    "checksum": "ee6163bf64859b3dd3eb974ebecc4d99eece742e",
+    "checksum_type": "sha1",
+    "size": 91176945,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0232f9336d69f642b5e3ac53656905f0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        4
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.4/bellsoft-jdk11.0.4-solaris-x64-lite.tar.gz",
+    "checksum": "072d22e6e533082ceefae1c110f148aec3bb9770",
+    "checksum_type": "sha1",
+    "size": 89963729,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "02e29201f59d746afa485ec2ea761485",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        13
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.13+8/bellsoft-jdk11.0.13+8-solaris-x64.tar.gz",
+    "checksum": "e1adde441b791eec82311df5fd83c2ef19248236",
+    "checksum_type": "sha1",
+    "size": 225199588,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "072bd293f0bf6d4eba84a1267e418945",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-solaris-x64-lite.tar.gz",
+    "checksum": "5ad4b45900f0112e02b528071d2ba35f85d23c29",
+    "checksum_type": "sha1",
+    "size": 91119002,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0d462052b7f3e767e3ce29af05de2fda",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        3
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.3/bellsoft-jdk11.0.3-solaris-x64.tar.gz",
+    "checksum": "768fd809c2f9e82a175851b378b8ddf43fd4bd54",
+    "checksum_type": "sha1",
+    "size": 219021304,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0de2b193a3bd4832bd3754c2af5438e9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.25+11/bellsoft-jdk11.0.25+11-solaris-x64.tar.gz",
+    "checksum": "b8576fb1f21521316c379c70c127ec44b4d5508d",
+    "checksum_type": "sha1",
+    "size": 227102276,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "114ba3b2f27279166ceab2ee931af2e6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14+9/bellsoft-jdk11.0.14+9-solaris-x64-lite.tar.gz",
+    "checksum": "9ab73fb26b29fb76ffd54da019e1037fe0106238",
+    "checksum_type": "sha1",
+    "size": 92144504,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1186be8245e0d06a6292571a8e9a6cca",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16.1+1/bellsoft-jdk11.0.16.1+1-solaris-x64.tar.gz",
+    "checksum": "936854b9174a0252e71343adee3d0bad3e5807a0",
+    "checksum_type": "sha1",
+    "size": 222829605,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "15e8d0572deaae409508f12bf43f8744",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.10+9/bellsoft-jdk11.0.10+9-solaris-x64.tar.gz",
+    "checksum": "51b2dbce7e00aa6d50359ec874c076f54990b4fb",
+    "checksum_type": "sha1",
+    "size": 224870267,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "162560540719d51749453b64b37855c9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14.1+1/bellsoft-jdk11.0.14.1+1-solaris-x64.tar.gz",
+    "checksum": "1a97006bb2ab004e776120f514e4bc96ada1b27e",
+    "checksum_type": "sha1",
+    "size": 225236163,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1666a6e3127442586ddfe45607dc3f7e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9.1+1/bellsoft-jre11.0.9.1+1-solaris-x64.tar.gz",
+    "checksum": "438088d8737ba258f9437ccac3a63a8f061f7cd2",
+    "checksum_type": "sha1",
+    "size": 58819542,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "189a35e8136df219f0d6030a50d87479",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+11/bellsoft-jdk11.0.9+11-solaris-x64-lite.tar.gz",
+    "checksum": "26146eb035859f4565ce74c448bc5081807a1747",
+    "checksum_type": "sha1",
+    "size": 96355659,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "19612d36d2d5450c7abe57b3df01935a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-solaris-x64.tar.gz",
+    "checksum": "85278ba439a6942569270a2ca991f80eda852ee6",
+    "checksum_type": "sha1",
+    "size": 223413153,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1aa75e8ba4b5a857de963e4a2d18fb0a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.24+9/bellsoft-jre11.0.24+9-solaris-x64.tar.gz",
+    "checksum": "b550466acdbb46798b5e41bc58d505154b9fb35e",
+    "checksum_type": "sha1",
+    "size": 60832785,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2701985f7790fc99bb5274eba29991ba",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20.1+1/bellsoft-jre11.0.20.1+1-solaris-x64.tar.gz",
+    "checksum": "ec34a73111fe9a108061a5cfc0e530026e1aa2a3",
+    "checksum_type": "sha1",
+    "size": 57794458,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "28acef2bcf910ce40fbe9afacdf831a6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        7
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.7+10/bellsoft-jdk11.0.7+10-solaris-x64.tar.gz",
+    "checksum": "476549ae6e5ffd3f402cd082ba00c5c576ad4a1a",
+    "checksum_type": "sha1",
+    "size": 221167992,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2dde47c42d3b8c6f1a1dd9e154ee41c9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15+10/bellsoft-jre11.0.15+10-solaris-x64.tar.gz",
+    "checksum": "98b685e3a5a31d10d4a4ef14f2334428f67f00a1",
+    "checksum_type": "sha1",
+    "size": 58957133,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2e03538555947cf795edf73b9b275b2c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.22+12/bellsoft-jdk11.0.22+12-solaris-x64-lite.tar.gz",
+    "checksum": "2b6d925d8b06079688da4d0d281f816599817917",
+    "checksum_type": "sha1",
+    "size": 91115196,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "31e1f94da03578b199935c211550d4c2",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9.1+1/bellsoft-jdk11.0.9.1+1-solaris-x64.tar.gz",
+    "checksum": "43a82b8763e8be99402651e08944292505b77509",
+    "checksum_type": "sha1",
+    "size": 224805207,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "330f974a10ee0a9bcd8570e3e4464d81",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28+12/bellsoft-jdk11.0.28+12-solaris-x64.tar.gz",
+    "checksum": "d8c6691bd51d0960f94f41c4f880cbae2b4d8c06",
+    "checksum_type": "sha1",
+    "size": 227147343,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "35205e403bf200f17ad918114090056e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        7
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.7+10/bellsoft-jdk11.0.7+10-solaris-x64-lite.tar.gz",
+    "checksum": "2485a5e66ee958b042ab6da91e74cabfe553320e",
+    "checksum_type": "sha1",
+    "size": 90097242,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "352fc1ec8b7708a73b1eea21e90b44e0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        2
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.2/bellsoft-jdk11.0.2-solaris-x64.tar.gz",
+    "checksum": "ee92da88714a2181e7b3f9b393feb61c9372000f",
+    "checksum_type": "sha1",
+    "size": 218993090,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "369ffba791fe800ca4bedc87651ece42",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.10+9/bellsoft-jdk11.0.10+9-solaris-x64-lite.tar.gz",
+    "checksum": "050811481e006dbec2e1aa0ae328c0a52bad346e",
+    "checksum_type": "sha1",
+    "size": 91914144,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3734be3f247ad159210f3333425aa417",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16+8/bellsoft-jre11.0.16+8-solaris-x64.tar.gz",
+    "checksum": "f13d415573acd2f17335f17a046b3394a64c122d",
+    "checksum_type": "sha1",
+    "size": 57697307,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3a12fbdd7f405d448c00c05040e41a05",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.17+7/bellsoft-jdk11.0.17+7-solaris-x64-lite.tar.gz",
+    "checksum": "eeaf9c1f83c6f33b98e3ad324131de1f54130baf",
+    "checksum_type": "sha1",
+    "size": 90985968,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "41dec557d98e95c5dc1535de444f2c62",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.19+7/bellsoft-jre11.0.19+7-solaris-x64.tar.gz",
+    "checksum": "d28436157a4a02624d5be4260a4928df22b86ed8",
+    "checksum_type": "sha1",
+    "size": 57772638,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "41fb57095f704c931d9f30c919ad63b0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.22+12/bellsoft-jre11.0.22+12-solaris-x64.tar.gz",
+    "checksum": "901cbb4b5e1e1545518c2c2a2c25917b48c0293a",
+    "checksum_type": "sha1",
+    "size": 57865285,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "428d760247c5b25d9bf6f6d2a1636f20",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+12/bellsoft-jdk11.0.9+12-solaris-x64.tar.gz",
+    "checksum": "de6f22e6fd20c1e72d84da85d93d3ed09c6ce587",
+    "checksum_type": "sha1",
+    "size": 224820876,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4402a0f878d4f19546f60fbcaf2e535d",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        8
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.8+10/bellsoft-jdk11.0.8+10-solaris-x64.tar.gz",
+    "checksum": "ccfdeb517481f5540dcee190f9a140ecca31571a",
+    "checksum_type": "sha1",
+    "size": 229576840,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4428839890195994d30d6b9a0d818bf1",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.25+11/bellsoft-jre11.0.25+11-solaris-x64.tar.gz",
+    "checksum": "24d1ccd01ed153e8b11d9c460087724ddb37ce16",
+    "checksum_type": "sha1",
+    "size": 60899027,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "48c5560f5ce7275cec98823ddf20baf2",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jre11.0.23+12-solaris-x64.tar.gz",
+    "checksum": "8886d27d47f6aa5eef8c358294fa21b170005c06",
+    "checksum_type": "sha1",
+    "size": 60850758,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "49568684a0cc2654dc6c98079233c517",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14+9/bellsoft-jdk11.0.14+9-solaris-x64.tar.gz",
+    "checksum": "933351524779254de07fd14f10712afdf89c8a53",
+    "checksum_type": "sha1",
+    "size": 225383924,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4be68d9275a20fe07c8dcfc450800558",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+11/bellsoft-jdk11.0.9+11-solaris-x64.tar.gz",
+    "checksum": "3f3fa0b7d03e4951c972613afcb25bfe18bc42d9",
+    "checksum_type": "sha1",
+    "size": 233683356,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4df52062a47ba18ac9d55d0be7aad994",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        3
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.3/bellsoft-jdk11.0.3-solaris-x64-lite.tar.gz",
+    "checksum": "85f685082fc3324da49dea21b01186a1c6c107bf",
+    "checksum_type": "sha1",
+    "size": 89072142,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "551a4d2487a0d1392fd3ebe9150c3fdc",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20+8/bellsoft-jdk11.0.20+8-solaris-x64.tar.gz",
+    "checksum": "21802c17c63afa8c5191300f43356a0bb30bd228",
+    "checksum_type": "sha1",
+    "size": 223277948,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "58bb598bddd0fa39a6250ecd92bcdd10",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.25+11/bellsoft-jdk11.0.25+11-solaris-x64-lite.tar.gz",
+    "checksum": "1641ab95662b7e5c2e01ddc6c29c83fcd8ca2f69",
+    "checksum_type": "sha1",
+    "size": 91159915,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5978e08f82857e6e85e9c4e45daca63d",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.21+10/bellsoft-jdk11.0.21+10-solaris-x64.tar.gz",
+    "checksum": "e3e240a7f3d23ba8abcf6ed1c3e97d57c316d669",
+    "checksum_type": "sha1",
+    "size": 223338385,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5b6596fe1d65b03286078cd77003efc4",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28+12/bellsoft-jre11.0.28+12-solaris-x64.tar.gz",
+    "checksum": "194acbbab50c9c8e250b3d33f1517ef350e3820d",
+    "checksum_type": "sha1",
+    "size": 60888526,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "5e8daa1e817c5c69824c09720b871409",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        6
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.6+10/bellsoft-jdk11.0.6+10-solaris-x64-lite.tar.gz",
+    "checksum": "9794020bd2329a6212f330b79d69aef5fd1610e8",
+    "checksum_type": "sha1",
+    "size": 90058633,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5fac3f856ddd73013964c983efddb137",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20+8/bellsoft-jdk11.0.20+8-solaris-x64-lite.tar.gz",
+    "checksum": "62216f2a822ce0fc225bf4cedd616f1aecce6005",
+    "checksum_type": "sha1",
+    "size": 91040899,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "600f3e6b6f3f381735e6c8b7b9da2d3e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20.1+1/bellsoft-jdk11.0.20.1+1-solaris-x64-lite.tar.gz",
+    "checksum": "38586603760744bf8388c4347f12e5aa7e245072",
+    "checksum_type": "sha1",
+    "size": 91021512,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "637a848449b1a309510a17ba5f1419cc",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.24+9/bellsoft-jdk11.0.24+9-solaris-x64.tar.gz",
+    "checksum": "f35f9ec779fbcf742399ade6bce659261cf5e186",
+    "checksum_type": "sha1",
+    "size": 226952877,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "65e0267e20bc174256860ef4673ec6d0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.22+12/bellsoft-jdk11.0.22+12-solaris-x64.tar.gz",
+    "checksum": "16a259ad6a72abd9a4d4fe56b501a01b824b1999",
+    "checksum_type": "sha1",
+    "size": 223433354,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "6ff1e51548c702d24bd25a3dccc47f90",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15+10/bellsoft-jdk11.0.15+10-solaris-x64.tar.gz",
+    "checksum": "fa0e17f4ffc7324b8ac60f352415a0e5f6d8c042",
+    "checksum_type": "sha1",
+    "size": 225433610,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "753dd15bb60f013e45c0eb1f4d7e68f9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.17+7/bellsoft-jdk11.0.17+7-solaris-x64.tar.gz",
+    "checksum": "1103b2767b9924ac9ab16ae71d834504f37ca087",
+    "checksum_type": "sha1",
+    "size": 223126347,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7657be2a5515bfb7d98f4f8b2c489b1e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        2
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.2/bellsoft-jdk11.0.2-solaris-x64-lite.tar.gz",
+    "checksum": "5826802fd49436eb9129f3f27dbdcaa6f0cd39ee",
+    "checksum_type": "sha1",
+    "size": 89068125,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "781ff82cdfdbf6690f9744ce8b4dace9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        13
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.13+8/bellsoft-jdk11.0.13+8-solaris-x64-lite.tar.gz",
+    "checksum": "7b50d533b2830f67adbcddb0e7ac38fd57dc01a2",
+    "checksum_type": "sha1",
+    "size": 92040036,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7953780e02c59a4b1d6c004693eb2281",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.24+9/bellsoft-jdk11.0.24+9-solaris-x64-lite.tar.gz",
+    "checksum": "131429eb12ea7d8a6dfc45678e0efb236201b6e1",
+    "checksum_type": "sha1",
+    "size": 91095929,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7bd07c4344de2fa924df218847a49745",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28+12/bellsoft-jdk11.0.28+12-solaris-x64-lite.tar.gz",
+    "checksum": "bacde45b67db546cd0b6f2f74dcb855ca41a7f74",
+    "checksum_type": "sha1",
+    "size": 91178475,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "7f605e3d8827e41ee7407c7498c73e7e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+12/bellsoft-jre11.0.9+12-solaris-x64.tar.gz",
+    "checksum": "d51f61416bfcc06f645279212f444e79266261b4",
+    "checksum_type": "sha1",
+    "size": 58824083,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "808fe965ba4edd3e4b1bd9fbe686ccd8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15,
+        1
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15.1+2/bellsoft-jdk11.0.15.1+2-solaris-x64.tar.gz",
+    "checksum": "3b33d627cc0b4af25c633dee015add6cf55ae619",
+    "checksum_type": "sha1",
+    "size": 225476375,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "82c49372ca2538713ff9fb4c446c889e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.18+10/bellsoft-jdk11.0.18+10-solaris-x64-lite.tar.gz",
+    "checksum": "41604b1e5dc96765df331e68cecc83917a0c38f9",
+    "checksum_type": "sha1",
+    "size": 90974117,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8512371aa06609db2ca0882f90de64e1",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+12/bellsoft-jdk11.0.9+12-solaris-x64-lite.tar.gz",
+    "checksum": "13aaddee71769dbe9d23263a2787ae9fdc247d47",
+    "checksum_type": "sha1",
+    "size": 91902830,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "88815c116837940edca81c7008fc9ece",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        12
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.12+7/bellsoft-jdk11.0.12+7-solaris-x64.tar.gz",
+    "checksum": "d5babc1d2ea51326405b4eb46570a29997351ae2",
+    "checksum_type": "sha1",
+    "size": 225413341,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "88d56a310a39fb8ad810f57962b63091",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        13
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.13+8/bellsoft-jre11.0.13+8-solaris-x64.tar.gz",
+    "checksum": "86c85567f98d44e10ef8b9d81af34cd19a7f7a14",
+    "checksum_type": "sha1",
+    "size": 58907618,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8e10ddcee421ca23380bdafeef0f7f89",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20.1+1/bellsoft-jdk11.0.20.1+1-solaris-x64.tar.gz",
+    "checksum": "ca6d9c05c29fc4c6711ef1ce381f53d896c01a57",
+    "checksum_type": "sha1",
+    "size": 223244879,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8fcb32a5de13eb8dcaf6d9c621f841af",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.17+7/bellsoft-jre11.0.17+7-solaris-x64.tar.gz",
+    "checksum": "ffed085bd9edcbb570876760f1e1797891d6cd0e",
+    "checksum_type": "sha1",
+    "size": 57757325,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "90d9368b95292c136c2e5d1db55167b2",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        10
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.10+9/bellsoft-jre11.0.10+9-solaris-x64.tar.gz",
+    "checksum": "d5c1153226fa187819f192f7251082a81d5416ee",
+    "checksum_type": "sha1",
+    "size": 58840137,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "92afc9c1dec301f9916df6c39a0c77cc",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+12/bellsoft-jdk11.0.23+12-solaris-x64.tar.gz",
+    "checksum": "def581a96e84e096ba1fb1b4ef9d8bee379051c3",
+    "checksum_type": "sha1",
+    "size": 226993957,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9626dfb4cab7d11ac4a17ed2dd132a66",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14.1+1/bellsoft-jre11.0.14.1+1-solaris-x64.tar.gz",
+    "checksum": "57832138bd26508bc37fca9f7f38250ae63f6eb5",
+    "checksum_type": "sha1",
+    "size": 58890703,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "964ced4aa591f97eec5fbbcda1ef3ab7",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        5
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.5+11/bellsoft-jdk11.0.5+11-solaris-x64.tar.gz",
+    "checksum": "aba15ae0444d4cbf17976fe5104dc28275669067",
+    "checksum_type": "sha1",
+    "size": 221031653,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "97d94c9982525194e5fc5ec1d7daf055",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9.1+1/bellsoft-jdk11.0.9.1+1-solaris-x64-lite.tar.gz",
+    "checksum": "595cc1f601d1695d92c0df7dfc93f5448da2423c",
+    "checksum_type": "sha1",
+    "size": 91893279,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9a884bd5849316c83351fc27cca3f15f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        8
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.8+10/bellsoft-jdk11.0.8+10-solaris-x64-lite.tar.gz",
+    "checksum": "31a29d926e8b7dbe826a1b0b3dde924d6fb15e6e",
+    "checksum_type": "sha1",
+    "size": 94303929,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9e552424858bd0a55e402fb9b3e108cb",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        5
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.5/bellsoft-jdk11.0.5-solaris-x64-lite.tar.gz",
+    "checksum": "61d74152ccccea876f9168504f9a2d9778757aad",
+    "checksum_type": "sha1",
+    "size": 90039666,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9f0c48431f3b5b75f2c0d1fe0587f30e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.26+9/bellsoft-jdk11.0.26+9-solaris-x64.tar.gz",
+    "checksum": "f34148454f2b54b640aca83a9e5abdab7b21ddfb",
+    "checksum_type": "sha1",
+    "size": 227024658,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "a3e0c9ca058119e96d225537ce6bf377",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.18+10/bellsoft-jdk11.0.18+10-solaris-x64.tar.gz",
+    "checksum": "e93ae23bff63e108ebafb16065d5b408a3ce6f22",
+    "checksum_type": "sha1",
+    "size": 223128908,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "a621a8238c40f19ce30aa31c7a1f5c6a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.26+9/bellsoft-jdk11.0.26+9-solaris-x64-lite.tar.gz",
+    "checksum": "731d88c2aeb82bc2ec1c2893421777094ebba555",
+    "checksum_type": "sha1",
+    "size": 91118536,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "aba9f64ad5ae80a14e8ba0921e306dbf",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15+10/bellsoft-jdk11.0.15+10-solaris-x64-lite.tar.gz",
+    "checksum": "be4ee9ab55240826727b33377e7cf2dade6ca81e",
+    "checksum_type": "sha1",
+    "size": 92153095,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ae5576535483070306d120779f0d480a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jdk11.0.23+10-solaris-x64-lite.tar.gz",
+    "checksum": "ce4342e1f3cf162f54aca1f6b9338e66b0ce2e9e",
+    "checksum_type": "sha1",
+    "size": 91101353,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b3153c4cce85b3d530026e9303f5f758",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.19+7/bellsoft-jdk11.0.19+7-solaris-x64.tar.gz",
+    "checksum": "f624293182ec79a988b95825d8c056eea6f0c5b7",
+    "checksum_type": "sha1",
+    "size": 223172502,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b3783d7f78cb0558cb703abd516f6f92",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        11
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.11+9/bellsoft-jre11.0.11+9-solaris-x64.tar.gz",
+    "checksum": "8669b53b09fc72f866d643b31f84785006c104e3",
+    "checksum_type": "sha1",
+    "size": 58760758,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b8f73c142535c9f2915a50894de67c69",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16+8/bellsoft-jdk11.0.16+8-solaris-x64.tar.gz",
+    "checksum": "e9671ed3f730c3cdd40318579a05ad3f67a740ff",
+    "checksum_type": "sha1",
+    "size": 222942969,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bbbb9f1803f1ae9973728d8e989ec1c4",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.20+8/bellsoft-jre11.0.20+8-solaris-x64.tar.gz",
+    "checksum": "b6a18ccf0784acbd750dab8265c66781b55d3f94",
+    "checksum_type": "sha1",
+    "size": 57801303,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bcf20324eea28cea0fdee4011b3f2836",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.27+9/bellsoft-jdk11.0.27+9-solaris-x64-lite.tar.gz",
+    "checksum": "64c8f9a35a00b7c59b3e53e4b63700415f1b6c6b",
+    "checksum_type": "sha1",
+    "size": 91188096,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c0fffd7c16834a1bd46347a5e9e5b745",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.27+9/bellsoft-jre11.0.27+9-solaris-x64.tar.gz",
+    "checksum": "dd7bff40324f0b926d171f9559962b98f86c1d2e",
+    "checksum_type": "sha1",
+    "size": 60900756,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c67c2825e69a9655e55a28f16c8e7a26",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        4
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.4/bellsoft-jdk11.0.4-solaris-x64.tar.gz",
+    "checksum": "98fb99905780fd7b47e3c73668c67a2c0cfd6097",
+    "checksum_type": "sha1",
+    "size": 220840067,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c73ba049d73eb8e8d0365079e937ad28",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.18+10/bellsoft-jre11.0.18+10-solaris-x64.tar.gz",
+    "checksum": "bc18700303e26fdecd52a84f45e180d846d60982",
+    "checksum_type": "sha1",
+    "size": 57746985,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c9ebcea549bf66c11a06b0ade2cd24b3",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.26+9/bellsoft-jre11.0.26+9-solaris-x64.tar.gz",
+    "checksum": "6cb6e07fd1e5d273abcde7d417bfdbd8072e886c",
+    "checksum_type": "sha1",
+    "size": 60859441,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c9f14533aa8ad2c7f3fb8e79984c2cf6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        11
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.11+9/bellsoft-jdk11.0.11+9-solaris-x64-lite.tar.gz",
+    "checksum": "a213021093091ce3499c1dc1ee8e33ad39e199a2",
+    "checksum_type": "sha1",
+    "size": 91859578,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ca948eebf755d8747c95c2b1ec0e2c2f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.23+10/bellsoft-jre11.0.23+10-solaris-x64.tar.gz",
+    "checksum": "f554ad62d3c99afd884eac0d1f1f72501241d1c2",
+    "checksum_type": "sha1",
+    "size": 57845179,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cae4807be8c3eebe8dbd207f0694e250",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        12
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.12+7/bellsoft-jdk11.0.12+7-solaris-x64-lite.tar.gz",
+    "checksum": "1be6ba0bb380bbc8be67f8eba8fde404946d699b",
+    "checksum_type": "sha1",
+    "size": 92147764,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cbec695d615b265200a7997c28614613",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14.1+1/bellsoft-jdk11.0.14.1+1-solaris-x64-lite.tar.gz",
+    "checksum": "44c70c6a23d1caa387afb70d00cac787f60ed4d3",
+    "checksum_type": "sha1",
+    "size": 92057147,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cf596bf084c55e406446370f48bb0733",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        14
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.14+9/bellsoft-jre11.0.14+9-solaris-x64.tar.gz",
+    "checksum": "679cad8a41033a13a2c3198ce181d553d68a44e1",
+    "checksum_type": "sha1",
+    "size": 58963182,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dafe4932cec6e17a15c179b901abccb6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        5
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.5/bellsoft-jdk11.0.5-solaris-x64.tar.gz",
+    "checksum": "405142b959b522121190fcceca6c88a37f88931b",
+    "checksum_type": "sha1",
+    "size": 221022393,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dbe306b7551ff8fcdaac804deaf70ee1",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        6
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.6+10/bellsoft-jdk11.0.6+10-solaris-x64.tar.gz",
+    "checksum": "1cf5b4f9f4a641bd3d9fc6cbfc4edd5402165719",
+    "checksum_type": "sha1",
+    "size": 221086342,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e2506ebd719efb281f3e3252aeabfca6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        8
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.8+10/bellsoft-jre11.0.8+10-solaris-x64.tar.gz",
+    "checksum": "31dbcd47afd74f7e1a271cf319455c92bc8fe11a",
+    "checksum_type": "sha1",
+    "size": 61307383,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e4b78e45f97bf8b81de046d2a111691c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        5
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.5+11/bellsoft-jdk11.0.5+11-solaris-x64-lite.tar.gz",
+    "checksum": "30dde52c22038242a766f6adc4d7357d09df704c",
+    "checksum_type": "sha1",
+    "size": 90045166,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e4edbd2260542d84fbaefd0d0a4ecbf5",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16.1+1/bellsoft-jdk11.0.16.1+1-solaris-x64-lite.tar.gz",
+    "checksum": "32da8187726e0c9a208b62c1b5321b416bb6faba",
+    "checksum_type": "sha1",
+    "size": 90845412,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e812fccd75a2d093a6ef6fbc533d9f72",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16+8/bellsoft-jdk11.0.16+8-solaris-x64-lite.tar.gz",
+    "checksum": "6192b8e8d499c2ed71412107a924580a960abda1",
+    "checksum_type": "sha1",
+    "size": 90893837,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ecf0b89c071e1e6bc0bcfbd1cd34a55b",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.27+9/bellsoft-jdk11.0.27+9-solaris-x64.tar.gz",
+    "checksum": "ac7bbf920f2f7d67d20624c255ac4c092c9b5b47",
+    "checksum_type": "sha1",
+    "size": 227136716,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f00b541afb0a6a9b6eadf92a410e488f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        16,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.16.1+1/bellsoft-jre11.0.16.1+1-solaris-x64.tar.gz",
+    "checksum": "07db5e659256398eb99abbad99d6ab10fa1bd2aa",
+    "checksum_type": "sha1",
+    "size": 57650707,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f405c6bd66468f25898b9f165e405afd",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15,
+        1
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15.1+2/bellsoft-jre11.0.15.1+2-solaris-x64.tar.gz",
+    "checksum": "7097c46ffe95c004769bda37e4d5424024afa072",
+    "checksum_type": "sha1",
+    "size": 58989305,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f72d1779b9be69d6ac0bfc112e254cce",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        9
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.9+11/bellsoft-jre11.0.9+11-solaris-x64.tar.gz",
+    "checksum": "022de4364414efb97477fb36191ffae27fb6bf08",
+    "checksum_type": "sha1",
+    "size": 63272515,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f7e9ae20dd05ffa3c6841a91b49a25d8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.21+10/bellsoft-jdk11.0.21+10-solaris-x64-lite.tar.gz",
+    "checksum": "5a78651e19a3438594ef24ff6c332ca863407114",
+    "checksum_type": "sha1",
+    "size": 91063312,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "faf076fc2e59d97baa1b9f3c9724ba43",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        11
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.11+9/bellsoft-jdk11.0.11+9-solaris-x64.tar.gz",
+    "checksum": "2dc5db27bd1ace546feb39c7886dede586a9c89a",
+    "checksum_type": "sha1",
+    "size": 224818379,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fb348203b8c71012f0a90d1233fce8b4",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        12
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.12+7/bellsoft-jre11.0.12+7-solaris-x64.tar.gz",
+    "checksum": "0240abe44a80e3ea9a7cde36242f3151e87d170b",
+    "checksum_type": "sha1",
+    "size": 59014467,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fd1a03924d2d7a5a964ddb871ad2e097",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.21+10/bellsoft-jre11.0.21+10-solaris-x64.tar.gz",
+    "checksum": "ce8e5944ab1d58790b7eafea07413deecb6408c4",
+    "checksum_type": "sha1",
+    "size": 57826104,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fdeacb363c2ecff90d1537b3e0095f45",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        15,
+        1
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.15.1+2/bellsoft-jdk11.0.15.1+2-solaris-x64-lite.tar.gz",
+    "checksum": "d5074bec9a87a9f4bf1e7f7d9fc1a9de19343624",
+    "checksum_type": "sha1",
+    "size": 92183266,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fff605608fbb6c2f237d3f48ff143cf9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.19+7/bellsoft-jdk11.0.19+7-solaris-x64-lite.tar.gz",
+    "checksum": "e96a24bb79e295aa20244a9ed6358e819eacdc47",
+    "checksum_type": "sha1",
+    "size": 91004617,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "02fa780bb5d8a80f5a840d8c8f4f3159",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        222
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u222/bellsoft-jdk8u222-solaris-x64.tar.gz",
+    "checksum": "b1757b8b993c7b93c880551ecfc4917e175046f4",
+    "checksum_type": "sha1",
+    "size": 106789633,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "06b6523a5f07ee4cf894421a3ea3096c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u352+8/bellsoft-jdk8u352+8-solaris-x64.tar.gz",
+    "checksum": "2be25935ff68744073a6390c73ddfe3e8cfacc59",
+    "checksum_type": "sha1",
+    "size": 109774247,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0996bbd325fc3aef8b57268acd96cb9e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        265
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u265+1/bellsoft-jre8u265+1-solaris-x64.tar.gz",
+    "checksum": "76fff3ba5bcc900bd529403f7d015bb6665c5ec8",
+    "checksum_type": "sha1",
+    "size": 43916347,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0df76ef80ece89102921c79fc914b344",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        222
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u222/bellsoft-jre8u222-solaris-x64.tar.gz",
+    "checksum": "10209d4e0b2c9aa0e68f9eee61756d345f721645",
+    "checksum_type": "sha1",
+    "size": 43563272,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "12def9feb4ec043a2956149cb3e0e8ab",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u442+7/bellsoft-jre8u442+7-solaris-x64.tar.gz",
+    "checksum": "8a4c9d4844c97cc4503db5cc2e70cd0325bb179b",
+    "checksum_type": "sha1",
+    "size": 45645470,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1560fe263b6cb180e35737e7417f8a2a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        272
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u272+10/bellsoft-jdk8u272+10-solaris-x64.tar.gz",
+    "checksum": "a3ead094402d3b5a4bb99f3575998499531f4fe0",
+    "checksum_type": "sha1",
+    "size": 109434106,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "176df889fbee2d3b8ef6b1a2590d1d85",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u392+9/bellsoft-jdk8u392+9-solaris-x64-lite.tar.gz",
+    "checksum": "ede7a640cfab28468817a61221fac222200d5127",
+    "checksum_type": "sha1",
+    "size": 57503296,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "18471241a796e661bcf51e8e86fdf670",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        262
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u262+10/bellsoft-jdk8u262+10-solaris-x64.tar.gz",
+    "checksum": "cc6c834532604073020b8e3941a7f5623d54624b",
+    "checksum_type": "sha1",
+    "size": 108040194,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1975fa497e23cc2cef7b9b5a06b593cb",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        322
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u322+6/bellsoft-jdk8u322+6-solaris-x64-lite.tar.gz",
+    "checksum": "40f66561f1ea7c11efb0bc35c604d9161405c0cd",
+    "checksum_type": "sha1",
+    "size": 57354483,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1f082adcaa60d6590fe76f67bbdfce5d",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        242
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u242+7/bellsoft-jre8u242+7-solaris-x64.tar.gz",
+    "checksum": "7afb95c61aa4307f995706423735c7db20cc4a90",
+    "checksum_type": "sha1",
+    "size": 43594797,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "21ac9b6548c9a60349ee4ed24b85ec5e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u412+9/bellsoft-jdk8u412+9-solaris-x64-lite.tar.gz",
+    "checksum": "c0c00d78e71848a09f6b112ede4bc9a74c567da4",
+    "checksum_type": "sha1",
+    "size": 57529776,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "26e3d5e21fa803c137cd7b90220eec93",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        312
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u312+7/bellsoft-jdk8u312+7-solaris-x64.tar.gz",
+    "checksum": "21f35f6001563dc487a03d60e14c9ebfe037ee2c",
+    "checksum_type": "sha1",
+    "size": 109823689,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2e1855c661412094f66421fd9ce43c75",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        282
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u282+8/bellsoft-jre8u282+8-solaris-x64.tar.gz",
+    "checksum": "f7e9d95ee8202718575e3b96dd732fc4be3b2261",
+    "checksum_type": "sha1",
+    "size": 45188839,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "30077b0623ce49442a941b1776a81347",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        232
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u232/bellsoft-jdk8u232-solaris-x64.tar.gz",
+    "checksum": "a2df569a918045666f7ea5f5f2484a54a02079dc",
+    "checksum_type": "sha1",
+    "size": 106806838,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3374861a362dbc6ab9e8f0fb48891b53",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u442+7/bellsoft-jdk8u442+7-solaris-x64.tar.gz",
+    "checksum": "2b52f826014ac85197a489247cd8ebb64920617f",
+    "checksum_type": "sha1",
+    "size": 109973365,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "34655a4a70fb039975aab75702b94309",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        202
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u202/bellsoft-jdk8u202-solaris-x64.tar.gz",
+    "checksum": "5c0d301b86309942622670fe4a2ef993f996edc1",
+    "checksum_type": "sha1",
+    "size": 106679083,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3c959a19b03fb6a4d05d474157c4011d",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        302
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u302+8/bellsoft-jdk8u302+8-solaris-x64.tar.gz",
+    "checksum": "9ec881ed6c43d5ccc851aacb73d690aa5b556915",
+    "checksum_type": "sha1",
+    "size": 109509603,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3fb5195d418ba65957f21cac9042e03a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u382+6/bellsoft-jdk8u382+6-solaris-x64.tar.gz",
+    "checksum": "bcf3475774cf6dc4fa8ca5dab197eee3437dd5ac",
+    "checksum_type": "sha1",
+    "size": 109884566,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4084f769b78b92026729c24ace2f85fd",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u362+9/bellsoft-jre8u362+9-solaris-x64.tar.gz",
+    "checksum": "bc2289833b4c6a047307f02619897456b10a7acf",
+    "checksum_type": "sha1",
+    "size": 45545974,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "444d5e5dd4b9ebf8e88e678898e2a4b8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u402+7/bellsoft-jdk8u402+7-solaris-x64-lite.tar.gz",
+    "checksum": "b6693cf9b87a71286fda8c2fb05ca58200b50230",
+    "checksum_type": "sha1",
+    "size": 57490039,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "47b8db660291f7f647df79c58cae2fbd",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u392+9/bellsoft-jdk8u392+9-solaris-x64.tar.gz",
+    "checksum": "b6bb2ec834bdb886e953c98d1d5c71fd4bfa7237",
+    "checksum_type": "sha1",
+    "size": 109938570,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4c9735dbf3e5897d9a2048f8b44df1ca",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u442+7/bellsoft-jdk8u442+7-solaris-x64-lite.tar.gz",
+    "checksum": "1188e55e6ab2eae5b0ada65e97613f463b5dda63",
+    "checksum_type": "sha1",
+    "size": 57514945,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4cce03aeb40414761023ec4002aa0f7e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u422+6/bellsoft-jre8u422+6-solaris-x64.tar.gz",
+    "checksum": "2d7adcd5996b84d3a4890b5eff3b954da754774a",
+    "checksum_type": "sha1",
+    "size": 45626203,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "501a0252400846ece75e369c7da77f17",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u402+7/bellsoft-jre8u402+7-solaris-x64.tar.gz",
+    "checksum": "e15b1338cd2029960940f359dde7822d40ef0884",
+    "checksum_type": "sha1",
+    "size": 45615529,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5559d277e36b8b51cad0d67f9db5324f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u452+11/bellsoft-jdk8u452+11-solaris-x64-lite.tar.gz",
+    "checksum": "1526ecc22567b70b1c7516fbb7328c6b974cedfc",
+    "checksum_type": "sha1",
+    "size": 57518515,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5a88e56d9c3927a867cc06025cb81a64",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u412+9/bellsoft-jdk8u412+9-solaris-x64.tar.gz",
+    "checksum": "93ead279b62fab42be598739dcc1ac5196a77841",
+    "checksum_type": "sha1",
+    "size": 109963862,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5a8e8b357994eed6976c4bc77df2d97c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u372+7/bellsoft-jdk8u372+7-solaris-x64-lite.tar.gz",
+    "checksum": "ccc3e25121164ad215fe81e798ba0b2d2b34bed0",
+    "checksum_type": "sha1",
+    "size": 57372862,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "62d43c5aece4e12eace2b95263372f37",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u402+7/bellsoft-jdk8u402+7-solaris-x64.tar.gz",
+    "checksum": "9d3a7e3a188fcbdb46f69c359cbbb679119ce154",
+    "checksum_type": "sha1",
+    "size": 109914000,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "632642f2662f3216107f928be6a1914d",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        333
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u333+2/bellsoft-jre8u333+2-solaris-x64.tar.gz",
+    "checksum": "cf0806720aa92e8d0ffde426c60c28c3d1d9454a",
+    "checksum_type": "sha1",
+    "size": 45516832,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "69e9690731dd33582ecad85d430f4204",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u462+11/bellsoft-jdk8u462+11-solaris-x64.tar.gz",
+    "checksum": "c16391ac236d9f155e4f6701fa5e7fb3b8141041",
+    "checksum_type": "sha1",
+    "size": 109978133,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "6b661acf989b664e506b80dd172d17ca",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        333
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u333+2/bellsoft-jdk8u333+2-solaris-x64.tar.gz",
+    "checksum": "8a35b4275e9056a525d571c19739195a1a74cafa",
+    "checksum_type": "sha1",
+    "size": 109753067,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "6c55724bfec0b5ca0e0e1deca2f7c055",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        345
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u345+1/bellsoft-jre8u345+1-solaris-x64.tar.gz",
+    "checksum": "34f58fa19e02ea457aa0347759788203b569767b",
+    "checksum_type": "sha1",
+    "size": 45518195,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "6e00270f42f24454fff5d72fa5911706",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u432+7/bellsoft-jre8u432+7-solaris-x64.tar.gz",
+    "checksum": "f7dd8ea0dc2f6aac6b6b1173c5a302a7a87b6443",
+    "checksum_type": "sha1",
+    "size": 45649955,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "730d6700b81a229cd7ddd6febce3a0ae",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        312
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u312+7/bellsoft-jdk8u312+7-solaris-x64-lite.tar.gz",
+    "checksum": "4d189d35e65590f6e400914bb2ac449c783343cc",
+    "checksum_type": "sha1",
+    "size": 57285684,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "74ef2e81ce027985678fa0b4f341e451",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u422+6/bellsoft-jdk8u422+6-solaris-x64-lite.tar.gz",
+    "checksum": "96653dce973b42e0ff8c4d5f37b7ded9a4a086e9",
+    "checksum_type": "sha1",
+    "size": 57493501,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7ae1bd474dcfe68a3c5690ae89e411bb",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        282
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u282+8/bellsoft-jdk8u282+8-solaris-x64.tar.gz",
+    "checksum": "3c52ca05336879f1376653ac19f8177736b6cc0c",
+    "checksum_type": "sha1",
+    "size": 109433777,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7ca3f2c2ca39e0cc508ea79505dc431f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        265
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u265+1/bellsoft-jdk8u265+1-solaris-x64.tar.gz",
+    "checksum": "1e20b6596bf2899cdcee4f4117e903da3a897a97",
+    "checksum_type": "sha1",
+    "size": 108067396,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7e8a432cba9f3aebb844fc31d3b972b0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u332+9/bellsoft-jdk8u332+9-solaris-x64-lite.tar.gz",
+    "checksum": "d9d7adedd28aa2ebaf5fdd4dcbb90835c42b4399",
+    "checksum_type": "sha1",
+    "size": 57371706,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "80ea43c4f72ce3ed6e7a229a37370efe",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        302
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u302+8/bellsoft-jdk8u302+8-solaris-x64-lite.tar.gz",
+    "checksum": "82b6bcf746a6a66af6e3fa7cb494971acac7e3e8",
+    "checksum_type": "sha1",
+    "size": 56961568,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "828ef11b4148dca7410694b28863919e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u362+9/bellsoft-jdk8u362+9-solaris-x64-lite.tar.gz",
+    "checksum": "3c520a64efbce69ee24fb6d31ce41f0239a10eb1",
+    "checksum_type": "sha1",
+    "size": 57378618,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "862e9b5e8d2a653b1061d2aa616368a0",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u372+7/bellsoft-jdk8u372+7-solaris-x64.tar.gz",
+    "checksum": "1b222e771b9c73223a01401337c12870ed0dec49",
+    "checksum_type": "sha1",
+    "size": 109781726,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "86575a63b2440cf2e58bf0a5700969c6",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u422+6/bellsoft-jdk8u422+6-solaris-x64.tar.gz",
+    "checksum": "3144f08089519a7a7c3daf558d72180c86fe0e6d",
+    "checksum_type": "sha1",
+    "size": 109892416,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8855799409fee8056cf52936e82fe5b9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        342
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u342+7/bellsoft-jdk8u342+7-solaris-x64-lite.tar.gz",
+    "checksum": "dafb34a359a4c02ba7c9420b03a2a78bdbf4d862",
+    "checksum_type": "sha1",
+    "size": 57364417,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "898667cac2a11f1cbdac3b9b4b0ae415",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        242
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u242+7/bellsoft-jdk8u242+7-solaris-x64.tar.gz",
+    "checksum": "c42857c0068dfddc537a1337736c4e82b953863e",
+    "checksum_type": "sha1",
+    "size": 106855116,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8a2ade2741630a1ac488a36e094806da",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        232
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u232+10/bellsoft-jre8u232+10-solaris-x64.tar.gz",
+    "checksum": "e13602004ad6f1c22d2695f282c5da2a52f12773",
+    "checksum_type": "sha1",
+    "size": 43581110,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8a80df4612b2b2a20cd7721cf1d0f7a7",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        342
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u342+7/bellsoft-jdk8u342+7-solaris-x64.tar.gz",
+    "checksum": "867a888659f9aed4e9f62918f86e862426965889",
+    "checksum_type": "sha1",
+    "size": 109774165,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8b0db34ab0568ac39e110266e65606a4",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        312
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u312+7/bellsoft-jre8u312+7-solaris-x64.tar.gz",
+    "checksum": "1e32ab5bd1662a291e2e2499cde9c04784b16af0",
+    "checksum_type": "sha1",
+    "size": 45467399,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8b1691a7e83dacfdf52679fc691d2666",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        212
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u212/bellsoft-jre8u212-solaris-x64.tar.gz",
+    "checksum": "a440f50cfa1ca4aacb83b353a51e59841607a29c",
+    "checksum_type": "sha1",
+    "size": 43524100,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8beced6558e34c2d76ca23b41e76ec41",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u432+7/bellsoft-jdk8u432+7-solaris-x64-lite.tar.gz",
+    "checksum": "20b44df42fc546f1b394a69c30384244bd7520ed",
+    "checksum_type": "sha1",
+    "size": 57530500,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "906f2b636f67c8748bef2f08e0d35a47",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u382+6/bellsoft-jdk8u382+6-solaris-x64-lite.tar.gz",
+    "checksum": "fb8f15596e4d9336122cac926613fdea8aee48aa",
+    "checksum_type": "sha1",
+    "size": 57476411,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9121a84cdf329754b07a1c90ca117473",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u352+8/bellsoft-jre8u352+8-solaris-x64.tar.gz",
+    "checksum": "59549c6574eb9271f737a08c19602514ae27ad1a",
+    "checksum_type": "sha1",
+    "size": 45542148,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9312287ad31bf35b04988f6b6e6e3323",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        232
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u232/bellsoft-jre8u232-solaris-x64.tar.gz",
+    "checksum": "85e63016592155ae48b4334a17f7ab0f6499cf0c",
+    "checksum_type": "sha1",
+    "size": 43580603,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "949008b3ffba97e9333f432e223ce070",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u462+11/bellsoft-jdk8u462+11-solaris-x64-lite.tar.gz",
+    "checksum": "8a74d338caa74c5b65bfd00d85065e1296dcb0e4",
+    "checksum_type": "sha1",
+    "size": 57510294,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "9ab87ab128a5c0194637e21ced083fe5",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        292
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u292+10/bellsoft-jdk8u292+10-solaris-x64.tar.gz",
+    "checksum": "0d32ff4a28d355dfdb3c96323cfc4e14f2cbed58",
+    "checksum_type": "sha1",
+    "size": 109466466,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "a883df92c095f89c242db4e58e170685",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        202
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u202/bellsoft-jre8u202-solaris-x64.tar.gz",
+    "checksum": "abc2a7062e0307d3e83ab00f416920174c4bf2b6",
+    "checksum_type": "sha1",
+    "size": 43493810,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "abba41b7edd6970481924b3aacdd6f71",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        345
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u345+1/bellsoft-jdk8u345+1-solaris-x64-lite.tar.gz",
+    "checksum": "2ae4246418d4dac2b346c20ecd09837af2f93684",
+    "checksum_type": "sha1",
+    "size": 57359714,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ac71bf646966ae8efa6f6f55240534a9",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u452+11/bellsoft-jre8u452+11-solaris-x64.tar.gz",
+    "checksum": "1280eaea05ec16cbc2610abe695b6cde68e9c20c",
+    "checksum_type": "sha1",
+    "size": 45646337,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "acb042fdc830e7dcd85adac6a2263486",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u452+11/bellsoft-jdk8u452+11-solaris-x64.tar.gz",
+    "checksum": "51aed9b4ee68e5acd3bada4818d4558916fa9c72",
+    "checksum_type": "sha1",
+    "size": 109982870,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b0327734dda3687c26291257fd449262",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        212
+      ],
+      "build": [
+        12
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u212/bellsoft-jdk8u212-solaris-x64.tar.gz",
+    "checksum": "0561d2439d33683d0b456e5c7da56c1b098dae71",
+    "checksum_type": "sha1",
+    "size": 106706105,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b351311a0504780e90d4679e3011954c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u432+7/bellsoft-jdk8u432+7-solaris-x64.tar.gz",
+    "checksum": "e0413a6dd4ef9a506866f67ccf7f38e200b06c2d",
+    "checksum_type": "sha1",
+    "size": 109963801,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b7f3724c8d468cf7f4d814d229a111ea",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u412+9/bellsoft-jre8u412+9-solaris-x64.tar.gz",
+    "checksum": "6e80dd96e9a93d1ddce8c71e53830f61f1e708c2",
+    "checksum_type": "sha1",
+    "size": 45648236,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ba7a24c143e0c6d2d4c37e5093756434",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        232
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u232+10/bellsoft-jdk8u232+10-solaris-x64.tar.gz",
+    "checksum": "b6e0cdcc240b12a8600e679f668eb41559456529",
+    "checksum_type": "sha1",
+    "size": 106814824,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "baaff015555a8168b4db2e76c946b2ab",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u332+9/bellsoft-jre8u332+9-solaris-x64.tar.gz",
+    "checksum": "4e5d88e1e965fc5e73e409992a633b0297a926cd",
+    "checksum_type": "sha1",
+    "size": 45547664,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bd97f1a42df66252bdd60f653e00e05c",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        302
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u302+8/bellsoft-jre8u302+8-solaris-x64.tar.gz",
+    "checksum": "413b2bd2a72939f865ab4c7ccdc00236f08b6c3c",
+    "checksum_type": "sha1",
+    "size": 45234616,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "bed809500a174a269d5d0ed4bd4a0069",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u362+9/bellsoft-jdk8u362+9-solaris-x64.tar.gz",
+    "checksum": "ae9fe9bc2b5adb7561ce7251391f69287f9f4a10",
+    "checksum_type": "sha1",
+    "size": 109797772,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c08311f043bf10208ffe7fb3a92a58c2",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        275
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u275+1/bellsoft-jdk8u275+1-solaris-x64.tar.gz",
+    "checksum": "05705c8bf305b06e828309ae3482b30352fd4749",
+    "checksum_type": "sha1",
+    "size": 109426682,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c2a406145e0e23da81df0f6fa5ca5200",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u382+6/bellsoft-jre8u382+6-solaris-x64.tar.gz",
+    "checksum": "1d3dd487b583f54bb5fc39afa6a48bdebe1e8500",
+    "checksum_type": "sha1",
+    "size": 45625138,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c5005bb57860366f997d3be4cdd0966e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u372+7/bellsoft-jre8u372+7-solaris-x64.tar.gz",
+    "checksum": "a0daae451664b2afac097dc9a3fbad25e1e36888",
+    "checksum_type": "sha1",
+    "size": 45540935,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d03351d3e057f97feb2ff5e157c9d2fc",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        275
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u275+1/bellsoft-jre8u275+1-solaris-x64.tar.gz",
+    "checksum": "4467192fbbf5ca5c11a87906b4c1f5ed19f636d2",
+    "checksum_type": "sha1",
+    "size": 45197490,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d28d7a3be10d1e6e48d7b6098675be99",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        322
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u322+6/bellsoft-jre8u322+6-solaris-x64.tar.gz",
+    "checksum": "92d16faade55e4e3a91410485604b5e3a62e29b0",
+    "checksum_type": "sha1",
+    "size": 45528291,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d4a7b9b34e331e478f1883fe0921e4d8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        252
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u252+9/bellsoft-jre8u252+9-solaris-x64.tar.gz",
+    "checksum": "9c05af2e766864efb001c03970a3b7887a9d2009",
+    "checksum_type": "sha1",
+    "size": 43805708,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d821efb1166d3ee74ee3b9c5b1b68a59",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        292
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u292+10/bellsoft-jre8u292+10-solaris-x64.tar.gz",
+    "checksum": "06a81f43fa55ae307044f16eb5d5e89c599e8c7d",
+    "checksum_type": "sha1",
+    "size": 45203980,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d880cfdb74fd65160fd9ceb2fde2f65f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        252
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u252+9/bellsoft-jdk8u252+9-solaris-x64.tar.gz",
+    "checksum": "b9433f7a59485ce98321941ddc3bd296fa90560f",
+    "checksum_type": "sha1",
+    "size": 107325946,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "de4d08c45714f1e0e077c525d00e6d1f",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        272
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u272+10/bellsoft-jre8u272+10-solaris-x64.tar.gz",
+    "checksum": "379b4d46fc5e19707ae4de483688cbfc603055aa",
+    "checksum_type": "sha1",
+    "size": 45202968,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "de5f5291431730b5315ea75cd029bd6e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u392+9/bellsoft-jre8u392+9-solaris-x64.tar.gz",
+    "checksum": "80375598732cfe4e87082802896b4e725d3c5b21",
+    "checksum_type": "sha1",
+    "size": 45639385,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e0a0777d8c3488e139629d69b49e9f51",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        333
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u333+2/bellsoft-jdk8u333+2-solaris-x64-lite.tar.gz",
+    "checksum": "9d7ff7cc642d92e76d9521f8d80294de6fd59e4f",
+    "checksum_type": "sha1",
+    "size": 57345473,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e0c1e4ea1ce4e7ba0b0c7caa64076a5a",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        322
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u322+6/bellsoft-jdk8u322+6-solaris-x64.tar.gz",
+    "checksum": "023ff04524fb5b49d82d3aeb0a0e7a0042256788",
+    "checksum_type": "sha1",
+    "size": 109949330,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e30fa5705dfc69c51d6acbf8b758ad52",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        342
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u342+7/bellsoft-jre8u342+7-solaris-x64.tar.gz",
+    "checksum": "ddc41c8d5712f8965aabac67aedf19a9e098d591",
+    "checksum_type": "sha1",
+    "size": 45539557,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ea7591f8f0d0b0c11c1c6ee25265bbfb",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u332+9/bellsoft-jdk8u332+9-solaris-x64.tar.gz",
+    "checksum": "5622263d30f88b123fc5b9bd5ce38a71fcdb493d",
+    "checksum_type": "sha1",
+    "size": 109781776,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "eaf6991e1ed5e455186a5818c406278e",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u352+8/bellsoft-jdk8u352+8-solaris-x64-lite.tar.gz",
+    "checksum": "4974049f349cd5720109bdbd58709ff6ae582674",
+    "checksum_type": "sha1",
+    "size": 57371913,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f1c2349367356a7528e079d17840ffa8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        262
+      ],
+      "build": [
+        10
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u262+10/bellsoft-jre8u262+10-solaris-x64.tar.gz",
+    "checksum": "61909ac5e6b91a6b745dc8ec716f4cd470ab6a18",
+    "checksum_type": "sha1",
+    "size": 43890097,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fed353421363a48ff233689f2912c9c8",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": [
+        11
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u462+11/bellsoft-jre8u462+11-solaris-x64.tar.gz",
+    "checksum": "03479f7993bd23c5f0f32901eef76249cf35148c",
+    "checksum_type": "sha1",
+    "size": 45641612,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "fedb3d8f1b9c8eedc7b120d4f23f60ef",
+    "distribution": "liberica",
+    "version": {
+      "components": [
+        8,
+        0,
+        345
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/bell-sw/Liberica/releases/download/8u345+1/bellsoft-jdk8u345+1-solaris-x64.tar.gz",
+    "checksum": "b4cfd981e8d97eb4b05ad40b108cc32c654e8eae",
+    "checksum_type": "sha1",
+    "size": 109743085,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "28ca8b3e4fdb6526189414d0eae8a83b",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-240905-2007/graalvm-java23-darwin-aarch64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 396137672,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "5169c10c759281356a25ed399fb78a73",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-2409082136/graalvm-java23-darwin-aarch64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 404125077,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "f9f4696ddeae4264b9e44c8c40aac20c",
+    "distribution": "gluon_graalvm",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        25
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/gluonhq/graal/releases/download/gluon-23%2B25.1-dev-240903-1155/graalvm-java23-darwin-aarch64-gluon-23%2B25.1-dev.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 396138887,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  }
+]

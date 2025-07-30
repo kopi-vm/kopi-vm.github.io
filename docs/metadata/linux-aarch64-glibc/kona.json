@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "f89c7832458be6456ccd03e81f7d838c",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        8
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.8/TencentKona-21.0.8.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211287515,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "d1dd1a489745b624e7b1b1c2cdd52a8c",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.7/TencentKona-21.0.7.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211109388,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0c7750cde4f5e4ae40c254fc72af8b21",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        6
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.6/TencentKona-21.0.6.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211013348,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c5ac4fc3ecd19af3c696bf348baf8b6b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.5/TencentKona-21.0.5.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 210956829,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "18cf630b99ebb0ad481c7e543aec29f2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        4
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.4/TencentKona-21.0.4.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211893742,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "debadb7c4a28939ca52d96a0ceaa8af4",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        3
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.3/TencentKona-21.0.3.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211802709,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1c7be102d3df96f4cbba7ee0bf2113a9",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        2
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.2/TencentKona-21.0.2.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211759464,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ef4444adedd8f2235eda0bb1d5a3a499",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21,
+        0,
+        1
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.1/TencentKona-21.0.1.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211585441,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "93c038ccc3ddc664d78a1e62d249c6a5",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        21
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21-ga/TencentKona-21.0.0.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 211540376,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1812b13c509ce893762597be74f30d18",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.16/TencentKona-17.0.16.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198288776,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "08d164317014fc920ce88a2bb971c206",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.15/TencentKona-17.0.15.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197953849,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "31e87cbacb0741f9dc4b234f30b1f283",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        14
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        14
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.14/TencentKona-17.0.14.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197866976,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d569aa81ae50b89e104bdf5750799bb9",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        13
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        13
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.13/TencentKona-17.0.13.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197784028,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dc39ae3014ed3d795bd61eafd0276915",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        12
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.12/TencentKona-17.0.12.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198204686,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "e4138e33c48c652f9ea8bf6563fa2f0b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        11
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.11/TencentKona-17.0.11.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197945913,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5d062495d505c9dd43e4d8cc45a9da26",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        10
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        10
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.10/TencentKona-17.0.10.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197649384,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dcf0a3c48654cab481eb2238e842938d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        9
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        9
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.9/TencentKona-17.0.9.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197564584,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d909b08a48052850b2731e7861508953",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        8
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        8
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.8/TencentKona-17.0.8.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197673077,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c642ffe9fa8ed97049f6cde1d926d5a8",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        7
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.7/TencentKona-17.0.7.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197265001,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "af5c3f931f81b8a7304b32a27e56d557",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        6
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.6/TencentKona-17.0.6.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197157975,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "957d74d40301f317f63a7a23f0513004",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.5/TencentKona-17.0.5.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197096304,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5c232f683880cac18221c41082cfae6c",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.4/TencentKona-17.0.4.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196843173,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ccdee7ba1522c799f5061a0d7e9f265e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        4
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.4.1/TencentKona-17.0.4.b2-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196836395,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "6b0a7d5b0f9de1d2145fcb0435c3a817",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        3
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.3/TencentKona-17.0.3.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196845347,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5407dd7f80a3decf7701731d2a4f0daa",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17,
+        0,
+        2
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.2/TencentKona-17.0.2.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196944169,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2664faf0e5a2b0060b474589c1e6ae6b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        17
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.0/TencentKona-17.0.0.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196892147,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9c73bb7999bf2ff5662b58e7cb32c078",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.28/TencentKona-11.0.28.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199551165,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "9924034e62a8c0004e9bf7859174bbcd",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.27/TencentKona-11.0.27.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199486767,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fb644ef94445ef09de5c62956fb96f11",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        26
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.26/TencentKona-11.0.26.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199444898,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "09e15012cf6986d6511aed53614b409b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        25
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.25/TencentKona-11.0.25.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199459775,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5246dc5f4b3b104d44524ef8337a584e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        24
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.24/TencentKona-11.0.24.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199397778,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9b389c80a832c4ef5121351c790b1ff8",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.23/TencentKona-11.0.23.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199361922,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "45f0a85d0c609e88bfaba6a2ffea13be",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        22
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.22/TencentKona-11.0.22.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199053340,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "7fa5c094ac917070e4b4872bf11a37da",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.21/TencentKona-11.0.21.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 199010567,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "153c55fc0b83e987aabd8e00949cb3a2",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        20
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.20/TencentKona-11.0.20.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198860030,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "b64558549f3ac34fa98482d4c2bc0a6b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.19/TencentKona-11.0.19.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198555424,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "a832fa2e8089ae0c5bcb91c58f90084d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        18
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.18/TencentKona-11.0.18.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198464335,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "97005ed9117b43b7d5f4200002f4ff3f",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.17/TencentKona-11.0.17.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198393076,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2ccf7540b324e80e5f20ea34926d7459",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.16/TencentKona-11.0.16.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198046207,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "4dc30efeb7dc0fca55305948fbfd0476",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.16.1/TencentKona-11.0.16.b2-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 198026303,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "436bc60a5667e87054efbb74ab10b4b0",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        15
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        15
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.15/TencentKona-11.0.15.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197485795,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "fdb6d5665588de2460b1558e4e5d510b",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        14
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        14
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.14/TencentKona-11.0.14.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197356249,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "2681dbc096a182087d3fddea4cb11972",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        13
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        13
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.13/TencentKona-11.0.13.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 197160359,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "de18faee7b941fdc3260cdf43435f79e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        11,
+        0,
+        12
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        12
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.12/TencentKona-11.0.12.b1-jdk_linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 196719752,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "98ccb4d1e89db3ff9764746c78796ce7",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/TencentKona8.0.23.b1_jdk_linux-aarch64_8u462.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112400577,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "ef1850bfd92e4d4abd19cdce4157ec9d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.22-GA/TencentKona8.0.22.b1_jdk_linux-aarch64_8u452.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112396606,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "29abb40653acf747d7fe0a23c68de293",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        442
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.21-GA/TencentKona8.0.21.b1_jdk_linux-aarch64_8u442.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112391544,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dc86ff3764c7363982dafbeaeb31b849",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        432
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.20-GA/TencentKona8.0.20.b1_jdk_linux-aarch64_8u432.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112353027,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "37eb9f5ffd5fae41271ea65cc66b356e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.19-GA/TencentKona8.0.19.b1_jdk_linux-aarch64_8u422.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112331740,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "94cb7ecedd0799b1f356913e3bd756b1",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.18-GA/TencentKona8.0.18.b1_jdk_linux-aarch64_8u412.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112311471,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "aed49ed99a213618bc0220665337ea9e",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        402
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.17-GA/TencentKona8.0.17.b1_jdk_linux-aarch64_8u402.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112207772,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "ae04d0b44732bf1e43d400bd91fde612",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.16-GA/TencentKona8.0.16.b1_jdk_linux-aarch64_8u392.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112091011,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "42c800d5154dc95812ad3374d8f4b582",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        382
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.15-GA/TencentKona8.0.15.b1_jdk_linux-aarch64_8u382.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112072237,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "edf2908e4530960279a05c0b51b67f49",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        372
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.14-GA/TencentKona8.0.14.b1_jdk_linux-aarch64_8u372.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112043624,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "9b62329e18a686fae09d0fa77be2633d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        362
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.13-GA/TencentKona8.0.13.b1_jdk_linux-aarch64_8u362.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111999246,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3844b0a00e5478e5f16150f7583dcfb3",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        352
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.12-GA/TencentKona8.0.12.b1_jdk_linux-aarch64_8u352.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 112007717,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d0b5adacaffa10c46ae745fe38e35b22",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        345
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        345
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.11-GA/TencentKona8.0.11.b2_jdk_linux-aarch64_8u345.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111853099,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "232576b67c63537887969c896132f16d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.10-GA/TencentKona8.0.10.b1_jdk_linux-aarch64_8u332.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111984884,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "1d40676cff00ff3c8aa9597c9c3c8804",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        322
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        322
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.9-GA/TencentKona8.0.9.b1_jdk_linux-aarch64_8u322.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111979734,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "8733202b05b0cb43f85b6eba86af3acd",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        312
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        312
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.8-GA/TencentKona8.0.8.b1_jdk_linux-aarch64_8u312.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111951735,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "aa3d3bffb0f7685f20fa9a6ae15eec2d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        302
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        302
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.7-GA/TencentKona8.0.7.b1_jdk_linux-aarch64_8u302.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 111915100,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "25c71164c2324220ec8a94a9275a1296",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        242
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        1
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/AARCH64_8u242/TencentKona8.0.1-jdk_linux-aarch64_8u242.tgz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 252871391,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  }
+]

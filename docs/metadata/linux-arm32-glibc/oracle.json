@@ -1,0 +1,352 @@
+[
+  {
+    "id": "c6943c537a20c12919cd0169c6f1da35",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        381
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        381
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "6d739bab458b376dd88cf548e7378872",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        371
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        371
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "5cc702fd3a85641734df5cb2c2af3aeb",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        361
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        361
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c8da0c9b63f1eac36234523899dee8f4",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        351
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        351
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "3d36dbd8dc7c5a73128849a50e46214c",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        341
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        341
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0755dfac583351d0b40f51e58976abb2",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        333
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        333
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "befc20845a3b485acb98b6ddbb40455d",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        331
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        331
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "36dfd46c42ecb8383d5aebf080e6c08a",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        321
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        321
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "0cce86f3f62bf624c8334ffdfdbec730",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        311
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        311
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "056c39cad9ff23d333e50d2000151aa3",
+    "distribution": "oracle",
+    "version": {
+      "components": [
+        8,
+        0,
+        301
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        301
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "arm32",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "",
+    "checksum": null,
+    "checksum_type": null,
+    "size": -1,
+    "lib_c_type": "glibc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  }
+]

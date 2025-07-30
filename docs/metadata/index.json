@@ -1,7 +1,87 @@
 {
   "version": 2,
-  "updated": "2025-07-30T10:29:21.822124805+00:00",
+  "updated": "2025-07-30T11:08:47.508682045+00:00",
   "files": [
+    {
+      "path": "aix-ppc64-libc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 64678,
+      "checksum": "f73502b79a20d5cd54e663d0d648a4bad84b59abdf8581276a6e38d110bf10d1",
+      "last_modified": "2025-07-30T11:08:47.492817581+00:00"
+    },
+    {
+      "path": "aix-ppc64-libc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 70796,
+      "checksum": "ef66a2e7705d0c5e4d7f5d61b1bf0548d459a74b271f1501e02a30429a68cda5",
+      "last_modified": "2025-07-30T11:08:47.492867744+00:00"
+    },
+    {
+      "path": "aix-ppc64-libc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 26866,
+      "checksum": "40ef08c1de758c22db595390d31d0f59c7eabb330378e8c6742603b7a5da2e27",
+      "last_modified": "2025-07-30T11:08:47.492886249+00:00"
+    },
+    {
+      "path": "aix-ppc64-libc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 186401,
+      "checksum": "0af1c75c4976cd3d2d27b0ae29b7845edc16c8cc284cedf47d27121eb5382c75",
+      "last_modified": "2025-07-30T11:08:47.493004780+00:00"
+    },
+    {
+      "path": "aix-ppc64-libc/semeru_certified.json",
+      "distribution": "semeru_certified",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "aix"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 55655,
+      "checksum": "d4d96d3dc9a40efed5b63c1b97c50ac331dfa7be87016d43e22c0e329c0165d6",
+      "last_modified": "2025-07-30T11:08:47.493042581+00:00"
+    },
     {
       "path": "aix-ppc64-libc/temurin.json",
       "distribution": "temurin",
@@ -16,7 +96,55 @@
       ],
       "size": 101562,
       "checksum": "8325a6d79411b2834d562a36812c4b517035eae53d9049de4abc471818942599",
-      "last_modified": "2025-07-30T10:29:21.820928015+00:00"
+      "last_modified": "2025-07-30T11:08:47.493108744+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 69526,
+      "checksum": "0e81e30da2ce37f30c5ad44f9d6728400ad185e93805cff9da296e3872e7d516",
+      "last_modified": "2025-07-30T11:08:47.493153869+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 23317,
+      "checksum": "c793cc57209d47ac4bacffe6ccb01cefb71d7d999436ee119de8c1261aa8ef3a",
+      "last_modified": "2025-07-30T11:08:47.493170400+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/bisheng.json",
+      "distribution": "bisheng",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 184751,
+      "checksum": "42f30eca9f7332805910b085d2d1f7aab671d7d0ceb496ee58a39b02a59ec536",
+      "last_modified": "2025-07-30T11:08:47.493287087+00:00"
     },
     {
       "path": "linux-aarch64-glibc/corretto.json",
@@ -32,7 +160,295 @@
       ],
       "size": 114420,
       "checksum": "e3fc4487b7a71eadfea315bc395f918994dabfcc691dfc8951f98e38542ffaf1",
-      "last_modified": "2025-07-30T10:29:21.820987237+00:00"
+      "last_modified": "2025-07-30T11:08:47.493377757+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/dragonwell.json",
+      "distribution": "dragonwell",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 118330,
+      "checksum": "bb684ea7cca9c986f4e29d8c82ddd87b5cba76c5b9ec8b1c9a661d5ae5d73287",
+      "last_modified": "2025-07-30T11:08:47.493452717+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm.json",
+      "distribution": "graalvm",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 21367,
+      "checksum": "195a2eafc330f1e586b2be3aa66464d4d77d974d745a2bb69c426293763095cb",
+      "last_modified": "2025-07-30T11:08:47.493466903+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm_ce11.json",
+      "distribution": "graalvm_ce11",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 23960,
+      "checksum": "abb9c75595f0bb50dda06cb22842baa6593c442d305705b0722cc809b614cfe7",
+      "last_modified": "2025-07-30T11:08:47.493482823+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm_ce16.json",
+      "distribution": "graalvm_ce16",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1680,
+      "checksum": "f34f889bb43d05b56ff78a353624a1b1ade5b9b8f17e4bc56ff61c40edee5435",
+      "last_modified": "2025-07-30T11:08:47.493485087+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm_ce17.json",
+      "distribution": "graalvm_ce17",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 10305,
+      "checksum": "af379658025076c4bb86d7d3a0ded616e13f6a6d286d536b272d466d89b5b683",
+      "last_modified": "2025-07-30T11:08:47.493492401+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm_ce19.json",
+      "distribution": "graalvm_ce19",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1703,
+      "checksum": "6a96c6478a74b318c7dddd6ac5120813afc9da8bfa587e18fe1432887ae3437f",
+      "last_modified": "2025-07-30T11:08:47.493494445+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/graalvm_community.json",
+      "distribution": "graalvm_community",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 14712,
+      "checksum": "5e73220f619ffff7563541c2f99722ce9c7f8dfddb48ed85d400cfe59a7a708d",
+      "last_modified": "2025-07-30T11:08:47.493504914+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 170413,
+      "checksum": "fc2dbe5e946309105b70a34645656a30780c2a26400fc3dd7b96d4413a129103",
+      "last_modified": "2025-07-30T11:08:47.493612966+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 53658,
+      "checksum": "47cd544989ad43f88974e1bc3414aaed69fc5414b3acf3fd482597b4ef397477",
+      "last_modified": "2025-07-30T11:08:47.493647230+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 507199,
+      "checksum": "789944aa08e594e6a5d6f56f5a5ad553e744f3d5406dc5e75782fb0ca80ba043",
+      "last_modified": "2025-07-30T11:08:47.493964242+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 69798,
+      "checksum": "5b41cbd3718d1254ef19382c85aada4944ff5eb9b9ef16679a278612242f47ab",
+      "last_modified": "2025-07-30T11:08:47.494008925+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/mandrel.json",
+      "distribution": "mandrel",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 47319,
+      "checksum": "13e419d4277950e0efb248fe2de3099ed3d24011069f4e2c3db10468ef5864a7",
+      "last_modified": "2025-07-30T11:08:47.494039563+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 40684,
+      "checksum": "31548fa827362cf25c735c7088909308a829b04134729795f1459dcf045f7219",
+      "last_modified": "2025-07-30T11:08:47.494066112+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 70894,
+      "checksum": "859110f3ac69ac8a84290f46a63d41116ef17726c2fbfc8c1340e6982b797497",
+      "last_modified": "2025-07-30T11:08:47.494111427+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/oracle_open_jdk.json",
+      "distribution": "oracle_open_jdk",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 59288,
+      "checksum": "d03a18607fb10a63ce785ce995a20270f558263dea009c32c93598e8241dc5c8",
+      "last_modified": "2025-07-30T11:08:47.494149247+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 89152,
+      "checksum": "b55e7c2eb96c722f09e75a09ac2de21b5f056ae9411eff7537af456ae3168f89",
+      "last_modified": "2025-07-30T11:08:47.494205833+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 182842,
+      "checksum": "77be5b8c4502dddcab29e533ab2e54f5ebe91a89a2c60de576d968f695d7eada",
+      "last_modified": "2025-07-30T11:08:47.494320637+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/semeru_certified.json",
+      "distribution": "semeru_certified",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 53450,
+      "checksum": "d3acbed7c61aa30a7bfcfc2ac7d02576630a57049ef4f27cab559c626fbc454a",
+      "last_modified": "2025-07-30T11:08:47.494368987+00:00"
     },
     {
       "path": "linux-aarch64-glibc/temurin.json",
@@ -48,7 +464,55 @@
       ],
       "size": 159951,
       "checksum": "57ef2f47af327c49c3bf4ded069a05ac69e64c2bd73a69dc8904b6441189cb6f",
-      "last_modified": "2025-07-30T10:29:21.821066197+00:00"
+      "last_modified": "2025-07-30T11:08:47.494471169+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/trava.json",
+      "distribution": "trava",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1759,
+      "checksum": "4a5d749ea6c70dd5fb6c123b743fc7154340695fc800b2ceca19766e56cb8e79",
+      "last_modified": "2025-07-30T11:08:47.494473333+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 360072,
+      "checksum": "f024f2857643d6c1fb7f70f76d5ccd4f5a2be03a9fee9bc193760d497774d964",
+      "last_modified": "2025-07-30T11:08:47.494698192+00:00"
+    },
+    {
+      "path": "linux-aarch64-glibc/zulu_prime.json",
+      "distribution": "zulu_prime",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 31588,
+      "checksum": "e32d7d9ed7868ea93c8509e94a22facc2ea3d98f7e07428480382322fa3c5d40",
+      "last_modified": "2025-07-30T11:08:47.494719061+00:00"
     },
     {
       "path": "linux-aarch64-musl/corretto.json",
@@ -64,7 +528,71 @@
       ],
       "size": 58739,
       "checksum": "b4796e3d93e29b5ee88e4f7eddacef615030f16cfbc2b92b8bd264137af48d6b",
-      "last_modified": "2025-07-30T10:29:21.821096064+00:00"
+      "last_modified": "2025-07-30T11:08:47.494756271+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 1670,
+      "checksum": "394d81e9db81e59e20f2f802624d87c97bfc378c8142b2ce09ca56fc13328481",
+      "last_modified": "2025-07-30T11:08:47.494759367+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 8590,
+      "checksum": "7c5aaafd5ce168b5e28e1be318a34509ca1ad6b8875aeae0c19cd66a2d579f6b",
+      "last_modified": "2025-07-30T11:08:47.494765759+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 267084,
+      "checksum": "ac85c7ce69af4cff8d7652b22a509acf1beb04430e562e71d2b5b88f74c9a164",
+      "last_modified": "2025-07-30T11:08:47.494933001+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 70092,
+      "checksum": "1a6fb3f0226282159501db2198e88ca4d9aa6dba5020dba8e17565309fa4bb38",
+      "last_modified": "2025-07-30T11:08:47.494977664+00:00"
     },
     {
       "path": "linux-aarch64-musl/temurin.json",
@@ -80,7 +608,183 @@
       ],
       "size": 33958,
       "checksum": "87eabec95db2161684381cb284f6c8ba812311d46d5020051cf1589fb9e462b6",
-      "last_modified": "2025-07-30T10:29:21.821113386+00:00"
+      "last_modified": "2025-07-30T11:08:47.494999946+00:00"
+    },
+    {
+      "path": "linux-aarch64-musl/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 141608,
+      "checksum": "e64cc59ff789aa42b81855b625ea6bef47cf3d2ca8ce3551875afad180992a73",
+      "last_modified": "2025-07-30T11:08:47.495089183+00:00"
+    },
+    {
+      "path": "linux-arm32-glibc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "arm32"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 423349,
+      "checksum": "b88b5996e61736a65a2c97ccf2499533ed64fe80126395bc8355d900b7000ed2",
+      "last_modified": "2025-07-30T11:08:47.495370097+00:00"
+    },
+    {
+      "path": "linux-arm32-glibc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "arm32"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 7261,
+      "checksum": "52464f206f08a39701062eae9ab2256d6f53f056d235625d56b3455aa61201ce",
+      "last_modified": "2025-07-30T11:08:47.495375678+00:00"
+    },
+    {
+      "path": "linux-ppc64-glibc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 51010,
+      "checksum": "f49a60e1a3814fd093f2836039e8a6e12dbf6a8dce01e0b556b0c8e7a1ec310f",
+      "last_modified": "2025-07-30T11:08:47.495408880+00:00"
+    },
+    {
+      "path": "linux-ppc64-glibc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "ppc64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 28944,
+      "checksum": "2e1fbeebc7e3487fd6a6a2df85df7519a969130b7feddb2fa125d292bc53d0a1",
+      "last_modified": "2025-07-30T11:08:47.495428085+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 76417,
+      "checksum": "794b10c6e142435303ac016a50b27c72053461b83b1fafb4b56e17cf70fc7fb2",
+      "last_modified": "2025-07-30T11:08:47.495476526+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 71405,
+      "checksum": "b115aee638f988980184c42d6fade54a6d8db5ea652dfecb7d03d3704c9dbde4",
+      "last_modified": "2025-07-30T11:08:47.495521810+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 323375,
+      "checksum": "fc6852c9424901127b0e974c4754f7be788bb12d5f57703d9e8014ab586df625",
+      "last_modified": "2025-07-30T11:08:47.495723777+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 164562,
+      "checksum": "c3a9153674dba69712d4ed440cc75fe41e5653fa71d2bb4ffcdce2f8de075675",
+      "last_modified": "2025-07-30T11:08:47.495827271+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 188255,
+      "checksum": "020ac552dab8d5c305753048fbf0d3a8e86c41ba694f84a6224206c2b24f5e96",
+      "last_modified": "2025-07-30T11:08:47.495945401+00:00"
+    },
+    {
+      "path": "linux-ppc64le-glibc/semeru_certified.json",
+      "distribution": "semeru_certified",
+      "architectures": [
+        "ppc64le"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 56168,
+      "checksum": "bfb5a6f26ac32e076e114682278c98e33019b2660ff62fd69282281bee6005b2",
+      "last_modified": "2025-07-30T11:08:47.495981599+00:00"
     },
     {
       "path": "linux-ppc64le-glibc/temurin.json",
@@ -96,7 +800,71 @@
       ],
       "size": 154364,
       "checksum": "489cf44e70f17971cb919c42a66038f919c3174c6e1f45f0e3abe40517906f5c",
-      "last_modified": "2025-07-30T10:29:21.821192987+00:00"
+      "last_modified": "2025-07-30T11:08:47.496078500+00:00"
+    },
+    {
+      "path": "linux-s390x-glibc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "s390x"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 72760,
+      "checksum": "f8cd322e527895915570b37be2a6ab32496dc47d269781c955bc3cb7ae2fa6e8",
+      "last_modified": "2025-07-30T11:08:47.496125167+00:00"
+    },
+    {
+      "path": "linux-s390x-glibc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "s390x"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 71085,
+      "checksum": "97678000e3738391c1f61c5400ff1cf837a1f67a449a4e2ce14b92952d0b7dc7",
+      "last_modified": "2025-07-30T11:08:47.496170482+00:00"
+    },
+    {
+      "path": "linux-s390x-glibc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "s390x"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 182042,
+      "checksum": "22b5c00120c42babed0f8845100fccf46c6c4289a609fe30bbe7f073535d5d62",
+      "last_modified": "2025-07-30T11:08:47.496284935+00:00"
+    },
+    {
+      "path": "linux-s390x-glibc/semeru_certified.json",
+      "distribution": "semeru_certified",
+      "architectures": [
+        "s390x"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 55030,
+      "checksum": "72ec18d9f4e5ca8cb40f09923fdfeae928e1c11c2d91105b5ed03d721121f79b",
+      "last_modified": "2025-07-30T11:08:47.496319991+00:00"
     },
     {
       "path": "linux-s390x-glibc/temurin.json",
@@ -112,7 +880,55 @@
       ],
       "size": 112466,
       "checksum": "8c9431d8a27b670812f8c4bbfddc11c1b0d3030f3a50f64dd847e33beea7a3c2",
-      "last_modified": "2025-07-30T10:29:21.821248272+00:00"
+      "last_modified": "2025-07-30T11:08:47.496404318+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 131133,
+      "checksum": "ce535649791b64d16e59f3a42c420ec7e9280b613e23d08a67d60afcf3ded74e",
+      "last_modified": "2025-07-30T11:08:47.496487073+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 69871,
+      "checksum": "adfc45e52176198ed0d10302f080101a2906cfa5601f6dc65f833dbf8e0f9bb1",
+      "last_modified": "2025-07-30T11:08:47.496531906+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/bisheng.json",
+      "distribution": "bisheng",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 169708,
+      "checksum": "65ec84c716e7caef57db962d9fc39212235ba9c2b5866da1e3cd8baf797e7e13",
+      "last_modified": "2025-07-30T11:08:47.496638836+00:00"
     },
     {
       "path": "linux-x64-glibc/corretto.json",
@@ -128,7 +944,359 @@
       ],
       "size": 131560,
       "checksum": "5a931d6f3c1cb92e2884092e8f93b9638f67886b3eff73f4f88c51ab9d57ef8d",
-      "last_modified": "2025-07-30T10:29:21.821313065+00:00"
+      "last_modified": "2025-07-30T11:08:47.496721731+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/dragonwell.json",
+      "distribution": "dragonwell",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 151549,
+      "checksum": "779f7660e3e189e64023dd2e54a4d72cb91f05a7ddfc5190cbc41c23b5be67c2",
+      "last_modified": "2025-07-30T11:08:47.496817350+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/gluon_graalvm.json",
+      "distribution": "gluon_graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 12563,
+      "checksum": "3a81994087745d85e11f7c6d94a170b257a50e5b7a466ca350484286892a17df",
+      "last_modified": "2025-07-30T11:08:47.496825946+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm.json",
+      "distribution": "graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 21159,
+      "checksum": "32c1ede615f522b014f5d1161eb8c5a66a3c65d9820af99cc9aaefa39b7fc35d",
+      "last_modified": "2025-07-30T11:08:47.496840112+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_ce11.json",
+      "distribution": "graalvm_ce11",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 28928,
+      "checksum": "4a9d93b8b02f0cbfc3118e319503966a8b9a17f398f43e3910291e8c6cbb2c88",
+      "last_modified": "2025-07-30T11:08:47.496859148+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_ce16.json",
+      "distribution": "graalvm_ce16",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1668,
+      "checksum": "1749ad6f3d2e0882c354fea815e1a55a06e42c5b1991bfda1f446b26fa64a269",
+      "last_modified": "2025-07-30T11:08:47.496861192+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_ce17.json",
+      "distribution": "graalvm_ce17",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 10233,
+      "checksum": "cdbf0a7f365dea0f930af00ac39c247ece8389f47d0e493498f19ce37be3289b",
+      "last_modified": "2025-07-30T11:08:47.496868465+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_ce19.json",
+      "distribution": "graalvm_ce19",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1691,
+      "checksum": "a676a3e3eee2c7da26437e8dee56087538096a106dcfe5b47b56d9876b66e9fc",
+      "last_modified": "2025-07-30T11:08:47.496872212+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_ce8.json",
+      "distribution": "graalvm_ce8",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 16944,
+      "checksum": "08a5deeb58c35a467cf96095ac9960708997b40f2f5cc61ef4b945c5922f28c8",
+      "last_modified": "2025-07-30T11:08:47.496883984+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/graalvm_community.json",
+      "distribution": "graalvm_community",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 14576,
+      "checksum": "cdf529b098f5952783569cca9e951c13bb9dc3ce6680fbd19fc309c4aa9999da",
+      "last_modified": "2025-07-30T11:08:47.496894293+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 168786,
+      "checksum": "5766c1e7eb36fc191da5e6d7488d8e3a25a323bd9d095eb1eda5d3d1c9ec186a",
+      "last_modified": "2025-07-30T11:08:47.497000562+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 71161,
+      "checksum": "33f4226efaa2dd8a02eec7d46e3e8d65f89aaaaa316371180b17b3de8120f809",
+      "last_modified": "2025-07-30T11:08:47.497045866+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 984342,
+      "checksum": "90dcb1120388ae325ecd2b09c2ac1b7828d60aea847be8c2fc1dc3cad7d1b2a6",
+      "last_modified": "2025-07-30T11:08:47.497681994+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 131928,
+      "checksum": "a87fe1d20fac03e75b089ea6c3e70850fa2a97ad3eee166dee15e0e45cbb4588",
+      "last_modified": "2025-07-30T11:08:47.497765340+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/mandrel.json",
+      "distribution": "mandrel",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 61540,
+      "checksum": "6c53a1fb727b3dd9b94f8186cbf0d79934ec64c33b0bbcd0e586ec0db6ea9f0f",
+      "last_modified": "2025-07-30T11:08:47.497804854+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 41093,
+      "checksum": "b667e27f3e8149ab54b40ff37a374e895ea9b37e7a5f224f2bf100153ba0e1d1",
+      "last_modified": "2025-07-30T11:08:47.497831654+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/ojdk_build.json",
+      "distribution": "ojdk_build",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 29689,
+      "checksum": "4e5d8f947fde03ca5a824e1036548d680b1f606950ad0fab1d9d220cfef2ba6c",
+      "last_modified": "2025-07-30T11:08:47.497850990+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/openlogic.json",
+      "distribution": "openlogic",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 117091,
+      "checksum": "692cdfaac1f02fcf281023b1b0abb658e790a5ab6f7204a616cf7c72e59eb3c9",
+      "last_modified": "2025-07-30T11:08:47.497925088+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 215502,
+      "checksum": "615541c8d27dad226ef21225e5bdb9cd099a4ca1c3336c476fa6db81cd7f4204",
+      "last_modified": "2025-07-30T11:08:47.498060361+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/oracle_open_jdk.json",
+      "distribution": "oracle_open_jdk",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 81740,
+      "checksum": "8638e72e70ba7afd0715a1fa295797cfebf2d40285fd9deb5aa851e7c0f03b9e",
+      "last_modified": "2025-07-30T11:08:47.498112208+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 170685,
+      "checksum": "025d196066be35dccd862514a2bfee1bac0dd39b449deaeddb9fdf8543f5a12e",
+      "last_modified": "2025-07-30T11:08:47.498219909+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 181242,
+      "checksum": "6a7ea9a2c197ae61b6486b857461dcb1222aa1408124d3da7cf23365854f1a0e",
+      "last_modified": "2025-07-30T11:08:47.498348899+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/semeru_certified.json",
+      "distribution": "semeru_certified",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 54806,
+      "checksum": "7722cc2ae1add63241adf1b6da9f7c39dbaead4459729f8c1b9e1f46c040fac5",
+      "last_modified": "2025-07-30T11:08:47.498384105+00:00"
     },
     {
       "path": "linux-x64-glibc/temurin.json",
@@ -144,7 +1312,71 @@
       ],
       "size": 318540,
       "checksum": "f1b6d83d3ad95b56d8517cf38fb2d17e0b337dc5fc6441de3f0371a8546a4bfe",
-      "last_modified": "2025-07-30T10:29:21.821469051+00:00"
+      "last_modified": "2025-07-30T11:08:47.498583317+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/trava.json",
+      "distribution": "trava",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 51992,
+      "checksum": "ebb71a84ffb4d6d5e22c3392732d329a2ce2a5c46b7540b2dd9c52e16d612eba",
+      "last_modified": "2025-07-30T11:08:47.498616720+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 1116944,
+      "checksum": "0acb57a470a96b581cd33bbd484e7a134cca966c8d8afe1b8957faf163333f09",
+      "last_modified": "2025-07-30T11:08:47.499315555+00:00"
+    },
+    {
+      "path": "linux-x64-glibc/zulu_prime.json",
+      "distribution": "zulu_prime",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 78643,
+      "checksum": "e6fdee291633fd92dd391489f3e436f5c3ae768ede247e433dc75348ecbe03f5",
+      "last_modified": "2025-07-30T11:08:47.499378783+00:00"
+    },
+    {
+      "path": "linux-x64-musl/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 3356,
+      "checksum": "551074386d8cc6ee4f736ca47000b1b74eee1a1ebe29402f4729e0236feb3e0c",
+      "last_modified": "2025-07-30T11:08:47.499382249+00:00"
     },
     {
       "path": "linux-x64-musl/corretto.json",
@@ -160,7 +1392,119 @@
       ],
       "size": 104419,
       "checksum": "ba9c9ce43b27ee1af207449305adac2447610949a09a0fc14ded6b52014368a2",
-      "last_modified": "2025-07-30T10:29:21.821523564+00:00"
+      "last_modified": "2025-07-30T11:08:47.499448072+00:00"
+    },
+    {
+      "path": "linux-x64-musl/dragonwell.json",
+      "distribution": "dragonwell",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 71666,
+      "checksum": "d858396f001fa029af5e3872ce50fc9a12bc9fe1565d1e6712f85597ae7149a8",
+      "last_modified": "2025-07-30T11:08:47.499494729+00:00"
+    },
+    {
+      "path": "linux-x64-musl/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 1654,
+      "checksum": "1e32f8f75691739f4e06671899f774a46d8050936aac1bd036619123d943e914",
+      "last_modified": "2025-07-30T11:08:47.499496563+00:00"
+    },
+    {
+      "path": "linux-x64-musl/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 9411,
+      "checksum": "936fd4c3f2d14f29e75e9d4c6ef93feec0db502fcdf31d528259bb754376e0f1",
+      "last_modified": "2025-07-30T11:08:47.499503495+00:00"
+    },
+    {
+      "path": "linux-x64-musl/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 317513,
+      "checksum": "0c6c45536d84ad5b06c0d6649b251561d9fb3baee446d95ce600b52fd2be7df2",
+      "last_modified": "2025-07-30T11:08:47.499704290+00:00"
+    },
+    {
+      "path": "linux-x64-musl/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 69478,
+      "checksum": "37e42f964a76d404137697fbddaaaaea2e420cd72c97acb368d3a363d486525e",
+      "last_modified": "2025-07-30T11:08:47.499748733+00:00"
+    },
+    {
+      "path": "linux-x64-musl/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 28300,
+      "checksum": "8ed31fd24b3a3122f2a01353e83b4f66f236da8bba470a166a8a231daf20e239",
+      "last_modified": "2025-07-30T11:08:47.499767479+00:00"
+    },
+    {
+      "path": "linux-x64-musl/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 54436,
+      "checksum": "b7229e9f420a28cdde7ff7acf660edaa061121b5444cdaf5eae56f7f5822a638",
+      "last_modified": "2025-07-30T11:08:47.499802293+00:00"
     },
     {
       "path": "linux-x64-musl/temurin.json",
@@ -176,7 +1520,39 @@
       ],
       "size": 153940,
       "checksum": "796c1855f38c98646bf2eb5f3a3377918d969b79ede3c6cf35b716ceb3caed76",
-      "last_modified": "2025-07-30T10:29:21.821599058+00:00"
+      "last_modified": "2025-07-30T11:08:47.499899114+00:00"
+    },
+    {
+      "path": "linux-x64-musl/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 346624,
+      "checksum": "daccc7b30f0f6e88732ad7270d789c2805b6319538d0f73646f4ac2f9b307eeb",
+      "last_modified": "2025-07-30T11:08:47.500116070+00:00"
+    },
+    {
+      "path": "linux-x64-musl/zulu_prime.json",
+      "distribution": "zulu_prime",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "musl"
+      ],
+      "size": 8966,
+      "checksum": "92a53d6af739ce96d56f9421cc9834a130dca05ebaa788af28e5004462870a65",
+      "last_modified": "2025-07-30T11:08:47.500122782+00:00"
     },
     {
       "path": "linux-x86-glibc/corretto.json",
@@ -192,7 +1568,39 @@
       ],
       "size": 22477,
       "checksum": "e2b6cdeb0ef36de18be23f705e4aa2a0c6125e56306e27318e9c979e37e50886",
-      "last_modified": "2025-07-30T10:29:21.821610640+00:00"
+      "last_modified": "2025-07-30T11:08:47.500137900+00:00"
+    },
+    {
+      "path": "linux-x86-glibc/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 45822,
+      "checksum": "21177a003f86ed34153e43ae49bad0aa64dc19b2bfda8be6512dc0407b14594f",
+      "last_modified": "2025-07-30T11:08:47.500167475+00:00"
+    },
+    {
+      "path": "linux-x86-glibc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "linux"
+      ],
+      "lib_c_types": [
+        "glibc"
+      ],
+      "size": 579815,
+      "checksum": "94945367e7f65bede7030acba02f7814b9f7884b129d764f755c97565c3f7716",
+      "last_modified": "2025-07-30T11:08:47.500542386+00:00"
     },
     {
       "path": "macos-aarch64-libc/corretto.json",
@@ -208,7 +1616,263 @@
       ],
       "size": 79030,
       "checksum": "37749047137ebde40d4709e71ae3630115b54aa1f2c91120e7ad5c5c46017f46",
-      "last_modified": "2025-07-30T10:29:21.821649844+00:00"
+      "last_modified": "2025-07-30T11:08:47.500592960+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/gluon_graalvm.json",
+      "distribution": "gluon_graalvm",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 2552,
+      "checksum": "8ef8d5cef017ffefc7ed6bde43cc02b88bbbba0be4536b25f6489556f9f8a786",
+      "last_modified": "2025-07-30T11:08:47.500595374+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/graalvm.json",
+      "distribution": "graalvm",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 21341,
+      "checksum": "f435bb6372bb0144a41c4e48a732b67e8702cd7286f79403b7e079b3fdb4e2b5",
+      "last_modified": "2025-07-30T11:08:47.500609781+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/graalvm_ce11.json",
+      "distribution": "graalvm_ce11",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 3381,
+      "checksum": "52aa5e8c8cf4b796dd335ce760ec6b6ce181c8c1e3b0d3835113614fba7a1dc0",
+      "last_modified": "2025-07-30T11:08:47.500612747+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/graalvm_ce17.json",
+      "distribution": "graalvm_ce17",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 3381,
+      "checksum": "27a366c69d41dd360a3952ed821a2d49136b401dae124dab87cacff575ddf522",
+      "last_modified": "2025-07-30T11:08:47.500615953+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/graalvm_ce19.json",
+      "distribution": "graalvm_ce19",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 1703,
+      "checksum": "f69217f5908aacc37d0a293170c00c608b6c54e7d35da9350d019b817e618175",
+      "last_modified": "2025-07-30T11:08:47.500618047+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/graalvm_community.json",
+      "distribution": "graalvm_community",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 14695,
+      "checksum": "cc00e846b29f0532e1a6d036f48e37df6045f5dc7c061ab402a3742771fbe45a",
+      "last_modified": "2025-07-30T11:08:47.500628466+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 167340,
+      "checksum": "c830bf3db2fb9c22f815d30f9dda557389ee583f3979cb8b9e557ab4cb4dceee",
+      "last_modified": "2025-07-30T11:08:47.500733783+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 42980,
+      "checksum": "3acbb60a16e720faf9eb4735e59a924ba5c7ef658244dc45102b4fbc84c148f7",
+      "last_modified": "2025-07-30T11:08:47.500761745+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 847795,
+      "checksum": "bb663aad20fbb568eb7b8ef5e8f091920e403edb6783975bb3541d37e7388cb5",
+      "last_modified": "2025-07-30T11:08:47.501290673+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 190294,
+      "checksum": "98222d79126e32181866d0f770ca775673d15aa90c5b2fe8799508d071220959",
+      "last_modified": "2025-07-30T11:08:47.501430915+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/mandrel.json",
+      "distribution": "mandrel",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 11156,
+      "checksum": "b72f40245016ad14a745d288f9460dbb6a6ec5601d268b34583b3cd9bb5099d6",
+      "last_modified": "2025-07-30T11:08:47.501439361+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 38989,
+      "checksum": "0966efa5cfa9ea9ebd3f48d7d1d08c059acdc6858769fc845a2e0abe32774857",
+      "last_modified": "2025-07-30T11:08:47.501464668+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 56989,
+      "checksum": "02955df59be93d043baaca177054bf154fcd4f273c461eb62d098aeb90b3bf50",
+      "last_modified": "2025-07-30T11:08:47.501501006+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/oracle_open_jdk.json",
+      "distribution": "oracle_open_jdk",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 22560,
+      "checksum": "b5112538a6a5222db6fd19bf85f651a12220e6cabcf28ec269c3fb06b4121e66",
+      "last_modified": "2025-07-30T11:08:47.501516274+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 103803,
+      "checksum": "3c19adf495e2731b2f0cdd20babab658313b46f4737f05c2f4023cfb9f1d9e53",
+      "last_modified": "2025-07-30T11:08:47.501582037+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 102253,
+      "checksum": "d1c80576218e4b903a062f38be3c9810d00a05a12e8c32e8f62ca834475c602f",
+      "last_modified": "2025-07-30T11:08:47.501646698+00:00"
     },
     {
       "path": "macos-aarch64-libc/temurin.json",
@@ -224,7 +1888,55 @@
       ],
       "size": 118833,
       "checksum": "ba2924f50420abbc59596d46b1605234aa1bea3cecd9790ef498f9da39135649",
-      "last_modified": "2025-07-30T10:29:21.821708235+00:00"
+      "last_modified": "2025-07-30T11:08:47.501721808+00:00"
+    },
+    {
+      "path": "macos-aarch64-libc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 891321,
+      "checksum": "9377c2c3798ed69e1f37f1220d776fb1e72c83c98b1cdf8366cfff6c58a66941",
+      "last_modified": "2025-07-30T11:08:47.502284969+00:00"
+    },
+    {
+      "path": "macos-x64-libc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 87461,
+      "checksum": "ff6b77f324c3e41e92f1175ba576c705c21d8e6a0a410dfd28f872975da6eb51",
+      "last_modified": "2025-07-30T11:08:47.502356142+00:00"
+    },
+    {
+      "path": "macos-x64-libc/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 100859,
+      "checksum": "85a262539d8ddc57b2e0db9f694849eeb5e578ab0f9450db9b730a6a99d554a7",
+      "last_modified": "2025-07-30T11:08:47.502420142+00:00"
     },
     {
       "path": "macos-x64-libc/corretto.json",
@@ -240,7 +1952,295 @@
       ],
       "size": 111647,
       "checksum": "ffb5da15e3d510e45ad4b6a4eea0713a1895fe4a18091ec870f7859b6fa91582",
-      "last_modified": "2025-07-30T10:29:21.821767106+00:00"
+      "last_modified": "2025-07-30T11:08:47.502490704+00:00"
+    },
+    {
+      "path": "macos-x64-libc/gluon_graalvm.json",
+      "distribution": "gluon_graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 14267,
+      "checksum": "87c02dca83cde9fc00c92e21e0bb925fa793c774162ac2de313c1a8a12b3e652",
+      "last_modified": "2025-07-30T11:08:47.502500743+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm.json",
+      "distribution": "graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 21133,
+      "checksum": "e38c77b018713db6bf5203e54334d8a4d9b23d1abce75634c5fa9aed1b126d1e",
+      "last_modified": "2025-07-30T11:08:47.502514869+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_ce11.json",
+      "distribution": "graalvm_ce11",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 28927,
+      "checksum": "c465c1c09bd8466d0d75319c66a703ca939ee34814d8b1fe198720bde54dfd9d",
+      "last_modified": "2025-07-30T11:08:47.502534235+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_ce16.json",
+      "distribution": "graalvm_ce16",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 1668,
+      "checksum": "02a2df1c8906e615ffb81e774ec9d8f2df339c7c73b3f3eaf264a29b5f4c871c",
+      "last_modified": "2025-07-30T11:08:47.502536449+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_ce17.json",
+      "distribution": "graalvm_ce17",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 10232,
+      "checksum": "6c5bd31ce90324e7a18bb30a140dbd90353b5894c428858e2baef14ddbd41f26",
+      "last_modified": "2025-07-30T11:08:47.502543893+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_ce19.json",
+      "distribution": "graalvm_ce19",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 1691,
+      "checksum": "aa26364a55394b99f71a613bd021a43a3072a78ae43d2c758c35526956cc28a3",
+      "last_modified": "2025-07-30T11:08:47.502546217+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_ce8.json",
+      "distribution": "graalvm_ce8",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 11039,
+      "checksum": "f419db4e8fe0932d04141b5be70a7d2694f6044867fbd4ca83badf3f1b621b65",
+      "last_modified": "2025-07-30T11:08:47.502554072+00:00"
+    },
+    {
+      "path": "macos-x64-libc/graalvm_community.json",
+      "distribution": "graalvm_community",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 14559,
+      "checksum": "96e19c3f02c71f3bd7976477b0feb849c54ac0673245302039eb264bb67cad1b",
+      "last_modified": "2025-07-30T11:08:47.502568309+00:00"
+    },
+    {
+      "path": "macos-x64-libc/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 165752,
+      "checksum": "1363a115d8e97924aaed9d4a6661e10df9788afb3a033df36117793ca1611e86",
+      "last_modified": "2025-07-30T11:08:47.502672123+00:00"
+    },
+    {
+      "path": "macos-x64-libc/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 49689,
+      "checksum": "6b0a9949176231e024d3fa53d62a36eaf3be2a90412d7d40998df8dc58b97577",
+      "last_modified": "2025-07-30T11:08:47.502704202+00:00"
+    },
+    {
+      "path": "macos-x64-libc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 937282,
+      "checksum": "9cf29e6180f2c2d7d92b8646645c82fce50a5aad7284782e916c0ca9eb9b043d",
+      "last_modified": "2025-07-30T11:08:47.503288924+00:00"
+    },
+    {
+      "path": "macos-x64-libc/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 237449,
+      "checksum": "47db45ab3d3858e38a774ae974cf01ff7039221f0c21489135d722356aa8ee2d",
+      "last_modified": "2025-07-30T11:08:47.503451468+00:00"
+    },
+    {
+      "path": "macos-x64-libc/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 41023,
+      "checksum": "27b7d5c403c9b7eefe4a4ab7d7f8d1498c599453ff9864124ecec1b887b6173f",
+      "last_modified": "2025-07-30T11:08:47.503478979+00:00"
+    },
+    {
+      "path": "macos-x64-libc/openlogic.json",
+      "distribution": "openlogic",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 82571,
+      "checksum": "3163e9c390d4e3f160479fa2fee075cf6b7cdcd1984c4420ce5ea81ea106b546",
+      "last_modified": "2025-07-30T11:08:47.503531567+00:00"
+    },
+    {
+      "path": "macos-x64-libc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 88996,
+      "checksum": "83ebab76382b4dcccffc183f14f512f5c9220393521206aa9b6178bcaad189e7",
+      "last_modified": "2025-07-30T11:08:47.503587973+00:00"
+    },
+    {
+      "path": "macos-x64-libc/oracle_open_jdk.json",
+      "distribution": "oracle_open_jdk",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 40025,
+      "checksum": "ff0c564954eb2469cb33164d709c04d6af684bde4ac0a3380ce288d69afb71fb",
+      "last_modified": "2025-07-30T11:08:47.503613811+00:00"
+    },
+    {
+      "path": "macos-x64-libc/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 161842,
+      "checksum": "7d4cfac0133a1e64dec9b97b91503133c940718a8bb0f80d53d2bcb1a4ce45a9",
+      "last_modified": "2025-07-30T11:08:47.503715391+00:00"
+    },
+    {
+      "path": "macos-x64-libc/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 151587,
+      "checksum": "f3ff4f439706738d58d34f49f03bc56bb9baead51d563a1065fb1f012a79d07a",
+      "last_modified": "2025-07-30T11:08:47.503810749+00:00"
     },
     {
       "path": "macos-x64-libc/temurin.json",
@@ -256,7 +2256,87 @@
       ],
       "size": 158096,
       "checksum": "d8969a9f094f3b83aac81ecd66a5ec3bcba5c994ec44b8f9d6b9f07c37e465ad",
-      "last_modified": "2025-07-30T10:29:21.821844313+00:00"
+      "last_modified": "2025-07-30T11:08:47.503910325+00:00"
+    },
+    {
+      "path": "macos-x64-libc/trava.json",
+      "distribution": "trava",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 50115,
+      "checksum": "3651213b26765b87b0c1918781781c3f854a12de6f9690f5e77856a4889d772a",
+      "last_modified": "2025-07-30T11:08:47.503942525+00:00"
+    },
+    {
+      "path": "macos-x64-libc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "macos"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 1360379,
+      "checksum": "5a3d9d6c5876a7fc03bbe1ebedc96c5ed860b948c72f0a663d10c519ac0baa4f",
+      "last_modified": "2025-07-30T11:08:47.504800867+00:00"
+    },
+    {
+      "path": "solaris-sparcv9-libc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "sparcv9"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 20836,
+      "checksum": "7d4038e358acfdc04873e6fa3936a591adec0b32a79ad0f65b74f235658cd2fe",
+      "last_modified": "2025-07-30T11:08:47.504815204+00:00"
+    },
+    {
+      "path": "solaris-sparcv9-libc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "sparcv9"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 166036,
+      "checksum": "88311fc60b2ffd27a3702fe3a05954ee3f3edfe1fe61629a76ba8ad381d2c615",
+      "last_modified": "2025-07-30T11:08:47.504920371+00:00"
+    },
+    {
+      "path": "solaris-sparcv9-libc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "sparcv9"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 88037,
+      "checksum": "7db1a4531681d4d1797d93365cfe82c39b9dbba1a0db8a3ef5a1b2dc1dd9565a",
+      "last_modified": "2025-07-30T11:08:47.504976275+00:00"
     },
     {
       "path": "solaris-sparcv9-libc/temurin.json",
@@ -272,7 +2352,71 @@
       ],
       "size": 28455,
       "checksum": "58a691446e94e0baec50b8ce52c971eeb850349d5b6394465dfb759bd7c460cb",
-      "last_modified": "2025-07-30T10:29:21.821858830+00:00"
+      "last_modified": "2025-07-30T11:08:47.504995170+00:00"
+    },
+    {
+      "path": "solaris-sparcv9-libc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "sparcv9"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 57427,
+      "checksum": "91c6583dfef388ec8e6d3f739f373efdd08302fb468445a9842636998d683401",
+      "last_modified": "2025-07-30T11:08:47.505031989+00:00"
+    },
+    {
+      "path": "solaris-x64-libc/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 17206,
+      "checksum": "86a553c30a5fe571a1a26c092ffc27f08e69a633bb2512d56606e0089ad59c32",
+      "last_modified": "2025-07-30T11:08:47.505043641+00:00"
+    },
+    {
+      "path": "solaris-x64-libc/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 164524,
+      "checksum": "afa29fd0fed9c3070998302fd2951a3e44ce0b3449b0af3436586ca067f7d2ab",
+      "last_modified": "2025-07-30T11:08:47.505146924+00:00"
+    },
+    {
+      "path": "solaris-x64-libc/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 147462,
+      "checksum": "97ec9a101729fbb25dbb5a1868ae8b7872619df0f1349e17a409826b76782330",
+      "last_modified": "2025-07-30T11:08:47.505239597+00:00"
     },
     {
       "path": "solaris-x64-libc/temurin.json",
@@ -288,7 +2432,71 @@
       ],
       "size": 27275,
       "checksum": "7fd84d67e5a62f593eedc1240469a180fac05fdacf2fb9ee895545a784615126",
-      "last_modified": "2025-07-30T10:29:21.821874640+00:00"
+      "last_modified": "2025-07-30T11:08:47.505258101+00:00"
+    },
+    {
+      "path": "solaris-x64-libc/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "solaris"
+      ],
+      "lib_c_types": [
+        "libc"
+      ],
+      "size": 57808,
+      "checksum": "a9a86bccc3ff2ebf6a4303c913d4450c14fe4ee6efe4089a4fe64a4c9a722ac6",
+      "last_modified": "2025-07-30T11:08:47.505295151+00:00"
+    },
+    {
+      "path": "windows-aarch64-c_std_lib/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 135170,
+      "checksum": "d51e8ba6aa31ade9905dcd762c6956fd1806e82065789233d57e126fc95998a9",
+      "last_modified": "2025-07-30T11:08:47.505389226+00:00"
+    },
+    {
+      "path": "windows-aarch64-c_std_lib/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 338597,
+      "checksum": "7f72debf2bc207b499322148c22aa6df2c316e13b889df37f9d3f7c3e1256410",
+      "last_modified": "2025-07-30T11:08:47.505601833+00:00"
+    },
+    {
+      "path": "windows-aarch64-c_std_lib/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 40815,
+      "checksum": "d4a14d939fe0f08d3e538bd2ff932094d78ecbc7016268b2a2df2eb1067336d1",
+      "last_modified": "2025-07-30T11:08:47.505628393+00:00"
     },
     {
       "path": "windows-aarch64-c_std_lib/temurin.json",
@@ -304,7 +2512,55 @@
       ],
       "size": 11416,
       "checksum": "6396e13fe416a8e26397dd654e4efa0df808950ccbbe476c55a3e40e3b0ffd8e",
-      "last_modified": "2025-07-30T10:29:21.821880932+00:00"
+      "last_modified": "2025-07-30T11:08:47.505636788+00:00"
+    },
+    {
+      "path": "windows-aarch64-c_std_lib/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "aarch64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 33825,
+      "checksum": "b9aa7ff660768a5c66aba454d4ffd6e1cb311648e1ae90680dc304fe6656833c",
+      "last_modified": "2025-07-30T11:08:47.505659210+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 86334,
+      "checksum": "8f2ab0430708c0ec627a405d2edf72211320e30a94881e6b7809700e6148f794",
+      "last_modified": "2025-07-30T11:08:47.505714163+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 80878,
+      "checksum": "400d4b92bbae565a9276d3e14e26fafca7e682057f012ba8e083e496ae2151ce",
+      "last_modified": "2025-07-30T11:08:47.505765980+00:00"
     },
     {
       "path": "windows-x64-c_std_lib/corretto.json",
@@ -320,7 +2576,359 @@
       ],
       "size": 136478,
       "checksum": "383f71488de4c57f2281215866784e3e2ea51d25921a9bc71944cc835aa9c573",
-      "last_modified": "2025-07-30T10:29:21.821947819+00:00"
+      "last_modified": "2025-07-30T11:08:47.505852101+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/dragonwell.json",
+      "distribution": "dragonwell",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 124466,
+      "checksum": "713ec1641ed8f2b1d6aaea7872c6c68ef6be4e325b0adde2f1084d2cbf9188cf",
+      "last_modified": "2025-07-30T11:08:47.505930918+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/gluon_graalvm.json",
+      "distribution": "gluon_graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 12658,
+      "checksum": "039e7ddcfea44b41183072461355a8a126e410cd724427dd9eb5cdb526884453",
+      "last_modified": "2025-07-30T11:08:47.505939874+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm.json",
+      "distribution": "graalvm",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 21237,
+      "checksum": "fcb498bd19a0e626a405bd9cb28e3738def7d304ff2ca200f00900f2b4e65ea3",
+      "last_modified": "2025-07-30T11:08:47.505954301+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_ce11.json",
+      "distribution": "graalvm_ce11",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 29029,
+      "checksum": "4c034aba81cd95cd4aadd3335ff5b4da4a134a98ffa1dfcffb4c7478b7ca621f",
+      "last_modified": "2025-07-30T11:08:47.505973858+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_ce16.json",
+      "distribution": "graalvm_ce16",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 1674,
+      "checksum": "1de99a2979fa8a351b071839b900016c7a4adf2ffe73423455f00a7bf916b8ad",
+      "last_modified": "2025-07-30T11:08:47.505976663+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_ce17.json",
+      "distribution": "graalvm_ce17",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 10268,
+      "checksum": "a6f0741f055c6db3be3518e74ed6cb665f32de5ca7f9fcb4d6e898012b5d8645",
+      "last_modified": "2025-07-30T11:08:47.505983857+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_ce19.json",
+      "distribution": "graalvm_ce19",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 1697,
+      "checksum": "44397b786c8a565d346f51eb93a6732d7b89a9c157f6750b406ba8e631108163",
+      "last_modified": "2025-07-30T11:08:47.505985931+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_ce8.json",
+      "distribution": "graalvm_ce8",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 17004,
+      "checksum": "302274e443f6f68a892feb0a037c69476676657e581bd85eed15f94dc9dd00e6",
+      "last_modified": "2025-07-30T11:08:47.505997713+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/graalvm_community.json",
+      "distribution": "graalvm_community",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 14627,
+      "checksum": "c5f430a63d55293d7aa862e0ec2293a16f7b50dd0e3056f02763456c6a49536e",
+      "last_modified": "2025-07-30T11:08:47.506008393+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 182398,
+      "checksum": "3f56eb464ddbf07f4b576caf9f22813924064a5fc1d0107990fb745f7fb0bb8f",
+      "last_modified": "2025-07-30T11:08:47.506122726+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/kona.json",
+      "distribution": "kona",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 50549,
+      "checksum": "3f05b544104c9ab824ede05a029b5ef9199174904162303438bc0802f9176e33",
+      "last_modified": "2025-07-30T11:08:47.506155136+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/liberica.json",
+      "distribution": "liberica",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 1056197,
+      "checksum": "3b6cc99dbfd8bd97b27b38bd4d23b845402e603142c2e93e9c773ee8e7313e89",
+      "last_modified": "2025-07-30T11:08:47.506823024+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/liberica_native.json",
+      "distribution": "liberica_native",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 131469,
+      "checksum": "f1e1fc108d72a70d6dda890268766663046012b05de100d41e0809f0dfff5f55",
+      "last_modified": "2025-07-30T11:08:47.506906229+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/mandrel.json",
+      "distribution": "mandrel",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 57402,
+      "checksum": "5ef377eb025fdd3f8c8ce96c52dfaf5a55bec22eaafc6fe4b5f31f82325f2585",
+      "last_modified": "2025-07-30T11:08:47.506943058+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/microsoft.json",
+      "distribution": "microsoft",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 41227,
+      "checksum": "50b7a97f53427753bdcd4df964fe0185b285097795a1fe09584b198eaa5c6fb5",
+      "last_modified": "2025-07-30T11:08:47.506969818+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/ojdk_build.json",
+      "distribution": "ojdk_build",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 98257,
+      "checksum": "2d70d4dddccdd0f450ae663ed0956455fbd2bc4b99e2597321a68a06b839ff7c",
+      "last_modified": "2025-07-30T11:08:47.507032174+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/openlogic.json",
+      "distribution": "openlogic",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 117488,
+      "checksum": "0d5e93dab3a9e496ea70feb896806af469a4fe36dcacc34b74d7ab78ad244207",
+      "last_modified": "2025-07-30T11:08:47.507106463+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/oracle.json",
+      "distribution": "oracle",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 123135,
+      "checksum": "87bfe193a48632b40982923925253399674571532b35b6923638c2f29dd3d4b3",
+      "last_modified": "2025-07-30T11:08:47.507185160+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/oracle_open_jdk.json",
+      "distribution": "oracle_open_jdk",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 78645,
+      "checksum": "2fba4c881c54c9e8735e9af12361190b44693809cde6a14c16f7df819f62a2bc",
+      "last_modified": "2025-07-30T11:08:47.507235313+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/redhat.json",
+      "distribution": "redhat",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 58412,
+      "checksum": "bda46a0607b88ef6a2f31568dc04cc83cc77639c035e0f897808bdbb265225d3",
+      "last_modified": "2025-07-30T11:08:47.507272954+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/sap_machine.json",
+      "distribution": "sap_machine",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 159736,
+      "checksum": "01819456aedd567a01c540637e261da719820709cb1b45d436bc5ce844fc2cc1",
+      "last_modified": "2025-07-30T11:08:47.507383270+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 152607,
+      "checksum": "197ea12ed4eee3587344645346825b05c01c2db9cce234b8ff5c0ccafddb163a",
+      "last_modified": "2025-07-30T11:08:47.507479540+00:00"
     },
     {
       "path": "windows-x64-c_std_lib/temurin.json",
@@ -336,7 +2944,71 @@
       ],
       "size": 161938,
       "checksum": "4a88acefc5e1b3c36cf8b8b477158dc2c7640d1bf59947373e625b7db233bb04",
-      "last_modified": "2025-07-30T10:29:21.822027009+00:00"
+      "last_modified": "2025-07-30T11:08:47.507581199+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/trava.json",
+      "distribution": "trava",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 48728,
+      "checksum": "0a02ec095d372ebfd5c616f902d92d36ab0b88f2ebe0df0cbc78f76d704967ff",
+      "last_modified": "2025-07-30T11:08:47.507613059+00:00"
+    },
+    {
+      "path": "windows-x64-c_std_lib/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x64"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 775513,
+      "checksum": "b0b1c898a0b78fc85eb8fe32023510ac590a39699003da95191754bad05d9569",
+      "last_modified": "2025-07-30T11:08:47.508097083+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/aoj.json",
+      "distribution": "aoj",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 79071,
+      "checksum": "6f0d3a2f93261c88a1cdc98c0fd023c711395f3459fde282fc70afcb1d226a5b",
+      "last_modified": "2025-07-30T11:08:47.508148068+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/aoj_openj9.json",
+      "distribution": "aoj_openj9",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 28668,
+      "checksum": "c5f2da07020445fcca53f0ba28d8e55dac16e617e09460779cfa8c395bdbdfb3",
+      "last_modified": "2025-07-30T11:08:47.508167153+00:00"
     },
     {
       "path": "windows-x86-c_std_lib/corretto.json",
@@ -352,7 +3024,87 @@
       ],
       "size": 74914,
       "checksum": "d6f6213804887c64ae201e0665a9c0bed799d64e645413fd863ef63627a123b6",
-      "last_modified": "2025-07-30T10:29:21.822064019+00:00"
+      "last_modified": "2025-07-30T11:08:47.508214883+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/dragonwell.json",
+      "distribution": "dragonwell",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 1807,
+      "checksum": "95116edbc6ee66e5063f6f3bd1963c4605ae1b75036e585c560e45f83067fb72",
+      "last_modified": "2025-07-30T11:08:47.508216826+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/jetbrains.json",
+      "distribution": "jetbrains",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 46262,
+      "checksum": "2d703a5e237bddcde7c948f2b921bb604d6467316a2acbf8ee7c92798cce47b5",
+      "last_modified": "2025-07-30T11:08:47.508246742+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/ojdk_build.json",
+      "distribution": "ojdk_build",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 45323,
+      "checksum": "f28966391815ef92b0e0d753dfb0954b526c0791a2177c26a039557dd7df24a9",
+      "last_modified": "2025-07-30T11:08:47.508276397+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/redhat.json",
+      "distribution": "redhat",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 14108,
+      "checksum": "a68500b7d177e95694295511c436b7ab461db869e5e66b42aa5996a17fd6ab00",
+      "last_modified": "2025-07-30T11:08:47.508286487+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/semeru.json",
+      "distribution": "semeru",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 38143,
+      "checksum": "28294d5f8cc6130c32081afc6ad0a156b6342ff28a4cf5770f8a54c2c85fabd2",
+      "last_modified": "2025-07-30T11:08:47.508311443+00:00"
     },
     {
       "path": "windows-x86-c_std_lib/temurin.json",
@@ -368,7 +3120,23 @@
       ],
       "size": 123218,
       "checksum": "684c394b71a7e4b2fb9c4a04029a8b76b68805b3038d22b7d00d3248c1eb265a",
-      "last_modified": "2025-07-30T10:29:21.822124564+00:00"
+      "last_modified": "2025-07-30T11:08:47.508398025+00:00"
+    },
+    {
+      "path": "windows-x86-c_std_lib/zulu.json",
+      "distribution": "zulu",
+      "architectures": [
+        "x86"
+      ],
+      "operating_systems": [
+        "windows"
+      ],
+      "lib_c_types": [
+        "c_std_lib"
+      ],
+      "size": 453933,
+      "checksum": "94125697abdbab00a0a88c43788a3e1311ada3de5c71f72c913b88568b37c811",
+      "last_modified": "2025-07-30T11:08:47.508681514+00:00"
     }
   ],
   "generator_config": {
