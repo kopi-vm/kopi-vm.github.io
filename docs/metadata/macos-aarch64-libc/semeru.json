@@ -964,7 +964,7 @@
     "download_url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.3%2B9_openj9-0.44.0/ibm-semeru-open-jre_aarch64_mac_21.0.3_9_openj9-0.44.0.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 49670506,
+    "size": 489,
     "lib_c_type": "libc",
     "javafx_bundled": false,
     "term_of_support": "lts",

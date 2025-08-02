@@ -311,41 +311,6 @@
     "latest_build_available": false
   },
   {
-    "id": "748f2d97862b7c55ce15eff560d93d3b",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        8,
-        0,
-        322
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        8,
-        0,
-        322
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM22.01.0.0/zing22.01.0.0-3-jdk8.0.322-linux_x64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 217484213,
-    "lib_c_type": "musl",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": true
-  },
-  {
     "id": "e7d2772e9540a8f883a01fb09ce9d327",
     "distribution": "zulu_prime",
     "version": {

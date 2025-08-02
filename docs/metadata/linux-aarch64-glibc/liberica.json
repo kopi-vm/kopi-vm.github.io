@@ -13419,41 +13419,6 @@
     "latest_build_available": false
   },
   {
-    "id": "6eb52fa1c50cf1bd6d470bcee60713c4",
-    "distribution": "liberica",
-    "version": {
-      "components": [
-        11,
-        0,
-        12
-      ],
-      "build": [
-        7
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        11
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.12+7/bellsoft-jdk11.0.12+7-linux-aarch64-lite.tar.gz",
-    "checksum": "fce355725dfa9c2d7e5a16eb462fe48fde9d82ae",
-    "checksum_type": "sha1",
-    "size": 75344837,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
     "id": "6f46827cff1662ad241acb2065680b49",
     "distribution": "liberica",
     "version": {

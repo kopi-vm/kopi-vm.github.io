@@ -1,5 +1,149 @@
 [
   {
+    "id": "4317f0d6c186cbcf281a9a59eb96cd4d",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.07.0.0/zing25.07.0.0-2-jdk21.0.7.0.101-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 310220073,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "697223dd883a998c98647bf8b047c181",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        8,
+        0,
+        461
+      ],
+      "build": [
+        2
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.07.0.0/zing25.07.0.0-2-jdk8.0.461-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 212408923,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "c7f625ae367ff49b54de7580292b6426",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        11,
+        0,
+        27
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.07.0.0/zing25.07.0.0-2-jdk11.0.27.0.101-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 293455553,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "dd89bb8915d2c1f404cd636e836eb636",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": [
+        1
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        7
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.07.0.0/zing25.07.0.0-2-jdk17.0.15.0.101-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 297181701,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "04b43ed1ed85a6e65e51eff00e5e6bc0",
     "distribution": "zulu_prime",
     "version": {
@@ -29,42 +173,6 @@
     "checksum": null,
     "checksum_type": null,
     "size": 292953012,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": true
-  },
-  {
-    "id": "1c041b757aa809e62b0139630238945d",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        17,
-        0,
-        15
-      ],
-      "build": [
-        6
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        25,
-        6
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.06.0.0/zing25.06.0.0-2-jdk17.0.15-linux_aarch64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 296685171,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -106,42 +214,6 @@
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false
-  },
-  {
-    "id": "e027b6420aea13c26a6289fce78ae8df",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        21,
-        0,
-        7
-      ],
-      "build": [
-        6
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        25,
-        6
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.06.0.0/zing25.06.0.0-2-jdk21.0.7-linux_aarch64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 309715099,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": true
   },
   {
     "id": "6b6f3c7e1ecec4ed82b3b457f681185a",
@@ -213,7 +285,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "e1a16df8d8d1eceda26da60571db06db",
@@ -713,78 +785,6 @@
     "checksum": null,
     "checksum_type": null,
     "size": 314846515,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "b652982e28d45e1f399b1667d20f6c8e",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        8,
-        0,
-        412
-      ],
-      "build": [
-        4
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        24,
-        5
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM24.05.0.0/zing24.05.0.0-4-jdk8.0.412-linux_aarch64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 216525325,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "2769a1738b0edd3c2c19aa36d91f3f12",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        8,
-        0,
-        411
-      ],
-      "build": [
-        3
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        24,
-        4
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM24.04.0.0/zing24.04.0.0-3-jdk8.0.411-linux_aarch64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 216223003,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -1350,7 +1350,7 @@
     "download_url": "https://cdn.azul.com/zing-zvm/ZVM22.06.0.0/zing22.06.0.0-jdk11.0.15-linux.aarch64.tar.gz",
     "checksum": null,
     "checksum_type": null,
-    "size": -1,
+    "size": 155,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",

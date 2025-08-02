@@ -502,6 +502,43 @@
     "latest_build_available": false
   },
   {
+    "id": "e1acf34ced9f3888fb5113db21c128b3",
+    "distribution": "openlogic",
+    "version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        16
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jre",
+    "archive_type": "zip",
+    "download_url": "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/17.0.16+8/openlogic-openjdk-jre-17.0.16+8-mac-x64.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 44477150,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "e9eae8149754ad574b3ec06515fa01c3",
     "distribution": "openlogic",
     "version": {
@@ -610,7 +647,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "0fe8c15be9bcbcad5293b8d1520f6e0b",
