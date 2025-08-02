@@ -28,7 +28,7 @@ jobs:
         key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
     
     - name: Install Kopi
-      run: cargo install kopi
+      run: cargo install kopi --force
 
     - name: Update metadata
       run: kopi-metadata-gen update --input docs/metadata --output docs/metadata
