@@ -1969,7 +1969,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "0f11d4945be24574b36e209c203e58b5",
