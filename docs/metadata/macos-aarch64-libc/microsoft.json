@@ -303,7 +303,7 @@
     "download_url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.0-macOS-aarch64.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 0,
+    "size": 191756269,
     "lib_c_type": "libc",
     "javafx_bundled": false,
     "term_of_support": "lts",

@@ -131,7 +131,7 @@
     "size": 237256596,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": true
   },
@@ -166,7 +166,7 @@
     "size": 237296293,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": false
   },
@@ -197,7 +197,7 @@
     "size": 237178559,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": false
   },
@@ -745,7 +745,7 @@
     "size": 184210656,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": true
   },
@@ -780,7 +780,7 @@
     "size": 184200706,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": false
   },
@@ -811,7 +811,7 @@
     "size": 184002617,
     "lib_c_type": "libc",
     "javafx_bundled": false,
-    "term_of_support": "sts",
+    "term_of_support": "mts",
     "release_status": "ga",
     "latest_build_available": false
   },
