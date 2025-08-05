@@ -4183,41 +4183,6 @@
     "latest_build_available": false
   },
   {
-    "id": "8dcf48a156f361adf7aafafec715eb55",
-    "distribution": "liberica",
-    "version": {
-      "components": [
-        19,
-        0,
-        2
-      ],
-      "build": [
-        9
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        19
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "aarch64",
-    "operating_system": "windows",
-    "package_type": "jre",
-    "archive_type": "zip",
-    "download_url": "https://github.com/bell-sw/Liberica/releases/download/19.0.2+9/bellsoft-jre19.0.2+9-windows-aarch64-full.zip",
-    "checksum": "4dec32bad0717e78a70e081b4fe939296e1222d9",
-    "checksum_type": "sha1",
-    "size": 44484450,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
-    "term_of_support": "sts",
-    "release_status": "ga",
-    "latest_build_available": true
-  },
-  {
     "id": "91de111715a56b3eddd75e43af3c6d8c",
     "distribution": "liberica",
     "version": {

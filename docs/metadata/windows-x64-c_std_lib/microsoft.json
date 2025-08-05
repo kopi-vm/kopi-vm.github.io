@@ -303,7 +303,7 @@
     "download_url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.0-windows-x64.zip",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 200292475,
+    "size": 0,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": false,
     "term_of_support": "lts",

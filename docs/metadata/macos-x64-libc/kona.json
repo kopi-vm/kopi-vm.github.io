@@ -1550,6 +1550,41 @@
     "latest_build_available": false
   },
   {
+    "id": "907bf8d8d24ebc2b37caed3aac24d04d",
+    "distribution": "kona",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/TencentKona8.0.23.b1_jdk_macosx-x86_64_8u462_notarized.tar.gz",
+    "checksum": null,
+    "checksum_type": "md5",
+    "size": 104510011,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "7eeb8191960a1a23ab854e96504fd82b",
     "distribution": "kona",
     "version": {

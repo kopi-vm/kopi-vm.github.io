@@ -792,6 +792,42 @@
     "latest_build_available": false
   },
   {
+    "id": "b652982e28d45e1f399b1667d20f6c8e",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        8,
+        0,
+        412
+      ],
+      "build": [
+        4
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        24,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM24.05.0.0/zing24.05.0.0-4-jdk8.0.412-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 216525325,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "2769a1738b0edd3c2c19aa36d91f3f12",
     "distribution": "zulu_prime",
     "version": {

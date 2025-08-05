@@ -17701,7 +17701,7 @@
     "download_url": "https://github.com/bell-sw/Liberica/releases/download/15.0.2+10/bellsoft-jdk15.0.2+10-windows-i586.zip",
     "checksum": "dca8ede3b2a1fddacadfc74cd9b77e23436c7f78",
     "checksum_type": "sha1",
-    "size": 179159728,
+    "size": 489,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": false,
     "term_of_support": "sts",
@@ -30391,41 +30391,6 @@
     "size": 36688500,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "d0df126c7e55228546cf09077031f6f4",
-    "distribution": "liberica",
-    "version": {
-      "components": [
-        11,
-        0,
-        26
-      ],
-      "build": [
-        9
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        11
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "windows",
-    "package_type": "jre",
-    "archive_type": "zip",
-    "download_url": "https://github.com/bell-sw/Liberica/releases/download/11.0.26+9/bellsoft-jre11.0.26+9-windows-amd64-full.zip",
-    "checksum": "5b8ea641616af4159e9d42abddda8a3f9dc7fd2c",
-    "checksum_type": "sha1",
-    "size": 86522377,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false
