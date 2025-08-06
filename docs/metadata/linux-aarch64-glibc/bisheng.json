@@ -315,6 +315,41 @@
     "latest_build_available": false
   },
   {
+    "id": "2157bddea743d81a9272a83642a58431",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-21.0.5-linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 51367180,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "2b5ade9f73569dd7d1101e518276a17c",
     "distribution": "bisheng",
     "version": {
@@ -2275,6 +2310,41 @@
     "latest_build_available": false
   },
   {
+    "id": "e32e93c48702b2b85281c654bab5377d",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        5
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-17.0.5-linux-aarch64_debuginfo.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 144979829,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "f804cc655ab9ffb9ad2836ba64588003",
     "distribution": "bisheng",
     "version": {
@@ -2478,6 +2548,41 @@
     "checksum": null,
     "checksum_type": null,
     "size": 196979475,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d218b43e5c2cc0eb6f01031a37796866",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        17,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        17,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-17.0.2-linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 46065543,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -3213,6 +3318,41 @@
     "checksum": null,
     "checksum_type": null,
     "size": 217698374,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "d0772faee78a94eb6197eba4667deb55",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        23
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jdk-11.0.23-linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 199454380,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -4410,6 +4550,41 @@
     "latest_build_available": false
   },
   {
+    "id": "bcdca7a8e4d64a59c70aad3e8ae2e2c5",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        11,
+        0,
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        0,
+        11
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-11.0.11-linux-aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 42412432,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "d30f66f09c6020b7c1244f28bf71c779",
     "distribution": "bisheng",
     "version": {
@@ -5142,6 +5317,41 @@
     "checksum": null,
     "checksum_type": null,
     "size": 153170344,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "03b32fe330ace3df598c4dd4419ae6ea",
+    "distribution": "bisheng",
+    "version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        0,
+        422
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jre-8u422-linux-aarch64_debuginfo.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 152966347,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",

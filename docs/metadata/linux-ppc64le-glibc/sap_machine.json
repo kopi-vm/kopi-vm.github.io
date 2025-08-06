@@ -431,7 +431,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22.0.2/sapmachine-jdk-22.0.2_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 205728994,
+    "size": 205727901,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "sts",
@@ -466,7 +466,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22.0.2/sapmachine-jre-22.0.2_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 52129922,
+    "size": 52128379,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "sts",
@@ -913,7 +913,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.4/sapmachine-jdk-21.0.4_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 207975184,
+    "size": 207976678,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -948,7 +948,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.4/sapmachine-jre-21.0.4_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 53100073,
+    "size": 53100357,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -1159,6 +1159,68 @@
     "checksum": null,
     "checksum_type": "sha256",
     "size": 52939674,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "97703428c329991cd4925c45bcd364ca",
+    "distribution": "sap_machine",
+    "version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "ppc64le",
+    "operating_system": "linux",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21/sapmachine-jre-21_linux-ppc64le_bin.tar.gz",
+    "checksum": null,
+    "checksum_type": "sha256",
+    "size": 52923224,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "eaa16e9bf1fc8fb02df9d83351076f85",
+    "distribution": "sap_machine",
+    "version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "ppc64le",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21/sapmachine-jdk-21_linux-ppc64le_bin.tar.gz",
+    "checksum": null,
+    "checksum_type": "sha256",
+    "size": 207532448,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -1531,7 +1593,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-19/sapmachine-jre-19_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 212,
+    "size": 48758593,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "sts",
@@ -2227,7 +2289,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.12/sapmachine-jdk-17.0.12_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 193072473,
+    "size": 193073802,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -2262,7 +2324,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.12/sapmachine-jre-17.0.12_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 47204692,
+    "size": 47204106,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -4431,7 +4493,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.24/sapmachine-jdk-11.0.24_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 179241415,
+    "size": 179247568,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
@@ -4466,7 +4528,7 @@
     "download_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.24/sapmachine-jre-11.0.24_linux-ppc64le_bin.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": 40437272,
+    "size": 40438837,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
