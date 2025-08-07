@@ -1,5 +1,40 @@
 [
   {
+    "id": "23962737d43d7dfc958771fc05997a44",
+    "distribution": "mandrel",
+    "version": {
+      "components": [
+        24,
+        2,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        24,
+        2,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/graalvm/mandrel/releases/download/mandrel-24.2.2.0-Final/mandrel-java24-macos-aarch64-24.2.2.0-Final.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 178335115,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "bbf98f5b22d13608e596db8ceea09332",
     "distribution": "mandrel",
     "version": {
@@ -32,7 +67,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "974963d9d863a31fb3705c92bc916d82",

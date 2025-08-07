@@ -1,5 +1,79 @@
 [
   {
+    "id": "27596c7fd5b3bc034a349564b3ffc7bb",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        82,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "sparcv9",
+    "operating_system": "solaris",
+    "package_type": "jre",
+    "archive_type": "zip",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu11.82.19-ca-jre11.0.28-solaris_sparcv9.zip",
+    "checksum": "5627b51676b7262310d0c91fcff01ceea80d746a581934d8796f42e8c1f1d7ab",
+    "checksum_type": "sha256",
+    "size": 53721901,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "a5c3eb05d0027d1abbe5ce705f7e4f2d",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        11,
+        0,
+        28
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        11,
+        82,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "sparcv9",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu11.82.19-ca-jdk11.0.28-solaris_sparcv9.zip",
+    "checksum": "660cb7f3e3da39f43bd80428f1dfa947c1b8d6ba773f10d4202bfd6c63ff2578",
+    "checksum_type": "sha256",
+    "size": 216188243,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "449f917377614b1ce557e43aa8dcad82",
     "distribution": "zulu",
     "version": {
@@ -34,7 +108,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "54f368a83447c78418a5016bb2d312c7",
@@ -71,7 +145,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "1c80032b7d15ef83f2312b50c6ce753d",
@@ -1264,6 +1338,44 @@
     "latest_build_available": false
   },
   {
+    "id": "6de2e2f0d756fc4ff268d4ac876d8ff8",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        88,
+        0,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "sparcv9",
+    "operating_system": "solaris",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu8.88.0.19-ca-jdk8.0.462-solaris_sparcv9.zip",
+    "checksum": "3ae5b35832e2a11852c41ba2d2310a7b0ec75e460233e433b54222c2b325bf81",
+    "checksum_type": "sha256",
+    "size": 116936993,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "6e0a6263a6fcb22b58a9b60141a2da2b",
     "distribution": "zulu",
     "version": {
@@ -1299,7 +1411,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "b2cd019ae9cdff8e34cd1f5ad6786ff3",

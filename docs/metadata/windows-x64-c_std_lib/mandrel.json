@@ -1,5 +1,40 @@
 [
   {
+    "id": "3c5c0fd07f8a433e0d1afbd71dc88922",
+    "distribution": "mandrel",
+    "version": {
+      "components": [
+        24,
+        2,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        24,
+        2,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "windows",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://github.com/graalvm/mandrel/releases/download/mandrel-24.2.2.0-Final/mandrel-java24-windows-amd64-24.2.2.0-Final.zip",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 204018763,
+    "lib_c_type": "c_std_lib",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "acdfc2513fb5ec3d7565e33e7a238364",
     "distribution": "mandrel",
     "version": {
@@ -32,7 +67,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "186df2611d5f5cc72803862c872b1dfd",
