@@ -2672,7 +2672,7 @@
     "download_url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.9%2B9_openj9-0.41.0/ibm-semeru-open-jdk_aarch64_linux_17.0.9_9_openj9-0.41.0.tar.gz",
     "checksum": null,
     "checksum_type": "sha256",
-    "size": -1,
+    "size": 206857922,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",
