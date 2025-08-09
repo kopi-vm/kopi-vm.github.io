@@ -1,5 +1,43 @@
 [
   {
+    "id": "8f1f9f7218025591cc9980667db6b2f9",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        8,
+        0,
+        462
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        88,
+        0,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "ppc64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zulu-embedded/bin/zulu8.88.0.19-ca-hl-jdk8.0.462-linux_ppc64.tar.gz",
+    "checksum": "bde8e058778efe446b4c66b59661b58cbb17f104ff7145bd904b9e867be52d09",
+    "checksum_type": "sha256",
+    "size": 115718676,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "3c3859524f73e8b4976d380dc7b3eb0a",
     "distribution": "zulu",
     "version": {
@@ -35,7 +73,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "ce07c85e62d894a98b7a5184733be43b",
@@ -715,6 +753,44 @@
     "checksum": "5c432ff3cdf51f2fd275f4c1aaef12d147541686ee2e4a8c9549e7277e48bf66",
     "checksum_type": "sha256",
     "size": 118149836,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "6989a31c074f6c89ea7163265159dae3",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        8,
+        0,
+        332
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        62,
+        0,
+        19
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "ppc64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zulu-embedded/bin/zulu8.62.0.19-ca-hl-jdk8.0.332-linux_ppc64.tar.gz",
+    "checksum": "a2aafa0183e9c322fe7c99cbd426ab69f0bcad0a658a97b35ddbe2e996bf588b",
+    "checksum_type": "sha256",
+    "size": 118154161,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",

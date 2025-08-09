@@ -1443,6 +1443,42 @@
     "latest_build_available": true
   },
   {
+    "id": "b70f02266732b85d1b74a34e4e94961c",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        13,
+        0,
+        14
+      ],
+      "build": [
+        5
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23,
+        3
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM23.03.0.0/zing23.03.0.0-3-jdk13.0.14-linux_x64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 280739443,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "mts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "b966523a3258cf614f7e7b563a315438",
     "distribution": "zulu_prime",
     "version": {
