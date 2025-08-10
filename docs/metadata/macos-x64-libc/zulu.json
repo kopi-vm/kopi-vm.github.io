@@ -40212,6 +40212,44 @@
     "latest_build_available": false
   },
   {
+    "id": "3697791a6ddcabd018253b6bb9095d55",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        8,
+        0,
+        452
+      ],
+      "build": [
+        9
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        86,
+        0,
+        25
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "zip",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu8.86.0.25-ca-fx-jdk8.0.452-macosx_x64.zip",
+    "checksum": "d23a0914e7810956d2e0d0c1c00fbdc2a8cf6e6989374a94ef872edc35ade6d4",
+    "checksum_type": "sha256",
+    "size": 169088464,
+    "lib_c_type": "libc",
+    "javafx_bundled": true,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "670294f2b4b6c01f80749efca5520dce",
     "distribution": "zulu",
     "version": {
@@ -42145,6 +42183,44 @@
     "size": 41478057,
     "lib_c_type": "libc",
     "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "cce8d917f8f4a5b85c058a6a4ef4220d",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        8,
+        0,
+        392
+      ],
+      "build": [
+        8
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        8,
+        74,
+        0,
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu8.74.0.17-ca-fx-jdk8.0.392-macosx_x64.tar.gz",
+    "checksum": "019a48d0b8992a18bd2910eac011aaef9d9ba163948a3407015c034bfe5bcf27",
+    "checksum_type": "sha256",
+    "size": 159854522,
+    "lib_c_type": "libc",
+    "javafx_bundled": true,
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false

@@ -180,6 +180,42 @@
     "latest_build_available": true
   },
   {
+    "id": "1c041b757aa809e62b0139630238945d",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        17,
+        0,
+        15
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.06.0.0/zing25.06.0.0-2-jdk17.0.15-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 296685171,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "a25f482de9ad002045ad9b04a460e3da",
     "distribution": "zulu_prime",
     "version": {
@@ -214,6 +250,42 @@
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false
+  },
+  {
+    "id": "e027b6420aea13c26a6289fce78ae8df",
+    "distribution": "zulu_prime",
+    "version": {
+      "components": [
+        21,
+        0,
+        7
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        25,
+        6
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "linux",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zing-zvm/ZVM25.06.0.0/zing25.06.0.0-2-jdk21.0.7-linux_aarch64.tar.gz",
+    "checksum": null,
+    "checksum_type": null,
+    "size": 309715099,
+    "lib_c_type": "glibc",
+    "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": true
   },
   {
     "id": "6b6f3c7e1ecec4ed82b3b457f681185a",

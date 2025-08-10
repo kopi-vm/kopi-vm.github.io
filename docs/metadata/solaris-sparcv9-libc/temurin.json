@@ -71,7 +71,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "766d9b15dccda3bd3e54f47606eb3ddb",
@@ -145,7 +145,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "5659cf51e92b2dd473005e440ae9ed5d",
