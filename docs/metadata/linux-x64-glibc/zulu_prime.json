@@ -1116,42 +1116,6 @@
     "latest_build_available": false
   },
   {
-    "id": "6ba5991afbdba28886d9e27cd2354c17",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        21,
-        0,
-        1
-      ],
-      "build": [
-        11
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        23,
-        10
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM23.10.0.0/zing23.10.0.0-3-jdk21.0.1-linux_x64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 320610625,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
     "id": "3bf700204358d35a30ef8f3269ea9290",
     "distribution": "zulu_prime",
     "version": {
@@ -1181,42 +1145,6 @@
     "checksum": null,
     "checksum_type": null,
     "size": 224627031,
-    "lib_c_type": "glibc",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "3b4d2f7c7b3589130924f60bdc542ee2",
-    "distribution": "zulu_prime",
-    "version": {
-      "components": [
-        17,
-        0,
-        8
-      ],
-      "build": [
-        1
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        23,
-        8
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zing-zvm/ZVM23.08.0.0/zing23.08.0.0-3-jdk17.0.8.1-linux_x64.tar.gz",
-    "checksum": null,
-    "checksum_type": null,
-    "size": 1043216868,
     "lib_c_type": "glibc",
     "javafx_bundled": false,
     "term_of_support": "lts",

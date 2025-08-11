@@ -14700,44 +14700,6 @@
     "latest_build_available": false
   },
   {
-    "id": "7fdec91dc081853f0898437e65ceaae3",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        13,
-        0,
-        5,
-        1
-      ],
-      "build": [
-        1
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        13,
-        35,
-        51
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "windows",
-    "package_type": "jdk",
-    "archive_type": "zip",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu13.35.51-ca-fx-jdk13.0.5.1-win_x64.zip",
-    "checksum": "56fd134d9f349995d6b2d9b58519872f9649101dc6ff4709c82d4105d6824322",
-    "checksum_type": "sha256",
-    "size": 274741086,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
-    "term_of_support": "mts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
     "id": "9bc21d99d691d5fa6fe2d67f7c147ae4",
     "distribution": "zulu",
     "version": {
@@ -16860,43 +16822,6 @@
     "checksum": "b0f5eb35ddbed40e956782817693169aa456d1d9d18145d25fcb94079699bbed",
     "checksum_type": "sha256",
     "size": 78157114,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "eeeec44a0fa04b9405d7a23ee8e6a565",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        11,
-        0,
-        21
-      ],
-      "build": [
-        9
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        11,
-        68,
-        17
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x64",
-    "operating_system": "windows",
-    "package_type": "jdk",
-    "archive_type": "zip",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu11.68.17-ca-fx-jdk11.0.21-win_x64.zip",
-    "checksum": "767080f72d45dcae6723e398f5e6b0c4912b6e147016bbc5798b85338951ddbe",
-    "checksum_type": "sha256",
-    "size": 284236837,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": true,
     "term_of_support": "lts",
