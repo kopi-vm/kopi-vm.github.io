@@ -6084,6 +6084,41 @@
     "latest_build_available": false
   },
   {
+    "id": "59d31fb80eeea5503523c507db37e081",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        23
+      ],
+      "build": [
+        6
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23,
+        0,
+        21
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu23.0.21-beta-jdk23.0.0-beta.6-macosx_x64.tar.gz",
+    "checksum": "881a7d5fd632d82ef985a5219a021a99c745fecf71bc62316e4be56dbb03abd9",
+    "checksum_type": "sha256",
+    "size": 206947866,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
     "id": "f5246ae50ac432036c00f32d0862b7be",
     "distribution": "zulu",
     "version": {
@@ -9517,6 +9552,43 @@
     "size": 49852348,
     "lib_c_type": "libc",
     "javafx_bundled": false,
+    "term_of_support": "lts",
+    "release_status": "ga",
+    "latest_build_available": false
+  },
+  {
+    "id": "c5d0849d08f0277b564304fd72d41b8e",
+    "distribution": "zulu",
+    "version": {
+      "components": [
+        21,
+        0,
+        6
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        21,
+        40,
+        17
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "x64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://cdn.azul.com/zulu/bin/zulu21.40.17-ca-fx-jdk21.0.6-macosx_x64.tar.gz",
+    "checksum": "9e152d50b8fbda7de0145729d18a8f3db5bfdd25303eea275af090d863dcc36c",
+    "checksum_type": "sha256",
+    "size": 300922772,
+    "lib_c_type": "libc",
+    "javafx_bundled": true,
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false
