@@ -1,0 +1,32 @@
+site_name: Kopi
+site_url: https://kopi-vm.github.io/
+repo_url: https://github.com/kopi-vm/kopi
+theme:
+  name: material
+  language: en
+  font:
+    text: Roboto
+  logo: assets/logo_black.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: brown
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+plugins:
+  - search
+  - offline
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kopi-vm/kopi
