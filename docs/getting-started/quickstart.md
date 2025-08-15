@@ -38,10 +38,10 @@ kopi install temurin@21.0.2
 
 ```bash
 # Use a specific version globally
-kopi use 21
+kopi global 21
 
 # Set project-specific version
-kopi pin 21
+kopi local 21
 
 # Check current version
 kopi current
@@ -55,8 +55,8 @@ kopi current
 # In your project directory
 cd my-java-project
 
-# Pin JDK version for this project
-kopi pin 17
+# Set JDK version for this project
+kopi local 17
 
 # This creates a .kopi-version file
 cat .kopi-version

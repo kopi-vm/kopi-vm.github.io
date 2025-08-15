@@ -434,7 +434,7 @@ spec:
 
 ## Best Practices
 
-### Version Pinning
+### Version Specification
 
 Always specify exact versions in CI/CD:
 

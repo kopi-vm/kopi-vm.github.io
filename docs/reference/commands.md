@@ -12,10 +12,7 @@ kopi [OPTIONS] <COMMAND>
 Options:
   -h, --help       Print help information
   -V, --version    Print version information
-  -v, --verbose    Enable verbose output
-  -q, --quiet      Suppress non-error output
-  --color <WHEN>   Color output [never, auto, always]
-  --config <PATH>  Use specific config file
+  -v, --verbose    Increase verbosity (-v info, -vv debug, -vvv trace)
 ```
 
 ## Core Commands
@@ -31,11 +28,11 @@ Arguments:
   <VERSION>    Version to install (e.g., "21", "temurin@21", "corretto@17.0.9")
 
 Options:
-  -d, --distribution <NAME>    JDK distribution [temurin, corretto, zulu, etc.]
-  -f, --force                  Force reinstall if already installed
-  --no-cache                   Skip metadata cache
-  --verify                     Verify checksum after download
-  --parallel                   Use parallel downloads
+  -f, --force                  Force reinstall even if already installed
+  --dry-run                    Show what would be installed without actually installing
+  --no-progress                Disable progress indicators
+  --timeout <SECONDS>          Download timeout in seconds
+  --javafx-bundled             Include packages regardless of JavaFX bundled status
   -h, --help                   Print help information
 
 Examples:
@@ -43,6 +40,7 @@ Examples:
   kopi install temurin@21              # Install Temurin JDK 21
   kopi install corretto@17.0.9         # Install specific Corretto version
   kopi install --force 21              # Reinstall JDK 21
+  kopi install --dry-run 21            # Preview installation
 ```
 
 ### kopi uninstall
@@ -50,62 +48,62 @@ Examples:
 Remove an installed JDK.
 
 ```bash
-kopi uninstall [OPTIONS] <VERSION>
+kopi uninstall [OPTIONS] [VERSION]
 
 Arguments:
-  <VERSION>    Version to uninstall
+  [VERSION]    Version to uninstall (optional)
 
 Options:
-  -f, --force          Skip confirmation prompt
-  --clean-metadata     Remove associated metadata
+  -f, --force          Skip confirmation prompts
+  --dry-run            Show what would be uninstalled without actually removing
+  --all                Uninstall all versions of a distribution
+  --cleanup            Clean up failed or partial uninstall operations
   -h, --help          Print help information
 
 Examples:
   kopi uninstall temurin@21            # Uninstall Temurin 21
   kopi uninstall 17                    # Uninstall JDK 17
   kopi uninstall --force corretto@17   # Force uninstall without prompt
+  kopi uninstall --all                 # Uninstall all JDKs
+  kopi uninstall --cleanup             # Clean up failed uninstalls
 ```
 
-### kopi use
+### kopi global
 
 Set the global default JDK version.
 
 ```bash
-kopi use [OPTIONS] <VERSION>
+kopi global <VERSION>
 
 Arguments:
-  <VERSION>    Version to use globally
+  <VERSION>    Version to set as global default
 
 Options:
-  --install-if-missing    Install if not present
   -h, --help             Print help information
 
 Examples:
-  kopi use 21                          # Use JDK 21 globally
-  kopi use temurin@17                  # Use Temurin 17 globally
-  kopi use system                      # Use system JDK
+  kopi global 21                       # Use JDK 21 globally
+  kopi global temurin@17               # Use Temurin 17 globally
+  kopi global system                   # Use system JDK
 ```
 
-### kopi pin
+### kopi local
 
-Pin JDK version for current project.
+Set JDK version for current project.
 
 ```bash
-kopi pin [OPTIONS] [VERSION]
+kopi local <VERSION>
 
 Arguments:
-  [VERSION]    Version to pin (defaults to current)
+  <VERSION>    Version to set for current project
 
 Options:
-  -d, --distribution <NAME>    Specify distribution
-  --format <FORMAT>           Version file format [kopi, java]
   -h, --help                 Print help information
 
 Examples:
-  kopi pin                             # Pin current JDK
-  kopi pin 21                          # Pin JDK 21
-  kopi pin temurin@21                  # Pin Temurin 21
-  kopi pin --format java 17            # Create .java-version file
+  kopi local 21                        # Set JDK 21 for project
+  kopi local temurin@21                # Set Temurin 21 for project
+  kopi local corretto@17.0.9           # Set specific version for project
 ```
 
 ### kopi shell
@@ -113,21 +111,22 @@ Examples:
 Set JDK version for current shell session.
 
 ```bash
-kopi shell [OPTIONS] [VERSION]
+kopi shell [OPTIONS] <VERSION>
 
 Arguments:
-  [VERSION]    Version for shell session
+  <VERSION>    JDK version to use
 
 Options:
-  --unset         Clear shell override
-  --status        Show current shell override
-  -h, --help      Print help information
+  --shell <SHELL>      Override shell detection
+  -h, --help          Print help information
+
+Aliases:
+  kopi use            Same as kopi shell
 
 Examples:
   kopi shell 11                        # Use JDK 11 in current shell
   kopi shell temurin@17                # Use Temurin 17 in current shell
-  kopi shell --unset                   # Clear shell override
-  kopi shell --status                  # Show current override
+  kopi use 21                          # Use JDK 21 in current shell (alias)
 ```
 
 ### kopi current
@@ -138,17 +137,14 @@ Display currently active JDK version.
 kopi current [OPTIONS]
 
 Options:
-  --global        Show global default
-  --project       Show project version
-  --verbose       Show resolution details
-  --short         Show version only
-  -h, --help      Print help information
+  -q, --quiet         Show only version number
+  --json              Output in JSON format
+  -h, --help          Print help information
 
 Examples:
   kopi current                         # Show active JDK
-  kopi current --global                # Show global default
-  kopi current --verbose               # Show with details
-  kopi current --short                 # Show version only
+  kopi current --quiet                 # Show version only
+  kopi current --json                  # Output as JSON
 ```
 
 ## Listing Commands
@@ -158,38 +154,39 @@ Examples:
 List installed JDK versions.
 
 ```bash
-kopi list [OPTIONS]
+kopi list
 
 Options:
-  -d, --distribution <NAME>    Filter by distribution
-  --lts                       Show only LTS versions
-  --verbose                   Show detailed information
-  --json                      Output as JSON
   -h, --help                 Print help information
+
+Aliases:
+  kopi ls                    Same as kopi list
 
 Examples:
   kopi list                            # List all installed JDKs
-  kopi list --lts                      # List only LTS versions
-  kopi list -d temurin                 # List Temurin installations
-  kopi list --json                     # Output as JSON
+  kopi ls                              # List all installed JDKs (alias)
 ```
 
 ### kopi search
 
-Search available JDK versions.
+Search available JDK versions (alias for cache search).
 
 ```bash
 kopi search [OPTIONS] [VERSION]
 
 Arguments:
-  [VERSION]    Version to search for (e.g., "21", "corretto", "corretto@21")
+  [VERSION]    Version pattern to search (e.g., "21", "corretto", "corretto@17")
 
 Options:
-  --compact                   Show compact output (version numbers only)
-  --detailed                  Show detailed information
-  --json                      Output as JSON
+  -c, --compact                Show compact output (version numbers only)
+  -d, --detailed              Show detailed information including download URLs
+  --json                      Output results as JSON
   --lts-only                  Show only LTS versions
+  --javafx-bundled            Include packages regardless of JavaFX bundled status
   -h, --help                 Print help information
+
+Aliases:
+  kopi s                      Same as kopi search
 
 Examples:
   kopi search                          # List available JDKs
@@ -203,267 +200,192 @@ Examples:
 
 ### kopi which
 
-Show path to JDK executable.
+Show installation path for a JDK version.
 
 ```bash
-kopi which [OPTIONS] <TOOL>
+kopi which [OPTIONS] [VERSION]
 
 Arguments:
-  <TOOL>       Tool name (java, javac, jar, etc.)
+  [VERSION]    JDK version specification (optional)
 
 Options:
-  --version    Show version of the tool
-  -h, --help   Print help information
+  --tool <TOOL>        Show path for specific JDK tool (default: java)
+  --home               Show JDK home directory instead of executable path
+  --json               Output in JSON format
+  -h, --help          Print help information
+
+Aliases:
+  kopi w              Same as kopi which
 
 Examples:
-  kopi which java                      # Path to java executable
-  kopi which javac                     # Path to javac
-  kopi which --version java            # Java version info
+  kopi which                           # Path to current JDK's java executable
+  kopi which 21                        # Path to JDK 21's java executable
+  kopi which --tool javac              # Path to javac
+  kopi which --home                    # JDK home directory
 ```
 
 ### kopi doctor
 
-Diagnose Kopi installation issues.
+Run diagnostics on kopi installation.
 
 ```bash
 kopi doctor [OPTIONS]
 
 Options:
-  --check <COMPONENT>    Check specific component
-  --fix                  Attempt to fix issues
-  -h, --help            Print help information
-
-Components:
-  - shell      Shell integration
-  - shims      Shim installation
-  - path       PATH configuration
-  - metadata   Metadata cache
-  - config     Configuration file
+  --json               Output results in JSON format
+  --check <CATEGORY>   Run only specific category of checks
+  -h, --help          Print help information
 
 Examples:
   kopi doctor                          # Full diagnostic
-  kopi doctor --check shell            # Check shell integration
-  kopi doctor --fix                    # Fix detected issues
+  kopi doctor --check shell            # Check specific category
+  kopi doctor --json                   # Output as JSON
 ```
 
 ### kopi setup
 
-Initialize or repair Kopi installation.
+Initial setup and configuration.
 
 ```bash
 kopi setup [OPTIONS]
 
 Options:
-  --regenerate-shims      Regenerate all shims
-  --shim <NAME>          Regenerate specific shim
-  --reset                Reset to defaults
-  -h, --help            Print help information
+  -f, --force          Force recreation of shims even if they exist
+  -h, --help          Print help information
 
 Examples:
   kopi setup                           # Initial setup
-  kopi setup --regenerate-shims        # Regenerate all shims
-  kopi setup --shim java               # Regenerate java shim
-  kopi setup --reset                   # Reset installation
+  kopi setup --force                   # Force recreate shims
 ```
 
-### kopi init
+### kopi env
 
-Generate shell initialization script.
+Output environment variables for shell evaluation.
 
 ```bash
-kopi init [OPTIONS] <SHELL>
+kopi env [OPTIONS] [VERSION]
 
 Arguments:
-  <SHELL>      Shell type [bash, zsh, fish, powershell]
+  [VERSION]    Specific version to use (defaults to current)
 
 Options:
-  --complete    Include completions
-  -h, --help    Print help information
+  --shell <SHELL>      Override shell detection
+  --export             Output export statements (default: true)
+  -h, --help          Print help information
 
 Examples:
-  kopi init bash                       # Bash initialization
-  kopi init zsh --complete             # Zsh with completions
-  kopi init fish                       # Fish initialization
+  kopi env                             # Set environment for current JDK
+  kopi env 21                          # Set environment for JDK 21
+  eval "$(kopi env)"                  # Bash/Zsh
+  kopi env | source                    # Fish
+  kopi env | Invoke-Expression         # PowerShell
 ```
 
 ## Cache Commands
 
 ### kopi cache
 
-Manage metadata cache.
+Manage JDK metadata cache.
 
 ```bash
 kopi cache <SUBCOMMAND>
 
 Subcommands:
-  status       Show cache status
-  update       Update metadata cache
-  clear        Clear cache
-  prune        Remove expired entries
-  verify       Verify cache integrity
+  refresh             Refresh metadata from foojay.io API
+  info                Show cache information
+  clear               Clear all cached data
+  search              Search for available JDK versions
+  list-distributions  List all available distributions in cache
 
 Examples:
-  kopi cache status                    # Show cache info
-  kopi cache update                    # Update metadata
+  kopi cache info                      # Show cache info
+  kopi cache refresh                   # Refresh metadata
   kopi cache clear                     # Clear all caches
-  kopi cache prune                     # Clean expired entries
+  kopi cache search 21                 # Search for JDK 21
+  kopi cache list-distributions        # List available distributions
 ```
 
-### kopi cache update
+### kopi cache refresh
 
-Update metadata cache.
+Refresh metadata from foojay.io API.
 
 ```bash
-kopi cache update [OPTIONS]
+kopi cache refresh [OPTIONS]
 
 Options:
-  --force             Ignore TTL and force update
-  --source <NAME>     Update specific source
+  --javafx-bundled    Include packages regardless of JavaFX bundled status
   -h, --help         Print help information
 
 Examples:
-  kopi cache update                    # Normal update
-  kopi cache update --force            # Force update
-  kopi cache update --source foojay    # Update Foojay data
+  kopi cache refresh                   # Normal refresh
+  kopi cache refresh --javafx-bundled  # Include JavaFX bundled packages
 ```
 
-### kopi cache clear
+### kopi cache search
 
-Clear cache data.
+Search for available JDK versions.
 
 ```bash
-kopi cache clear [OPTIONS]
+kopi cache search [OPTIONS] <VERSION>
+
+Arguments:
+  <VERSION>    Query to search for (e.g., "21", "17.0.9", "corretto@21")
 
 Options:
-  --metadata      Clear metadata only
-  --downloads     Clear downloads only
-  --all          Clear everything
-  -h, --help     Print help information
+  --compact                   Display minimal information
+  --detailed                  Display detailed information
+  --json                      Output results as JSON
+  --lts-only                  Filter to show only LTS versions
+  --javafx-bundled            Include packages regardless of JavaFX bundled status
+  --java-version              Force search by java_version field
+  --distribution-version      Force search by distribution_version field
+  -h, --help                 Print help information
 
 Examples:
-  kopi cache clear                     # Clear all caches
-  kopi cache clear --metadata          # Clear metadata only
-  kopi cache clear --downloads         # Clear downloads only
+  kopi cache search 21                 # Search for JDK 21
+  kopi cache search corretto           # Search for Corretto
+  kopi cache search --lts-only         # Show only LTS versions
 ```
 
-## Configuration Commands
+## Shim Commands
 
-### kopi config
+### kopi shim
 
-Manage Kopi configuration.
+Manage tool shims.
 
 ```bash
-kopi config <SUBCOMMAND>
+kopi shim <SUBCOMMAND>
 
 Subcommands:
-  get <KEY>           Get configuration value
-  set <KEY> <VALUE>   Set configuration value
-  list                List all settings
-  edit                Edit config file
-  reset               Reset to defaults
+  add <TOOL>        Add a shim for a specific tool
+  remove <TOOL>     Remove a shim for a specific tool
+  list              List installed shims
+  verify            Verify and repair shims
 
 Examples:
-  kopi config get defaults.distribution
-  kopi config set defaults.distribution temurin
-  kopi config list
-  kopi config edit
-  kopi config reset
+  kopi shim add java                  # Add java shim
+  kopi shim remove javac              # Remove javac shim
+  kopi shim list                      # List all shims
+  kopi shim list --available          # Show available tools
+  kopi shim verify                    # Verify shims
+  kopi shim verify --fix              # Fix issues
 ```
 
-### kopi config get
+## Command Aliases
 
-Get configuration value.
+Many Kopi commands have shorter aliases for convenience:
 
-```bash
-kopi config get <KEY>
-
-Arguments:
-  <KEY>        Configuration key
-
-Examples:
-  kopi config get defaults.distribution    # Get default distribution
-  kopi config get cache.max_size          # Get cache size limit
-```
-
-### kopi config set
-
-Set configuration value.
-
-```bash
-kopi config set <KEY> <VALUE>
-
-Arguments:
-  <KEY>        Configuration key
-  <VALUE>      New value
-
-Examples:
-  kopi config set defaults.distribution corretto
-  kopi config set cache.max_size 200
-  kopi config set cache.auto_update 24
-```
-
-## Advanced Commands
-
-### kopi prune
-
-Remove unused JDK installations.
-
-```bash
-kopi prune [OPTIONS]
-
-Options:
-  --dry-run       Show what would be removed
-  --keep-lts      Keep all LTS versions
-  --older-than    Remove versions older than N days
-  -f, --force     Skip confirmation
-  -h, --help      Print help information
-
-Examples:
-  kopi prune                           # Remove unused JDKs
-  kopi prune --dry-run                 # Preview removal
-  kopi prune --keep-lts                # Keep LTS versions
-  kopi prune --older-than 90           # Remove > 90 days old
-```
-
-### kopi validate
-
-Validate version files and configuration.
-
-```bash
-kopi validate [OPTIONS] [FILE]
-
-Arguments:
-  [FILE]       File to validate (defaults to .kopi-version)
-
-Options:
-  --strict      Strict validation
-  -h, --help    Print help information
-
-Examples:
-  kopi validate                        # Validate .kopi-version
-  kopi validate .java-version          # Validate specific file
-  kopi validate --strict               # Strict validation
-```
-
-### kopi metadata
-
-Manage JDK metadata.
-
-```bash
-kopi metadata <SUBCOMMAND>
-
-Subcommands:
-  generate      Generate metadata from local JDKs
-  import        Import custom metadata
-  export        Export metadata
-  validate      Validate metadata file
-
-Examples:
-  kopi metadata generate --from /opt/jdks
-  kopi metadata import custom.json
-  kopi metadata export --output metadata.json
-  kopi metadata validate metadata.json
-```
+| Standard Command | Alias | Description |
+|-----------------|-------|-------------|
+| `kopi install` | `kopi i` | Install a JDK version |
+| `kopi list` | `kopi ls` | List installed JDK versions |
+| `kopi shell` | `kopi use` | Set JDK for current shell session |
+| `kopi global` | `kopi g`, `kopi default` | Set global default JDK |
+| `kopi local` | `kopi l`, `kopi pin` | Set project-specific JDK |
+| `kopi which` | `kopi w` | Show JDK installation path |
+| `kopi search` | `kopi s` | Search available JDK versions |
+| `kopi refresh` | `kopi r` | Refresh metadata cache (hidden) |
+| `kopi uninstall` | `kopi u`, `kopi remove` | Uninstall a JDK |
 
 ## Environment Variables
 
@@ -520,14 +442,14 @@ Kopi uses specific exit codes for different error conditions:
 ### Common Workflows
 
 ```bash
-# Install and use latest LTS
-kopi install 21  # Install latest LTS manually
-kopi use 21
+# Install and use latest LTS globally
+kopi install 21
+kopi global 21
 
 # Set up new project
 cd my-project
 kopi install 21
-kopi pin 21
+kopi local 21
 
 # Test with multiple JDKs
 for version in 11 17 21; do
@@ -535,8 +457,9 @@ for version in 11 17 21; do
     ./gradlew test
 done
 
-# Clean up old installations
-kopi prune --older-than 30
+# Manually clean up old installations
+kopi list  # Check installed versions
+kopi uninstall temurin@11  # Remove specific version
 ```
 
 ### CI/CD Integration

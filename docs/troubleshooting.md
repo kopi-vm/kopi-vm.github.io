@@ -56,11 +56,11 @@ $ java --version
 
 1. **Configure shell integration**:
 ```bash
-# Initialize Kopi for your shell
-eval "$(kopi init bash)"  # or zsh, fish
+# Add shims to PATH
+export PATH="$HOME/.kopi/shims:$PATH"
 
 # Add to shell config file
-echo 'eval "$(kopi init bash)"' >> ~/.bashrc
+echo 'export PATH="$HOME/.kopi/shims:$PATH"' >> ~/.bashrc
 ```
 
 2. **Check PATH order**:
@@ -74,7 +74,7 @@ export PATH="$HOME/.kopi/shims:$PATH"
 
 3. **Regenerate shims**:
 ```bash
-kopi setup --regenerate-shims
+kopi setup --force
 ```
 
 4. **Run diagnostics**:
@@ -108,9 +108,6 @@ env | grep KOPI_VERSION
 ```bash
 # Clear environment override
 unset KOPI_VERSION
-
-# Clear shell override
-kopi shell --unset
 ```
 
 3. **Verify version files**:
@@ -125,10 +122,10 @@ find . -name ".kopi-version" -o -name ".java-version"
 4. **Set correct version**:
 ```bash
 # For project
-kopi pin 21
+kopi local 21
 
 # For global
-kopi use 21
+kopi global 21
 
 # For shell session
 kopi shell 21
@@ -155,18 +152,13 @@ cat .kopi-version
 dos2unix .kopi-version
 ```
 
-3. **Validate version file**:
-```bash
-kopi validate .kopi-version
-```
-
-4. **Create new version file**:
+3. **Create new version file**:
 ```bash
 # Remove old file
 rm .kopi-version
 
 # Create new
-kopi pin 21
+kopi local 21
 ```
 
 ## Installation and Download Issues
@@ -184,7 +176,7 @@ Error: Failed to install JDK
 
 1. **Update metadata cache**:
 ```bash
-kopi cache update --force
+kopi cache refresh
 ```
 
 2. **Check available versions**:
@@ -211,9 +203,9 @@ df -h ~/.kopi
 # Need ~500MB per JDK
 ```
 
-6. **Enable debug mode**:
+6. **Enable verbose mode**:
 ```bash
-KOPI_DEBUG=1 kopi install 21
+kopi -v install 21
 ```
 
 ### Download Timeouts
@@ -228,23 +220,16 @@ export KOPI_NETWORK_TIMEOUT=600
 kopi install 21
 ```
 
-2. **Reduce parallel downloads**:
+2. **Configure proxy** (if behind firewall):
 ```bash
-export KOPI_PARALLEL_DOWNLOADS=1
+export HTTP_PROXY=http://proxy:8080
+export HTTPS_PROXY=http://proxy:8080
 kopi install 21
 ```
 
-3. **Configure proxy** (if behind firewall):
+3. **Try with increased timeout**:
 ```bash
-export KOPI_HTTP_PROXY=http://proxy:8080
-export KOPI_HTTPS_PROXY=http://proxy:8080
-kopi install 21
-```
-
-4. **Try offline mode** (if metadata cached):
-```bash
-export KOPI_OFFLINE=1
-kopi search
+kopi install --timeout 600 21
 ```
 
 ### Checksum Verification Failed
@@ -253,21 +238,15 @@ kopi search
 
 **Solutions**:
 
-1. **Clear downloads and retry**:
+1. **Clear cache and retry**:
 ```bash
-kopi cache clear --downloads
+kopi cache clear
 kopi install 21
 ```
 
 2. **Update metadata** (checksums might be outdated):
 ```bash
-kopi cache update --force
-kopi install 21
-```
-
-3. **Skip verification** (not recommended):
-```bash
-export KOPI_VERIFY_CHECKSUMS=false
+kopi cache refresh
 kopi install 21
 ```
 
@@ -282,29 +261,11 @@ kopi install 21
 1. **Configure proxy settings**:
 ```bash
 # Set proxy
-export KOPI_HTTP_PROXY=http://user:pass@proxy.corp.com:8080
-export KOPI_HTTPS_PROXY=http://user:pass@proxy.corp.com:8080
+export HTTP_PROXY=http://user:pass@proxy.corp.com:8080
+export HTTPS_PROXY=http://user:pass@proxy.corp.com:8080
 
 # Exclude internal hosts
-export KOPI_NO_PROXY=localhost,*.corp.com,10.0.0.0/8
-```
-
-2. **Add to config file**:
-```toml
-# ~/.kopi/config.toml
-[network]
-http_proxy = "http://proxy.corp.com:8080"
-https_proxy = "http://proxy.corp.com:8080"
-no_proxy = "localhost,*.corp.com"
-```
-
-3. **Handle SSL certificates**:
-```bash
-# For self-signed certificates
-export KOPI_VERIFY_CERTIFICATES=false
-
-# Or provide CA bundle
-export KOPI_CA_BUNDLE=/etc/ssl/certs/corporate-ca.pem
+export NO_PROXY=localhost,*.corp.com,10.0.0.0/8
 ```
 
 ### SSL Certificate Errors
@@ -322,14 +283,9 @@ sudo apt-get update && sudo apt-get install ca-certificates
 brew install ca-certificates
 ```
 
-2. **Use corporate CA bundle**:
+2. **Use system certificates**:
 ```bash
-export KOPI_CA_BUNDLE=/path/to/corporate-ca-bundle.pem
-```
-
-3. **Temporarily disable verification** (development only):
-```bash
-export KOPI_VERIFY_CERTIFICATES=false
+# The system certificates should be configured correctly
 ```
 
 ## Performance Issues
@@ -351,18 +307,12 @@ time java --version
 
 2. **Update cache**:
 ```bash
-kopi cache update
-kopi cache optimize
+kopi cache refresh
 ```
 
-3. **Disable auto-switching** (if not needed):
+3. **Profile execution**:
 ```bash
-export KOPI_AUTO_SWITCH=false
-```
-
-4. **Profile execution**:
-```bash
-KOPI_DEBUG=1 KOPI_TRACE=all java --version
+kopi -vvv current
 ```
 
 ### High Disk Usage
@@ -385,8 +335,8 @@ kopi list
 # Remove specific version
 kopi uninstall temurin@11
 
-# Remove all unused
-kopi prune
+# Remove specific versions
+kopi uninstall --all
 ```
 
 3. **Clear cache**:
@@ -394,12 +344,6 @@ kopi prune
 kopi cache clear
 ```
 
-4. **Set cache limits**:
-```toml
-# ~/.kopi/config.toml
-[cache]
-max_size = 50  # MB
-```
 
 ## Platform-Specific Issues
 
@@ -586,12 +530,8 @@ echo $PATH | tr ':' '\n' | grep kopi
 # Check environment
 env | grep -E "(KOPI|JAVA)"
 
-# Check configuration
-kopi config list
-kopi config validate
-
 # Check cache
-kopi cache status
+kopi cache info
 ls -la ~/.kopi/cache/
 ```
 
@@ -629,9 +569,9 @@ kopi doctor --system-info
 KOPI_DEBUG=1 kopi [command] 2>&1 | tee error.log
 ```
 
-3. **Configuration**:
+3. **Cache information**:
 ```bash
-kopi config list
+kopi cache info
 ```
 
 4. **Reproduction steps**:

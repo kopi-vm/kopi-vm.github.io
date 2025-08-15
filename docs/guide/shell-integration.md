@@ -25,11 +25,11 @@ Kopi uses **shims** - lightweight executable scripts that intercept Java command
 Add to your `~/.bashrc`:
 
 ```bash
-# Initialize Kopi
-eval "$(kopi init bash)"
-
-# Optional: Add shims to PATH (if not already added)
+# Add shims to PATH
 export PATH="$HOME/.kopi/shims:$PATH"
+
+# Set JAVA_HOME
+eval "$(kopi env)"
 ```
 
 ### Zsh
@@ -37,11 +37,11 @@ export PATH="$HOME/.kopi/shims:$PATH"
 Add to your `~/.zshrc`:
 
 ```bash
-# Initialize Kopi
-eval "$(kopi init zsh)"
-
-# Optional: Add shims to PATH (if not already added)
+# Add shims to PATH
 export PATH="$HOME/.kopi/shims:$PATH"
+
+# Set JAVA_HOME
+eval "$(kopi env)"
 ```
 
 ### Fish
@@ -49,11 +49,11 @@ export PATH="$HOME/.kopi/shims:$PATH"
 Add to your `~/.config/fish/config.fish`:
 
 ```fish
-# Initialize Kopi
-kopi init fish | source
-
-# Optional: Add shims to PATH (if not already added)
+# Add shims to PATH
 set -gx PATH $HOME/.kopi/shims $PATH
+
+# Set JAVA_HOME
+kopi env | source
 ```
 
 ### PowerShell
@@ -61,11 +61,11 @@ set -gx PATH $HOME/.kopi/shims $PATH
 Add to your PowerShell profile:
 
 ```powershell
-# Initialize Kopi
-kopi init powershell | Invoke-Expression
-
 # Add shims to PATH
 $env:Path = "$env:USERPROFILE\.kopi\shims;$env:Path"
+
+# Set JAVA_HOME
+kopi env | Invoke-Expression
 ```
 
 ### Command Prompt (Windows)
@@ -301,19 +301,22 @@ refreshenv
 
 ### Minimal Setup
 
-Just add shims to PATH without auto-switching:
+Just add shims to PATH:
 
 ```bash
 export PATH="$HOME/.kopi/shims:$PATH"
 ```
 
-### Full Integration
+### With Environment Variables
 
-Complete setup with all features:
+Add shims and set JAVA_HOME:
 
 ```bash
-# Initialize Kopi with all features
-eval "$(kopi init bash --complete)"
+# Add to PATH
+export PATH="$HOME/.kopi/shims:$PATH"
+
+# Set JAVA_HOME for current JDK
+eval "$(kopi env)"
 ```
 
 ### Custom Integration
@@ -328,18 +331,16 @@ KOPI_JDKS="$HOME/.kopi/jdks"
 # Add to PATH
 export PATH="$KOPI_SHIMS:$PATH"
 
-# Custom version detection
-detect_java_version() {
-    # Your custom logic here
-}
+# Set JAVA_HOME dynamically
+export JAVA_HOME=$(kopi which --home)
 ```
 
 ## Best Practices
 
-1. **Initialize early** - Add Kopi init near the top of shell config
-2. **PATH order matters** - Ensure shims come before system Java
-3. **Avoid conflicts** - Remove other JDK version managers
-4. **Use version files** - Let Kopi handle automatic switching
+1. **PATH order matters** - Ensure shims come before system Java
+2. **Avoid conflicts** - Remove other JDK version managers
+3. **Use version files** - Let Kopi handle automatic switching
+4. **Set environment early** - Add PATH and JAVA_HOME near the top of shell config
 5. **Keep shells updated** - Update shell configs after Kopi updates
 
 ## Next Steps

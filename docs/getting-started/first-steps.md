@@ -47,10 +47,10 @@ kopi install temurin@21.0.2+13.0.LTS
 
 ```bash
 # Set global default
-kopi use 21
+kopi global 21
 
 # Set project version
-kopi pin 17
+kopi local 17
 
 # Temporary shell override
 kopi shell 11
@@ -62,8 +62,11 @@ kopi shell 11
 # Uninstall a JDK
 kopi uninstall temurin@17
 
-# Remove unused JDKs
-kopi prune
+# List installed JDKs to see what can be removed
+kopi list
+
+# Uninstall specific versions
+kopi uninstall corretto@11
 ```
 
 ## Working with Projects
@@ -110,10 +113,10 @@ KOPI_VERSION=17 java --version
 
 ## Tips and Best Practices
 
-1. **Use version files** - Always pin versions in projects for consistency
+1. **Use version files** - Always use `kopi local` to set versions in projects for consistency
 2. **Specify distributions** - Be explicit about which JDK distribution you need
-3. **Regular updates** - Keep your metadata cache updated with `kopi cache update`
-4. **Clean up** - Remove unused JDKs with `kopi prune` to save disk space
+3. **Regular updates** - Keep your metadata cache updated with `kopi cache refresh`
+4. **Clean up** - Regularly check installed JDKs with `kopi list` and remove unused ones with `kopi uninstall`
 
 ## Next Steps
 

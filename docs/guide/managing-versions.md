@@ -45,30 +45,27 @@ Set the system-wide default JDK:
 
 ```bash
 # Set global version
-kopi use 21
+kopi global 21
 
-# View global version
-kopi current --global
+# View current version
+kopi current
 
 # Reset to system JDK
-kopi use system
+kopi global system
 ```
 
 ### Project Version
 
-Pin JDK version for a project:
+Set JDK version for a project:
 
 ```bash
-# Pin current JDK
-kopi pin
+# Set specific version
+kopi local 17
 
-# Pin specific version
-kopi pin 17
+# Set with distribution
+kopi local temurin@17
 
-# Pin with distribution
-kopi pin temurin@17
-
-# Remove project pin
+# Remove project version
 rm .kopi-version
 ```
 
@@ -80,11 +77,11 @@ Temporary override for current shell:
 # Set shell version
 kopi shell 11
 
+# Or use the alias
+kopi use 11
+
 # Verify override
 java --version
-
-# Clear override
-kopi shell --unset
 ```
 
 ## Version Discovery
@@ -95,11 +92,8 @@ kopi shell --unset
 # List all installed versions
 kopi list
 
-# List with details
-kopi list --verbose
-
-# Filter by distribution
-kopi list --distribution temurin
+# Or use the alias
+kopi ls
 ```
 
 ### Searching Available Versions
@@ -125,10 +119,10 @@ kopi search --lts-only
 Kopi resolves versions in this priority:
 
 1. Environment variable (`KOPI_VERSION`)
-2. Shell override (`kopi shell`)
+2. Shell override (`kopi shell` or `kopi use`)
 3. Project version file (`.kopi-version` or `.java-version`)
 4. Parent directory version files (recursive)
-5. Global default (`kopi use`)
+5. Global default (`kopi global`)
 6. System JDK
 
 ### Version File Formats
@@ -160,22 +154,6 @@ corretto-21
 
 ## Advanced Usage
 
-### Version Aliases
-
-Create shortcuts for commonly used versions:
-
-```bash
-# Create alias (in ~/.kopi/config.toml)
-[aliases]
-lts = "temurin@21"
-latest = "temurin@22"
-graal = "graalvm@21"
-
-# Use alias
-kopi use lts
-kopi pin latest
-```
-
 ### Multiple JDK Installations
 
 Install multiple versions of the same major version:
@@ -186,9 +164,13 @@ kopi install temurin@21
 kopi install corretto@21
 kopi install graalvm@21
 
-# Switch between them
-kopi use temurin@21
-kopi use graalvm@21
+# Switch between them globally
+kopi global temurin@21
+kopi global graalvm@21
+
+# Or use in current shell
+kopi shell temurin@21
+kopi use graalvm@21  # alias for shell
 ```
 
 ### Version Constraints
@@ -208,11 +190,11 @@ kopi install "~21.0.2"  # Allows 21.0.x where x >= 2
 
 ## Best Practices
 
-1. **Always pin versions** in production projects
+1. **Always set versions** in production projects using `kopi local`
 2. **Use LTS versions** for stability
 3. **Specify distributions** explicitly in CI/CD
 4. **Document version requirements** in README
-5. **Test with multiple JDKs** using shell overrides
+5. **Test with multiple JDKs** using `kopi shell` or `kopi use`
 
 ## Troubleshooting
 
@@ -220,7 +202,7 @@ kopi install "~21.0.2"  # Allows 21.0.x where x >= 2
 
 ```bash
 # Update metadata cache
-kopi cache update
+kopi cache refresh
 
 # Search with different criteria
 kopi search
@@ -229,15 +211,15 @@ kopi search
 ### Version Conflicts
 
 ```bash
-# Check version resolution
-kopi current --verbose
-
-# Clear shell override
-kopi shell --unset
+# Check current version
+kopi current
 
 # Verify environment
 env | grep JAVA
 env | grep KOPI
+
+# Clear environment override
+unset KOPI_VERSION
 ```
 
 ## Next Steps

@@ -6,20 +6,17 @@ Learn how to configure JDK versions for your projects and ensure consistency acr
 
 ### Creating Version Files
 
-Pin a JDK version to your project:
+Set a JDK version for your project:
 
 ```bash
 # Navigate to project root
 cd my-project
 
-# Pin current JDK version
-kopi pin
+# Set specific version
+kopi local 21
 
-# Pin specific version
-kopi pin 21
-
-# Pin with distribution
-kopi pin temurin@21.0.2
+# Set with distribution
+kopi local temurin@21.0.2
 ```
 
 This creates a `.kopi-version` file in your project root.
@@ -94,7 +91,7 @@ Commit version files to version control:
 ```bash
 # Add to Git
 git add .kopi-version
-git commit -m "Pin JDK version to 21"
+git commit -m "Set JDK version to 21"
 ```
 
 ### Documentation
@@ -205,9 +202,9 @@ build:
 
 ## Best Practices
 
-### Version Pinning
+### Version Setting
 
-1. **Always pin versions** in production projects
+1. **Always set versions** in production projects using `kopi local`
 2. **Use exact versions** for reproducible builds
 3. **Include distribution** to avoid ambiguity
 
