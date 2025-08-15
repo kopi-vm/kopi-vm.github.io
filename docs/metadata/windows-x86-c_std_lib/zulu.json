@@ -836,7 +836,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "787438e26771a40f02365d46f8571b53",
@@ -910,7 +910,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "07aef4e2f41d245df6ca33d14583abc3",
@@ -1352,43 +1352,6 @@
     "size": 40160405,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "c41e86d709bc2c0fe30f6d293e88fa8c",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        17,
-        0,
-        13
-      ],
-      "build": [
-        11
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        17,
-        54,
-        21
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x86",
-    "operating_system": "windows",
-    "package_type": "jdk",
-    "archive_type": "zip",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu17.54.21-ca-fx-jdk17.0.13-win_i686.zip",
-    "checksum": "59a286d9a58029e69c67abc2eda34eb158609a6d1e8e6e7380c5a4c3005174a4",
-    "checksum_type": "sha256",
-    "size": 270598367,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false
@@ -11040,43 +11003,6 @@
     "size": 184362977,
     "lib_c_type": "c_std_lib",
     "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
-    "id": "2f941ceb8ee4a1033b56ed9eec1fc175",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        11,
-        0,
-        12
-      ],
-      "build": [
-        7
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        11,
-        50,
-        19
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x86",
-    "operating_system": "windows",
-    "package_type": "jdk",
-    "archive_type": "zip",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu11.50.19-ca-fx-jdk11.0.12-win_i686.zip",
-    "checksum": "cfef8f133a56de786e9bb2b50bbc52403b4124a8dcfdd30411e5b989a20e72b9",
-    "checksum_type": "sha256",
-    "size": 248830214,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": true,
     "term_of_support": "lts",
     "release_status": "ga",
     "latest_build_available": false

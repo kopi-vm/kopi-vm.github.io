@@ -107,6 +107,43 @@
     "latest_build_available": false
   },
   {
+    "id": "beda89b1be02ea780fd9411f0bebeb24",
+    "distribution": "oracle_open_jdk",
+    "version": {
+      "components": [
+        23,
+        0,
+        2
+      ],
+      "build": [
+        7
+      ],
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        23,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://download.java.net/java/GA/jdk23.0.2/6da2a6609d6e406f85c491fcb119101b/7/GPL/openjdk-23.0.2_macos-aarch64_bin.tar.gz",
+    "checksum": null,
+    "checksum_type": "sha256",
+    "size": 204446912,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "a53ec705431ff62c354e58226c13c3aa",
     "distribution": "oracle_open_jdk",
     "version": {
@@ -141,7 +178,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "4dec34ee3bf8da98b6b43f2129f86296",

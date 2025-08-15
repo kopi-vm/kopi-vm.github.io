@@ -1,5 +1,75 @@
 [
   {
+    "id": "07395814964cfce0c83140d7c37f1ac2",
+    "distribution": "semeru",
+    "version": {
+      "components": [
+        24,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        24,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jdk",
+    "archive_type": "targz",
+    "download_url": "https://github.com/ibmruntimes/semeru24-binaries/releases/download/jdk-24.0.2%2B12_openj9-0.54.0/ibm-semeru-open-jdk_aarch64_mac_24.0.2_12_openj9-0.54.0.tar.gz",
+    "checksum": null,
+    "checksum_type": "sha256",
+    "size": 233653185,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
+    "id": "4bba0c3f39124e21b0ee6b85c15e18b7",
+    "distribution": "semeru",
+    "version": {
+      "components": [
+        24,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "distribution_version": {
+      "components": [
+        24,
+        0,
+        2
+      ],
+      "build": null,
+      "pre_release": null
+    },
+    "architecture": "aarch64",
+    "operating_system": "macos",
+    "package_type": "jre",
+    "archive_type": "targz",
+    "download_url": "https://github.com/ibmruntimes/semeru24-binaries/releases/download/jdk-24.0.2%2B12_openj9-0.54.0/ibm-semeru-open-jre_aarch64_mac_24.0.2_12_openj9-0.54.0.tar.gz",
+    "checksum": null,
+    "checksum_type": "sha256",
+    "size": 51899126,
+    "lib_c_type": "libc",
+    "javafx_bundled": false,
+    "term_of_support": "sts",
+    "release_status": "ga",
+    "latest_build_available": true
+  },
+  {
     "id": "164c190bf60ff5fbcd52b58d5157cf23",
     "distribution": "semeru",
     "version": {
