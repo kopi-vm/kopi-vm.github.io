@@ -159,7 +159,7 @@ temurin@21
 ### How does automatic version switching work?
 
 When you run a Java command, Kopi:
-1. Checks for `KOPI_VERSION` environment variable
+1. Checks for `KOPI_JAVA_VERSION` environment variable
 2. Looks for `.kopi-version` or `.java-version` in current directory
 3. Searches parent directories for version files
 4. Falls back to global default
@@ -231,25 +231,24 @@ kopi config set defaults.distribution corretto
 
 ### Can I use Kopi offline?
 
-Yes, Kopi supports offline mode:
+Currently, Kopi requires network access for most operations:
 
 ```bash
-# Enable offline mode
-export KOPI_OFFLINE=1
-
-# Works with cached metadata
-kopi search  # Uses cached data
-kopi install 21   # Works if JDK is cached
+kopi search  # Fetches from remote
+kopi install 21   # Downloads from remote
 ```
+
+Cached metadata allows some operations to work without network access.
 
 ### How do I use Kopi behind a proxy?
 
 Set proxy environment variables:
 
 ```bash
-export KOPI_HTTP_PROXY=http://proxy:8080
-export KOPI_HTTPS_PROXY=http://proxy:8080
-export KOPI_NO_PROXY=localhost,internal.company.com
+# Use standard proxy environment variables
+export HTTP_PROXY=http://proxy:8080
+export HTTPS_PROXY=http://proxy:8080
+export NO_PROXY=localhost,internal.company.com
 ```
 
 Or configure in `~/.kopi/config.toml`:
@@ -263,18 +262,7 @@ no_proxy = "localhost,internal.company.com"
 
 ### How do I speed up downloads?
 
-1. **Increase parallel downloads**:
-```bash
-export KOPI_PARALLEL_DOWNLOADS=8
-```
-
-2. **Use closer mirrors** (automatic by default)
-
-3. **Enable compression**:
-```toml
-[cache]
-compress = true
-```
+Kopi automatically uses the closest mirrors for downloads. Download speed depends on your network connection and the selected JDK distribution's servers.
 
 ## Troubleshooting Questions
 
@@ -304,10 +292,10 @@ Check version resolution:
 kopi current --verbose
 
 # Check for overrides
-env | grep KOPI_VERSION
+env | grep KOPI_JAVA_VERSION
 
 # Clear overrides
-unset KOPI_VERSION
+unset KOPI_JAVA_VERSION
 kopi shell --unset
 ```
 
@@ -478,20 +466,12 @@ cargo test
 
 ### How can I make Kopi even faster?
 
-1. **Keep cache updated**:
+**Keep cache updated**:
 ```bash
-kopi cache update
+kopi cache refresh
 ```
 
-2. **Disable auto-switching** if not needed:
-```bash
-export KOPI_AUTO_SWITCH=false
-```
-
-3. **Use local metadata**:
-```bash
-export KOPI_OFFLINE=1  # When possible
-```
+Kopi is already optimized for speed with efficient shims, smart caching, and lazy loading.
 
 ## Security Questions
 
@@ -513,17 +493,7 @@ Yes, Kopi implements several security measures:
 
 ### Can I disable security checks?
 
-Not recommended, but possible for development:
-
-```bash
-# Disable checksum verification
-export KOPI_VERIFY_CHECKSUMS=false
-
-# Disable certificate verification
-export KOPI_VERIFY_CERTIFICATES=false
-```
-
-**Never disable in production!**
+No, Kopi always performs security checks for safety. Checksum verification and certificate validation are mandatory for all downloads to ensure JDK integrity and security.
 
 ## Next Steps
 

@@ -101,13 +101,13 @@ $ java --version
 kopi current --verbose
 
 # Check for overrides
-env | grep KOPI_VERSION
+env | grep KOPI_JAVA_VERSION
 ```
 
 2. **Clear overrides**:
 ```bash
 # Clear environment override
-unset KOPI_VERSION
+unset KOPI_JAVA_VERSION
 ```
 
 3. **Verify version files**:
@@ -216,8 +216,7 @@ kopi -v install 21
 
 1. **Increase timeout**:
 ```bash
-export KOPI_NETWORK_TIMEOUT=600
-kopi install 21
+kopi install --timeout 600 21
 ```
 
 2. **Configure proxy** (if behind firewall):
@@ -501,16 +500,13 @@ kopi doctor --fix
 Enable detailed logging:
 
 ```bash
-# General debug
-export KOPI_DEBUG=1
+# Use Rust's env_logger for debugging
+RUST_LOG=debug kopi install 21
+RUST_LOG=trace kopi current
 
-# Component-specific
-export KOPI_DEBUG_METADATA=1
-export KOPI_DEBUG_CACHE=1
-export KOPI_DEBUG_SHIM=1
-
-# Trace level
-export KOPI_TRACE=all
+# Component-specific debugging
+RUST_LOG=kopi::cache=debug kopi cache refresh
+RUST_LOG=kopi::shim=trace kopi shim list
 ```
 
 ### Manual Checks
@@ -566,7 +562,7 @@ kopi doctor --system-info
 
 2. **Error output**:
 ```bash
-KOPI_DEBUG=1 kopi [command] 2>&1 | tee error.log
+RUST_LOG=debug kopi [command] 2>&1 | tee error.log
 ```
 
 3. **Cache information**:

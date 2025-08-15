@@ -118,7 +118,7 @@ kopi search --lts-only
 
 Kopi resolves versions in this priority:
 
-1. Environment variable (`KOPI_VERSION`)
+1. Environment variable (`KOPI_JAVA_VERSION`)
 2. Shell override (`kopi shell` or `kopi use`)
 3. Project version file (`.kopi-version` or `.java-version`)
 4. Parent directory version files (recursive)
@@ -219,7 +219,7 @@ env | grep JAVA
 env | grep KOPI
 
 # Clear environment override
-unset KOPI_VERSION
+unset KOPI_JAVA_VERSION
 ```
 
 ## Next Steps

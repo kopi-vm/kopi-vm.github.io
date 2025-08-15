@@ -347,7 +347,7 @@ time ~/.kopi/shims/java --version
 kopi cache status
 
 # Profile execution
-KOPI_DEBUG=1 java --version
+RUST_LOG=debug java --version
 ```
 
 ### Command Not Found
@@ -370,14 +370,11 @@ kopi doctor
 Control shim behavior:
 
 ```bash
-# Skip version resolution
-KOPI_SKIP_SHIM=1 java --version
-
-# Debug mode
-KOPI_DEBUG=1 java MyApp
-
 # Force specific version
-KOPI_VERSION=21 java --version
+KOPI_JAVA_VERSION=21 java --version
+
+# Debug with Rust logging
+RUST_LOG=debug java MyApp
 ```
 
 ### Direct Binary Access

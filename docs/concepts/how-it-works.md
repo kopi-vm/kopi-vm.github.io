@@ -66,7 +66,7 @@ Kopi uses a hierarchical resolution strategy:
 
 ```
 Priority Order:
-1. KOPI_VERSION environment variable
+1. KOPI_JAVA_VERSION environment variable
 2. Shell override (kopi shell)
 3. .kopi-version in current directory
 4. .java-version in current directory

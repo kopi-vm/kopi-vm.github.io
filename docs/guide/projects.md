@@ -272,7 +272,7 @@ kopi current --verbose
 cat .kopi-version
 
 # Check for overrides
-env | grep KOPI_VERSION
+env | grep KOPI_JAVA_VERSION
 ```
 
 ## Next Steps

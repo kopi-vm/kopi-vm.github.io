@@ -367,7 +367,7 @@ services:
   app:
     build: .
     environment:
-      - KOPI_VERSION=21
+      - KOPI_JAVA_VERSION=21
     volumes:
       - ~/.kopi:/root/.kopi:cached
     ports:

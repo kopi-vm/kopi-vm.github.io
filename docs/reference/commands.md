@@ -393,31 +393,22 @@ Variables that affect Kopi behavior:
 
 ```bash
 # Force specific JDK version
-export KOPI_VERSION=21
+export KOPI_JAVA_VERSION=21
 
-# Skip shim processing
-export KOPI_SKIP_SHIM=1
+# Override Kopi home directory
+export KOPI_HOME=/opt/kopi
 
-# Enable debug output
-export KOPI_DEBUG=1
+# Enable debug output (using Rust's env_logger)
+RUST_LOG=debug kopi install 21
+RUST_LOG=trace kopi current
 
-# Specific debug categories
-export KOPI_DEBUG_METADATA=1
-export KOPI_DEBUG_CACHE=1
-export KOPI_DEBUG_SHIM=1
-
-# Force offline mode
-export KOPI_OFFLINE=1
-
-# Custom cache directory
-export KOPI_CACHE_DIR=/tmp/kopi-cache
-
-# Custom config file
-export KOPI_CONFIG=/path/to/config.toml
-
-# Disable colors
-export NO_COLOR=1
+# Standard proxy variables
+export HTTP_PROXY=http://proxy:8080
+export HTTPS_PROXY=http://proxy:8080
+export NO_PROXY=localhost,*.internal.com
 ```
+
+See [Environment Variables](environment.md) for complete reference.
 
 ## Exit Codes
 

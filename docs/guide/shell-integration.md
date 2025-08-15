@@ -132,7 +132,7 @@ echo $JAVA_HOME  # Points to active JDK
 echo $PATH       # Includes JDK bin directory
 
 # Manual override
-export KOPI_VERSION=17  # Force JDK 17
+export KOPI_JAVA_VERSION=17  # Force JDK 17
 ```
 
 ## Advanced Configuration
@@ -250,7 +250,7 @@ kopi current --verbose
 
 # Clear any overrides
 unset JAVA_HOME
-unset KOPI_VERSION
+unset KOPI_JAVA_VERSION
 
 # Verify shell integration
 kopi doctor

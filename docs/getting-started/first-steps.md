@@ -108,7 +108,7 @@ Once shell integration is configured, Kopi automatically switches JDK versions w
 kopi shell 11
 
 # Run single command with different JDK
-KOPI_VERSION=17 java --version
+KOPI_JAVA_VERSION=17 java --version
 ```
 
 ## Tips and Best Practices

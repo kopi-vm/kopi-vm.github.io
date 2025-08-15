@@ -361,13 +361,13 @@ cat .kopi-version
 
 ```bash
 # Check for overrides
-env | grep KOPI_VERSION
+env | grep KOPI_JAVA_VERSION
 
 # Check shell override
 kopi shell --status
 
 # Clear overrides
-unset KOPI_VERSION
+unset KOPI_JAVA_VERSION
 kopi shell --unset
 ```
 
