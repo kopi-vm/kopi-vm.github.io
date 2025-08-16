@@ -3468,7 +3468,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": true
+    "latest_build_available": false
   },
   {
     "id": "e6e444f0d62c6d798bbeadadb06dd2a4",

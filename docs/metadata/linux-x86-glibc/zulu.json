@@ -21274,44 +21274,6 @@
     "latest_build_available": false
   },
   {
-    "id": "514959764eb3a5d26ef691b1c19e5d9b",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        8,
-        0,
-        265
-      ],
-      "build": [
-        11
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        8,
-        48,
-        0,
-        53
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x86",
-    "operating_system": "linux",
-    "package_type": "jdk",
-    "archive_type": "targz",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu8.48.0.53-ca-fx-jdk8.0.265-linux_i686.tar.gz",
-    "checksum": "dbe21c122659819b33ca65ea37689ed7ea6644d44f24da9e22e7dca4b6491c59",
-    "checksum_type": "sha256",
-    "size": 156450811,
-    "lib_c_type": "glibc",
-    "javafx_bundled": true,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
     "id": "5cad8ee9d5a67719401a388225c39948",
     "distribution": "zulu",
     "version": {
