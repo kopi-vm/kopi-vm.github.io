@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "devDependencies": {
+    "markdownlint-cli2": "0.18.1",
+    "npm-run-all2": "8.0.4",
+    "prettier": "3.6.2"
+  },
+  "markdownlint-cli2": {
+    "config": {
+      "extends": "markdownlint/style/prettier"
+    }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 120
+  },
+  "scripts": {
+    "lint": "run-p lint:*",
+    "lint:md": "markdownlint-cli2 .",
+    "lint:prettier": "prettier --check .",
+    "format": "run-p format:*",
+    "format:md": "markdownlint-cli2 --fix .",
+    "format:prettier": "prettier --write ."
+  }
+}
