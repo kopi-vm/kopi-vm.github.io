@@ -386,12 +386,21 @@ kopi which --tool jar temurin@17
 
 ### kopi doctor
 
-Run diagnostics on your Kopi installation. This command checks for common issues with shell configuration, shims, permissions, and installed JDKs.
+Run diagnostics on your Kopi installation. This command checks for common issues across various categories including installation, shell configuration, JDKs, permissions, network, and cache.
 
-| Option               | Short | Description                            |
-| -------------------- | ----- | -------------------------------------- |
-| `--json`             |       | Machine-readable output                |
-| `--check <CATEGORY>` |       | Run only specific categories of checks |
+| Option               | Short | Description                                                                                   |
+| -------------------- | ----- | --------------------------------------------------------------------------------------------- |
+| `--json`             |       | Output results in JSON format for automation                                                  |
+| `--check <CATEGORY>` |       | Run only specific category of checks (installation, shell, jdks, permissions, network, cache) |
+
+Available check categories:
+
+- **installation**: Verifies Kopi binary, version, directories, configuration files, and shims in PATH
+- **shell**: Checks shell detection, PATH configuration, shell configuration, and shim functionality
+- **jdks**: Validates JDK installations, integrity, disk space usage, and version consistency
+- **permissions**: Examines directory and binary file permissions
+- **network**: Tests API connectivity, DNS resolution, proxy configuration, and TLS verification
+- **cache**: Inspects cache files, permissions, format validity, staleness, and size
 
 #### Examples
 
@@ -405,12 +414,15 @@ kopi doctor
 
 ```bash
 kopi doctor --check shell
+kopi doctor --check jdks
+kopi doctor --check network
 ```
 
 **Get JSON output for automation:**
 
 ```bash
 kopi doctor --json
+kopi doctor --check cache --json
 ```
 
 ### kopi setup
