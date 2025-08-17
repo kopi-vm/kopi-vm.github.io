@@ -21,6 +21,10 @@ graalvm@21.0.1
 # Version only (uses default distribution)
 21
 17.0.9
+
+# JRE format: jre@distribution@version
+jre@temurin@21
+jre@corretto@17
 ```
 
 **Examples:**
@@ -33,7 +37,7 @@ temurin@21
 corretto@17.0.9.8.1
 
 # GraalVM with exact version
-graalvm@21.0.1+12.1
+graalvm@21.0.1
 
 # Just major version (auto-selects distribution)
 21
@@ -44,30 +48,27 @@ graalvm@21.0.1+12.1
 For compatibility with other tools (jEnv, etc.):
 
 ```bash
-# Simple version number
+# Simple version number only
 17
 21
 11.0.2
-
-# Some tools support distribution prefix
-temurin-17
-corretto-21
 ```
 
 **Kopi's interpretation:**
 
-- Reads numeric versions
-- Auto-selects best distribution
-- Maintains compatibility with jEnv
+- Reads numeric versions only
+- Does not support distribution prefix in .java-version
+- Auto-selects best distribution based on configuration
 
 ## Version File Priority
 
 When multiple version files exist, Kopi uses this priority:
 
-1. `.kopi-version` (highest priority)
-2. `.java-version`
-3. Parent directory files (recursive)
-4. Global configuration
+1. `KOPI_JAVA_VERSION` environment variable (highest priority)
+2. `.kopi-version` in current directory
+3. `.java-version` in current directory
+4. Parent directory files (searched recursively up to root)
+5. Global configuration (`~/.kopi/version`)
 
 ```
 project/
@@ -82,14 +83,16 @@ project/
 ### Using Commands
 
 ```bash
-# Pin current JDK version
-kopi pin
-
-# Pin specific version
+# Pin specific version (creates .kopi-version)
+kopi local 21
+# or using the alias
 kopi pin 21
 
 # Pin with distribution
-kopi pin temurin@21
+kopi local temurin@21
+
+# Pin with JRE package type
+kopi local jre@temurin@21
 ```
 
 ### Manual Creation
@@ -103,7 +106,7 @@ echo "17" > .java-version
 
 # Using heredoc for complex versions
 cat > .kopi-version << EOF
-graalvm@21.0.1+12.1
+graalvm@21.0.1
 EOF
 ```
 
@@ -139,23 +142,7 @@ graalvm@21
 # Distribution with full version
 temurin@21.0.2+13
 corretto@17.0.9.8.1
-graalvm@21.0.1+12.1
-```
-
-### Version Constraints
-
-```bash
-# Minimum version (future feature)
->=21.0.1
-
-# Version range (future feature)
->=17.0.0 <18.0.0
-
-# Latest LTS (future feature)
-lts
-
-# Latest version (future feature)
-latest
+graalvm@21.0.1
 ```
 
 ## Directory Hierarchy
@@ -298,52 +285,6 @@ git add .kopi-version
 git commit -m "Set JDK version to Temurin 21"
 ```
 
-### 5. Validate in CI/CD
-
-```yaml
-# In CI pipeline
-- name: Validate JDK version
-  run: |
-    expected=$(cat .kopi-version)
-    actual=$(kopi current)
-    if [ "$actual" != "$expected" ]; then
-      echo "Version mismatch!"
-      exit 1
-    fi
-```
-
-## Migration from Other Formats
-
-### From .sdkmanrc
-
-```bash
-# SDKMAN! format
-java=17.0.2-tem
-
-# Convert to Kopi
-temurin@17.0.2
-```
-
-### From .tool-versions
-
-```bash
-# asdf format
-java adoptopenjdk-17.0.2
-
-# Convert to Kopi
-temurin@17.0.2
-```
-
-### From .nvmrc Style
-
-```bash
-# Node.js style version file
-17
-
-# Works as-is with Kopi (.java-version)
-17
-```
-
 ## Troubleshooting
 
 ### Version File Not Detected
@@ -354,7 +295,10 @@ pwd
 ls -la .kopi-version .java-version
 
 # Check version resolution
-kopi current --verbose
+kopi current
+
+# Check with JSON output for details
+kopi current --json
 
 # Verify file contents
 cat .kopi-version
@@ -366,75 +310,27 @@ cat .kopi-version
 # Check for overrides
 env | grep KOPI_JAVA_VERSION
 
-# Check shell override
-kopi shell --status
+# Check current version
+kopi current
 
-# Clear overrides
+# Clear environment override
 unset KOPI_JAVA_VERSION
-kopi shell --unset
 ```
 
 ### Invalid Version Format
 
 ```bash
-# Validate version file
-kopi validate .kopi-version
-
 # Common issues:
 # - Windows line endings (use dos2unix)
 # - Extra whitespace (trim with sed)
 # - Invalid distribution name
-```
+# - Invalid version format
 
-## Advanced Features
+# Fix Windows line endings
+dos2unix .kopi-version
 
-### Dynamic Version Files
-
-Generate version files based on environment:
-
-```bash
-#!/bin/bash
-# generate-version.sh
-
-if [ "$ENV" = "production" ]; then
-    echo "temurin@21.0.2+13" > .kopi-version
-else
-    echo "temurin@22" > .kopi-version
-fi
-```
-
-### Version File Templates
-
-Use templates for consistency:
-
-```bash
-# .kopi-version.template
-${DISTRIBUTION}@${VERSION}
-
-# Generate from template
-envsubst < .kopi-version.template > .kopi-version
-```
-
-### Conditional Versions
-
-Script-based version selection:
-
-```bash
-#!/bin/bash
-# Set JDK based on branch
-
-branch=$(git branch --show-current)
-case "$branch" in
-    main|master)
-        kopi pin temurin@21
-        ;;
-    develop)
-        kopi pin temurin@22
-        ;;
-    release/*)
-        kopi pin temurin@21.0.2+13
-        ;;
-esac
+# Remove extra whitespace
+sed -i 's/[[:space:]]*$//' .kopi-version
 ```
 
 ## Next Steps
