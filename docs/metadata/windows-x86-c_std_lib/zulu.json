@@ -3402,43 +3402,6 @@
     "latest_build_available": false
   },
   {
-    "id": "b92ff35d171cf1e2e482801bb4e5ba12",
-    "distribution": "zulu",
-    "version": {
-      "components": [
-        17,
-        0,
-        4
-      ],
-      "build": [
-        8
-      ],
-      "pre_release": null
-    },
-    "distribution_version": {
-      "components": [
-        17,
-        36,
-        15
-      ],
-      "build": null,
-      "pre_release": null
-    },
-    "architecture": "x86",
-    "operating_system": "windows",
-    "package_type": "jdk",
-    "archive_type": "zip",
-    "download_url": "https://cdn.azul.com/zulu/bin/zulu17.36.15-ca-jdk17.0.4-win_i686.zip",
-    "checksum": "9bc03c9e2be923d7e13f68e29c0198dddfaa19f006dd4199dbda32fa523ac2e5",
-    "checksum_type": "sha256",
-    "size": 189974453,
-    "lib_c_type": "c_std_lib",
-    "javafx_bundled": false,
-    "term_of_support": "lts",
-    "release_status": "ga",
-    "latest_build_available": false
-  },
-  {
     "id": "c7ca2d713cb68a5ec358b15f06d00010",
     "distribution": "zulu",
     "version": {

@@ -248,7 +248,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "686a0dfb7aed41b06f58ae7e0e575264",
@@ -462,7 +462,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "ccb1be93f338a1d357d6ea9f79d2e323",
@@ -1344,7 +1344,7 @@
     "javafx_bundled": false,
     "term_of_support": "sts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "d26203f6d90342f1bbb9849515a23b04",
@@ -1638,7 +1638,7 @@
     "javafx_bundled": false,
     "term_of_support": "lts",
     "release_status": "ga",
-    "latest_build_available": false
+    "latest_build_available": true
   },
   {
     "id": "604d461ee1cfa49cb9e334e234c0ffc4",
