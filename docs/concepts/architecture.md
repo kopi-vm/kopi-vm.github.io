@@ -238,4 +238,3 @@ graph TD
 - [Version Files](version-files.md) - Version configuration
 - [Shims](shims.md) - Command interception details
 - [Metadata System](metadata.md) - JDK discovery and metadata
-- [Caching](caching.md) - Cache management

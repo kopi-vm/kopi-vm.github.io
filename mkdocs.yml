@@ -52,7 +52,6 @@ nav:
       - Version Files: concepts/version-files.md
       - Shims: concepts/shims.md
       - Metadata System: concepts/metadata.md
-      - Caching: concepts/caching.md
   - Reference:
       - Commands: reference/commands.md
       - Configuration: reference/configuration.md
