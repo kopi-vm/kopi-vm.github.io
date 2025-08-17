@@ -24,10 +24,29 @@
       "Bash(kill:*)",
       "Bash(chmod:*)",
       "Bash(npm run:*)",
-      "Bash(mkdocs:*)"
+      "Bash(mkdocs:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_install",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_navigate_back",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_press_key"
     ],
-    "deny": ["Bash(sudo:*)", "Bash(git push:*)", "Bash(git commit:*)", "Bash(git reset:*)", "Bash(git rebase:*)"],
-    "additionalDirectories": ["/workspaces/kopi-workspace/kopi/"]
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(git reset:*)",
+      "Bash(git rebase:*)"
+    ],
+    "additionalDirectories": [
+      "/workspaces/kopi-workspace/kopi/"
+    ]
   },
-  "enabledMcpjsonServers": ["playwright"]
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
 }
