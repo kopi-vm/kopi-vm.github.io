@@ -519,5 +519,5 @@ kopi search <version>
 ## Next Steps
 
 - [Commands](commands.md) - Command reference
-- [JDK Distributions Guide](../guide/distributions.md) - Detailed comparison
+- [Managing Versions](../guide/managing-versions.md) - Working with distributions
 - [Installation](../getting-started/installation.md) - Getting started

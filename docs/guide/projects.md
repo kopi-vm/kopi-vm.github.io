@@ -108,6 +108,6 @@ If you have Kopi installed, the required JDK will be automatically installed whe
 
 ## Next Steps
 
-- [CI/CD Integration](ci-cd.md) - Automated builds
 - [Shell Integration](shell-integration.md) - Shell configuration
-- [Migration Guide](migration.md) - Migrating from other tools
+- [Managing Versions](managing-versions.md) - Version management
+- [Configuration](../reference/configuration.md) - Advanced configuration

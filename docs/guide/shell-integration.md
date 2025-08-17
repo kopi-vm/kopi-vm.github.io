@@ -245,6 +245,6 @@ refreshenv
 
 ## Next Steps
 
-- [CI/CD Integration](ci-cd.md) - Automated builds
 - [Working with Projects](projects.md) - Project configuration
+- [Managing Versions](managing-versions.md) - Version management
 - [Troubleshooting](../troubleshooting.md) - Common issues

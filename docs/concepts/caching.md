@@ -308,6 +308,5 @@ kopi cache search 21
 
 ## Next Steps
 
-- [How Kopi Works](how-it-works.md) - System overview
-- [Version Management](../reference/version-management.md) - Version patterns
-- [Commands Reference](../reference/commands.md#cache) - Cache commands
+- [Architecture](architecture.md) - System overview
+- [Commands Reference](../reference/commands.md) - Cache commands and version patterns

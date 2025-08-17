@@ -470,5 +470,5 @@ impl RateLimiter {
 ## Next Steps
 
 - [Caching](caching.md) - Cache management
-- [How Kopi Works](how-it-works.md) - System overview
+- [Architecture](architecture.md) - System overview
 - [Configuration](../reference/configuration.md) - Metadata configuration
