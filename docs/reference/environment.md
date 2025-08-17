@@ -48,64 +48,63 @@ export KOPI_HOME=/opt/kopi
 
 These environment variables override settings from the configuration file. They follow the pattern `KOPI_<SECTION>__<KEY>` where section names are uppercase and nested keys are separated by double underscores.
 
-### KOPI_DEFAULT_DISTRIBUTION
+### General Configuration
 
-Override the default JDK distribution.
+| Variable                        | Description                          | Default   | Type   |
+| ------------------------------- | ------------------------------------ | --------- | ------ |
+| `KOPI_DEFAULT_DISTRIBUTION`     | Default JDK distribution             | `temurin` | String |
+| `KOPI_ADDITIONAL_DISTRIBUTIONS` | Additional distributions to consider | `[]`      | Array  |
+
+### Storage Configuration
+
+| Variable                          | Description                       | Default | Type    |
+| --------------------------------- | --------------------------------- | ------- | ------- |
+| `KOPI_STORAGE__MIN_DISK_SPACE_MB` | Minimum required disk space in MB | `500`   | Integer |
+
+### Auto-Install Configuration
+
+| Variable                          | Description                         | Default | Type    |
+| --------------------------------- | ----------------------------------- | ------- | ------- |
+| `KOPI_AUTO_INSTALL__ENABLED`      | Enable automatic JDK installation   | `true`  | Boolean |
+| `KOPI_AUTO_INSTALL__PROMPT`       | Prompt before auto-installation     | `true`  | Boolean |
+| `KOPI_AUTO_INSTALL__TIMEOUT_SECS` | Timeout for auto-install operations | `300`   | Integer |
+
+### Shims Configuration
+
+| Variable                          | Description                              | Default | Type    |
+| --------------------------------- | ---------------------------------------- | ------- | ------- |
+| `KOPI_SHIMS__AUTO_CREATE_SHIMS`   | Automatically create shims for JDK tools | `true`  | Boolean |
+| `KOPI_SHIMS__ADDITIONAL_TOOLS`    | Additional tools to create shims for     | `[]`    | Array   |
+| `KOPI_SHIMS__EXCLUDE_TOOLS`       | Tools to exclude from shim creation      | `[]`    | Array   |
+| `KOPI_SHIMS__AUTO_INSTALL`        | Auto-install JDK when shim is executed   | `false` | Boolean |
+| `KOPI_SHIMS__AUTO_INSTALL_PROMPT` | Prompt before shim auto-install          | `true`  | Boolean |
+| `KOPI_SHIMS__INSTALL_TIMEOUT`     | Timeout for shim installations (seconds) | `600`   | Integer |
+
+### Metadata Cache Configuration
+
+| Variable                                | Description                         | Default | Type    |
+| --------------------------------------- | ----------------------------------- | ------- | ------- |
+| `KOPI_METADATA__CACHE__MAX_AGE_HOURS`   | Maximum age of cached metadata      | `720`   | Integer |
+| `KOPI_METADATA__CACHE__AUTO_REFRESH`    | Automatically refresh expired cache | `true`  | Boolean |
+| `KOPI_METADATA__CACHE__REFRESH_ON_MISS` | Refresh cache when item not found   | `true`  | Boolean |
+
+### Examples
 
 ```bash
-# Use Corretto as default instead of Temurin
+# Set default distribution to Corretto
 export KOPI_DEFAULT_DISTRIBUTION=corretto
-kopi install 21  # Installs corretto@21
-```
 
-**Default**: `temurin`  
-**Values**: Any valid distribution name (temurin, corretto, zulu, etc.)
-
-### KOPI_STORAGE\_\_MIN_DISK_SPACE_MB
-
-Minimum required disk space in MB for JDK installations.
-
-```bash
 # Require at least 1GB free space
 export KOPI_STORAGE__MIN_DISK_SPACE_MB=1024
-```
 
-**Default**: `500`  
-**Unit**: Megabytes
+# Disable auto-installation prompts
+export KOPI_AUTO_INSTALL__PROMPT=false
 
-### Auto-Install Settings
+# Exclude specific tools from shim creation
+export KOPI_SHIMS__EXCLUDE_TOOLS="jvisualvm,jconsole"
 
-Control automatic JDK installation behavior.
-
-```bash
-# Enable auto-installation
-export KOPI_AUTO_INSTALL__ENABLED=true
-
-# Enable prompting before auto-install
-export KOPI_AUTO_INSTALL__PROMPT=true
-
-# Set timeout for auto-install operations (seconds)
-export KOPI_AUTO_INSTALL__TIMEOUT_SECS=300
-```
-
-### Shim Settings
-
-```bash
-# Control automatic shim creation
-export KOPI_SHIMS__AUTO_CREATE_SHIMS=true
-```
-
-### Cache Settings
-
-```bash
-# Maximum age of cache in hours
-export KOPI_CACHE__MAX_AGE_HOURS=24
-
-# Enable automatic cache refresh
-export KOPI_CACHE__AUTO_REFRESH=true
-
-# Refresh cache when requested item is not found
-export KOPI_CACHE__REFRESH_ON_MISS=true
+# Set longer cache retention (60 days)
+export KOPI_METADATA__CACHE__MAX_AGE_HOURS=1440
 ```
 
 ## Debug Logging
@@ -255,64 +254,3 @@ When resolving which JDK version to use, Kopi checks in this order:
 2. `.kopi-version` file in current or parent directories
 3. `.java-version` file in current or parent directories
 4. Global default from configuration
-
-## Best Practices
-
-### CI/CD
-
-```bash
-# Set specific version for CI builds
-export KOPI_JAVA_VERSION=$(cat .kopi-version)
-
-# Use for GitHub Actions, GitLab CI, etc.
-```
-
-### Corporate Networks
-
-```bash
-# Configure proxy settings
-export HTTP_PROXY=http://proxy.corp.com:8080
-export HTTPS_PROXY=http://proxy.corp.com:8080
-export NO_PROXY=localhost,*.corp.com
-```
-
-### Testing Multiple Versions
-
-```bash
-# Temporarily override version
-KOPI_JAVA_VERSION=17 mvn test
-KOPI_JAVA_VERSION=21 mvn test
-```
-
-## Debugging
-
-### Check Active Variables
-
-```bash
-# Show all Kopi-related variables
-env | grep KOPI
-
-# Show Java-related variables
-env | grep -E "(JAVA|JDK)"
-
-# Check specific configuration
-kopi current  # Shows active JDK and source
-```
-
-### Variable Not Working?
-
-```bash
-# Ensure variable is exported
-export KOPI_JAVA_VERSION=21  # Correct
-KOPI_JAVA_VERSION=21         # Wrong (not exported)
-
-# Check variable spelling
-export KOPI_JAVA_VERSION=21  # Correct
-export KOPI_VERSION=21        # Wrong (old name)
-```
-
-## Next Steps
-
-- [Configuration](configuration.md) - Configuration file reference
-- [Commands](commands.md) - Command reference
-- [Troubleshooting](../troubleshooting.md) - Common issues
