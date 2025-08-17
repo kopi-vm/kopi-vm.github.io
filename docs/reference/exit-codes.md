@@ -1,667 +1,229 @@
 # Exit Codes
 
-Reference for Kopi exit codes and their meanings.
+Reference for Kopi exit codes and their meanings based on the actual implementation.
 
 ## Standard Exit Codes
 
 ### 0 - Success
 
-The command completed successfully.
-
-```bash
-kopi install 21
-echo $?  # 0
-```
+The command completed successfully without any errors.
 
 ### 1 - General Error
 
-An unspecified error occurred.
-
-```bash
-kopi invalid-command
-echo $?  # 1
-```
+An unspecified error occurred during command execution. This is the default exit code for errors that don't have a specific code assigned.
 
 **Common causes**:
 
-- Unknown error
-- Unhandled exception
-- Generic failure
+- I/O errors
+- JSON parsing errors
+- ZIP archive errors
+- File system walk errors
+- Thread panics
+- Cache not found
+- General system errors
+- Not implemented features
 
 **Resolution**:
 
-- Check error message
-- Enable debug mode (`KOPI_DEBUG=1`)
-- Report issue if persistent
+- Check the error message for specific details
+- Enable debug mode by setting KOPI_DEBUG environment variable to 1
+- Report the issue if it persists
 
-## Command and Argument Errors
+## Command and Configuration Errors
 
-### 2 - Invalid Command or Arguments
+### 2 - Invalid Format or Configuration
 
-The command syntax is incorrect or arguments are invalid.
-
-```bash
-kopi install
-# Error: Missing required argument: VERSION
-echo $?  # 2
-
-kopi install --invalid-flag 21
-# Error: Unknown option: --invalid-flag
-echo $?  # 2
-```
+The command received invalid input or configuration.
 
 **Common causes**:
 
-- Missing required arguments
-- Unknown command
-- Invalid option flags
-- Incorrect argument format
+- Invalid version format specification
+- Invalid configuration values
+- Validation errors in input parameters
 
 **Resolution**:
 
-- Check command syntax with `--help`
-- Verify argument format
-- Update Kopi if command should exist
+- Check the version format (use proper syntax like "21", "temurin@21", etc.)
+- Verify configuration file syntax and values
+- Review command arguments for correct format
 
-### 3 - Version File Not Found
+### 3 - No Local Version
 
-No version file found in current or parent directories.
-
-```bash
-cd /tmp/no-version-file
-kopi current
-# Error: No .kopi-version or .java-version file found
-echo $?  # 3
-```
+No JDK version configured for the current project.
 
 **Common causes**:
 
-- No `.kopi-version` or `.java-version` file
-- Not in a project directory
-- File deleted or renamed
+- No .kopi-version or .java-version file found in current or parent directories
+- Not in a project directory with version configuration
 
 **Resolution**:
 
-- Create version file: `kopi pin 21`
-- Navigate to project directory
-- Set global default: `kopi use 21`
+- Create a version file using the pin command
+- Navigate to a project directory with a version file
+- Set a global default using the use command
 
 ### 4 - JDK Not Installed
 
-The requested JDK version is not installed.
-
-```bash
-kopi use temurin@99
-# Error: JDK temurin@99 is not installed
-echo $?  # 4
-```
+The requested JDK version is not installed on the system.
 
 **Common causes**:
 
-- JDK not yet installed
-- Typo in version specification
-- JDK was uninstalled
+- JDK has not been installed yet
+- Specified version doesn't exist
+- JDK was previously uninstalled
+- Auto-install was declined by user
+- Auto-install failed
 
 **Resolution**:
 
-- Install JDK: `kopi install <version>`
-- List installed: `kopi list`
-- Check available: `kopi search`
+- Install the JDK using the install command
+- List installed JDKs with the list command
+- Check available versions with the search command
+- Enable auto-install if desired
 
-## Installation and Download Errors
+### 5 - Tool Not Found
 
-### 5 - Installation Failed
-
-JDK installation failed.
-
-```bash
-kopi install invalid@version
-# Error: Failed to install JDK
-echo $?  # 5
-```
+A required tool was not found in the JDK installation.
 
 **Common causes**:
 
-- Invalid version specified
-- Download failed
-- Extraction failed
-- Verification failed
+- Tool doesn't exist in the specified JDK
+- JDK installation is corrupted or incomplete
+- Looking for a tool that's not part of the JDK
 
 **Resolution**:
 
-- Verify version exists: `kopi search`
-- Check network connection
-- Clear cache: `kopi cache clear`
-- Retry with `--force`
+- Verify the tool name is correct
+- Check which tools are available in the JDK
+- Reinstall the JDK if installation appears corrupted
 
-### 6 - Download Failed
+## Shell Integration Errors
 
-Failed to download JDK archive.
+### 6 - Shell Detection Error
 
-```bash
-# With network issues
-kopi install 21
-# Error: Failed to download JDK archive
-echo $?  # 6
-```
+Failed to detect the current shell environment.
 
 **Common causes**:
 
-- Network connectivity issues
-- Proxy configuration problems
-- Server unavailable
-- Timeout
+- Unable to determine shell type
+- Shell environment variables not set properly
+- Running in an unsupported environment
 
 **Resolution**:
 
-- Check internet connection
-- Configure proxy if needed
-- Increase timeout: `KOPI_NETWORK_TIMEOUT=300`
-- Try different mirror/distribution
+- Manually specify the shell type
+- Check shell environment variables
+- Run Kopi from a supported shell
 
-### 7 - Checksum Verification Failed
+### 7 - Unsupported Shell
 
-Downloaded file failed checksum verification.
-
-```bash
-kopi install 21
-# Error: Checksum verification failed
-echo $?  # 7
-```
+The detected shell is not supported by Kopi.
 
 **Common causes**:
 
-- Corrupted download
-- Man-in-the-middle attack
-- Wrong checksum in metadata
+- Using a shell that Kopi doesn't support
+- Shell version too old or too new
+- Custom or uncommon shell
 
 **Resolution**:
 
-- Retry download
-- Clear downloads: `kopi cache clear --downloads`
-- Update metadata: `kopi cache update`
-- Report if persistent
+- Switch to a supported shell (bash, zsh, fish, etc.)
+- Check Kopi documentation for supported shells
+- Use manual PATH configuration as a workaround
 
-### 8 - Extraction Failed
-
-Failed to extract JDK archive.
-
-```bash
-kopi install 21
-# Error: Failed to extract archive
-echo $?  # 8
-```
-
-**Common causes**:
-
-- Corrupted archive
-- Insufficient disk space
-- Permission issues
-- Unsupported archive format
-
-**Resolution**:
-
-- Check disk space: `df -h`
-- Clear downloads and retry
-- Check permissions
-- Update Kopi for format support
-
-## Configuration and System Errors
-
-### 10 - Configuration Error
-
-Configuration file is invalid or cannot be loaded.
-
-```bash
-kopi config validate
-# Error: Invalid configuration
-echo $?  # 10
-```
-
-**Common causes**:
-
-- Syntax error in config file
-- Invalid values
-- Missing required fields
-- Corrupted file
-
-**Resolution**:
-
-- Fix syntax errors
-- Reset config: `kopi config reset`
-- Check with: `kopi config validate`
-- Edit manually: `kopi config edit`
-
-### 11 - Metadata Error
-
-Metadata is corrupted or unavailable.
-
-```bash
-kopi search
-# Error: Failed to load metadata
-echo $?  # 11
-```
-
-**Common causes**:
-
-- Corrupted cache
-- Network issues
-- Invalid metadata format
-
-**Resolution**:
-
-- Update metadata: `kopi cache update --force`
-- Clear cache: `kopi cache clear`
-- Check network connectivity
-- Try offline mode if available
-
-### 12 - Cache Error
-
-Cache operations failed.
-
-```bash
-kopi cache update
-# Error: Failed to update cache
-echo $?  # 12
-```
-
-**Common causes**:
-
-- Permission issues
-- Disk full
-- Corrupted cache
-- I/O errors
-
-**Resolution**:
-
-- Check permissions on `~/.kopi/cache`
-- Free disk space
-- Clear cache: `kopi cache clear --all`
-- Check filesystem health
-
-## Permission and Access Errors
+## File System Errors
 
 ### 13 - Permission Denied
 
-Insufficient permissions for operation.
-
-```bash
-sudo kopi install 21  # If KOPI_HOME is protected
-# Error: Permission denied
-echo $?  # 13
-```
+Insufficient permissions for the requested operation.
 
 **Common causes**:
 
 - Protected directories
 - File ownership issues
 - Read-only filesystem
-- SELinux/AppArmor restrictions
+- SELinux or AppArmor restrictions
 
 **Resolution**:
 
-- Check file permissions
-- Use user installation (not root)
-- Fix ownership: `chown -R $USER ~/.kopi`
-- Check security policies
+- Check file and directory permissions
+- Use user installation instead of root
+- Fix ownership of .kopi directory in home folder
+- Check security policy configurations
 
-### 14 - Directory Not Found
+### 17 - Already Exists
 
-Required directory does not exist.
-
-```bash
-KOPI_HOME=/nonexistent kopi list
-# Error: Directory not found
-echo $?  # 14
-```
+The resource already exists and cannot be created again.
 
 **Common causes**:
 
-- KOPI_HOME misconfigured
-- Directory deleted
-- Mount point not available
+- JDK version already installed
+- Configuration file already exists
+- Shim already created
 
 **Resolution**:
 
-- Create directory: `mkdir -p ~/.kopi`
-- Fix KOPI_HOME variable
-- Run setup: `kopi setup`
+- Use the existing resource
+- Remove the existing resource if replacement is needed
+- Use force flag if available to override
 
-### 15 - File Not Found
-
-Required file does not exist.
-
-```bash
-kopi validate /nonexistent/file
-# Error: File not found
-echo $?  # 15
-```
-
-**Common causes**:
-
-- File deleted
-- Wrong path specified
-- File not created yet
-
-**Resolution**:
-
-- Verify file path
-- Create file if needed
-- Check working directory
-
-## Network Errors
+## Network and Resource Errors
 
 ### 20 - Network Error
 
-General network communication failure.
-
-```bash
-# With no internet
-kopi cache update
-# Error: Network error
-echo $?  # 20
-```
+Network-related operations failed.
 
 **Common causes**:
 
 - No internet connection
-- DNS resolution failure
-- Firewall blocking
-- SSL/TLS issues
+- HTTP request failed
+- Metadata fetch failed
+- DNS resolution issues
+- Proxy configuration problems
+- SSL/TLS certificate issues
 
 **Resolution**:
 
-- Check connectivity: `ping api.foojay.io`
-- Check DNS: `nslookup api.foojay.io`
-- Configure proxy if needed
-- Use offline mode: `KOPI_OFFLINE=1`
-
-### 21 - Timeout
-
-Operation timed out.
-
-```bash
-KOPI_NETWORK_TIMEOUT=1 kopi install 21
-# Error: Operation timed out
-echo $?  # 21
-```
-
-**Common causes**:
-
-- Slow network
-- Server not responding
-- Timeout too short
-
-**Resolution**:
-
-- Increase timeout: `KOPI_NETWORK_TIMEOUT=300`
-- Try again later
-- Use different mirror
-- Check server status
-
-### 22 - Proxy Error
-
-Proxy configuration or connection issues.
-
-```bash
-KOPI_HTTP_PROXY=invalid:proxy kopi install 21
-# Error: Proxy error
-echo $?  # 22
-```
-
-**Common causes**:
-
-- Invalid proxy settings
-- Proxy authentication required
-- Proxy server down
-
-**Resolution**:
-
-- Verify proxy settings
-- Include authentication: `http://user:pass@proxy:port`
-- Test proxy: `curl -x $KOPI_HTTP_PROXY https://api.foojay.io`
-- Bypass proxy: `KOPI_NO_PROXY=api.foojay.io`
-
-## Resource Errors
+- Check network connectivity
+- Verify proxy settings if behind a firewall
+- Check if metadata servers are accessible
+- Try using offline mode if available
+- Retry the operation
 
 ### 28 - Insufficient Disk Space
 
-Not enough disk space for operation.
-
-```bash
-# On full disk
-kopi install 21
-# Error: Insufficient disk space
-echo $?  # 28
-```
+Not enough disk space available for the operation.
 
 **Common causes**:
 
 - Disk full
-- Quota exceeded
+- User quota exceeded
 - Temporary directory full
+- Not enough space for JDK installation
 
 **Resolution**:
 
-- Free disk space
-- Clean downloads: `kopi cache clear --downloads`
-- Prune old JDKs: `kopi prune`
-- Use different disk: `KOPI_HOME=/other/disk/kopi`
+- Free disk space on the system
+- Clean downloads using cache clear command
+- Remove old JDKs using the prune command
+- Use different disk by setting KOPI_HOME environment variable
 
-### 29 - Memory Error
-
-Insufficient memory for operation.
-
-```bash
-# On low memory system
-kopi install 21
-# Error: Out of memory
-echo $?  # 29
-```
-
-**Common causes**:
-
-- System out of memory
-- Process limits too low
-- Memory leak
-
-**Resolution**:
-
-- Free memory
-- Increase limits: `ulimit -m unlimited`
-- Reduce parallel downloads: `KOPI_PARALLEL_DOWNLOADS=1`
-- Report issue if persistent
-
-## Shell and Environment Errors
-
-### 126 - Command Found but Not Executable
-
-Command exists but cannot be executed.
-
-```bash
-chmod -x ~/.kopi/shims/java
-java --version
-# Error: Permission denied
-echo $?  # 126
-```
-
-**Common causes**:
-
-- Missing execute permission
-- Wrong file type
-- Corrupted shim
-
-**Resolution**:
-
-- Fix permissions: `chmod +x ~/.kopi/shims/*`
-- Regenerate shims: `kopi setup --regenerate-shims`
-- Check file type: `file ~/.kopi/shims/java`
+## Command Not Found Errors
 
 ### 127 - Command Not Found
 
-Command or required program not found.
-
-```bash
-# If shims not in PATH
-java --version
-# Error: Command not found
-echo $?  # 127
-```
+Standard POSIX exit code for command not found.
 
 **Common causes**:
 
-- Shims not in PATH
-- Shell not configured
-- Required tool missing
+- Kopi binary not found in PATH
+- Shell not found in PATH
+- Shims directory not in PATH
+- Installation incomplete
 
 **Resolution**:
 
-- Add to PATH: `export PATH="$HOME/.kopi/shims:$PATH"`
-- Configure shell: `eval "$(kopi init bash)"`
-- Install missing tools
-- Run setup: `kopi setup`
-
-### 130 - Interrupted (Ctrl+C)
-
-Operation interrupted by user.
-
-```bash
-kopi install 21
-# Press Ctrl+C
-echo $?  # 130
-```
-
-**Common causes**:
-
-- User pressed Ctrl+C
-- SIGINT signal received
-
-**Resolution**:
-
-- Retry operation
-- Clean partial downloads
-- Use `--force` to restart
-
-## Using Exit Codes in Scripts
-
-### Bash Script Example
-
-```bash
-#!/bin/bash
-set -e  # Exit on error
-
-install_jdk() {
-    local version=$1
-
-    if kopi install "$version"; then
-        echo "Successfully installed $version"
-    else
-        case $? in
-            4)
-                echo "JDK already installed"
-                ;;
-            5)
-                echo "Installation failed, retrying..."
-                kopi install --force "$version"
-                ;;
-            20)
-                echo "Network error, trying offline"
-                KOPI_OFFLINE=1 kopi use "$version"
-                ;;
-            28)
-                echo "Disk full, cleaning up..."
-                kopi prune --force
-                kopi install "$version"
-                ;;
-            *)
-                echo "Unknown error: $?"
-                exit 1
-                ;;
-        esac
-    fi
-}
-
-install_jdk "21"
-```
-
-### CI/CD Example
-
-```yaml
-# GitHub Actions
-- name: Install JDK
-  run: |
-    kopi install $(cat .kopi-version) || {
-      code=$?
-      if [ $code -eq 4 ]; then
-        echo "::warning::JDK already installed"
-      else
-        echo "::error::Installation failed with code $code"
-        exit $code
-      fi
-    }
-```
-
-### Error Handling Function
-
-```bash
-handle_kopi_error() {
-    local exit_code=$1
-
-    case $exit_code in
-        0) return 0 ;;
-        2) echo "Check command syntax with: kopi --help" ;;
-        3) echo "Create version file with: kopi pin" ;;
-        4) echo "Install JDK with: kopi install" ;;
-        13) echo "Fix permissions: sudo chown -R $USER ~/.kopi" ;;
-        20) echo "Check network or use offline mode" ;;
-        28) echo "Free disk space with: kopi prune" ;;
-        127) echo "Configure shell: eval \"\$(kopi init bash)\"" ;;
-        *) echo "Error code $exit_code - check logs" ;;
-    esac
-
-    return $exit_code
-}
-
-# Usage
-kopi current || handle_kopi_error $?
-```
-
-## Debugging Exit Codes
-
-### Enable Debug Output
-
-```bash
-# See detailed error information
-KOPI_DEBUG=1 kopi install 21
-echo "Exit code: $?"
-```
-
-### Check System Errors
-
-```bash
-# Check system error
-strerror() {
-    python3 -c "import os; print(os.strerror($1))"
-}
-
-kopi install 21
-strerror $?
-```
-
-### Log Exit Codes
-
-```bash
-# Log all Kopi commands and exit codes
-kopi() {
-    command kopi "$@"
-    local code=$?
-    echo "[$(date)] kopi $@ = $code" >> ~/.kopi/commands.log
-    return $code
-}
-```
-
-## Next Steps
-
-- [Commands](commands.md) - Command reference
-- [Troubleshooting](../troubleshooting.md) - Common issues
-- [Environment Variables](environment.md) - Environment settings
+- Ensure Kopi is properly installed
+- Add Kopi to PATH environment variable
+- Configure shell using the init command
+- Reinstall Kopi if necessary
