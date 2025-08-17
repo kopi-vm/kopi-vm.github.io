@@ -16,6 +16,7 @@ bash: kopi: command not found
 **Solutions**:
 
 1. **Add Kopi to PATH**:
+
 ```bash
 # For bash
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
@@ -30,6 +31,7 @@ set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
 ```
 
 2. **Verify installation**:
+
 ```bash
 # Check if kopi exists
 ls ~/.cargo/bin/kopi
@@ -39,6 +41,7 @@ ls ~/.cargo/bin/kopi
 ```
 
 3. **Reinstall if needed**:
+
 ```bash
 cargo install kopi --force
 ```
@@ -55,6 +58,7 @@ $ java --version
 **Solutions**:
 
 1. **Configure shell integration**:
+
 ```bash
 # Add shims to PATH
 export PATH="$HOME/.kopi/shims:$PATH"
@@ -64,6 +68,7 @@ echo 'export PATH="$HOME/.kopi/shims:$PATH"' >> ~/.bashrc
 ```
 
 2. **Check PATH order**:
+
 ```bash
 echo $PATH
 # Ensure ~/.kopi/shims comes before system Java
@@ -73,11 +78,13 @@ export PATH="$HOME/.kopi/shims:$PATH"
 ```
 
 3. **Regenerate shims**:
+
 ```bash
 kopi setup --force
 ```
 
 4. **Run diagnostics**:
+
 ```bash
 kopi doctor
 ```
@@ -96,6 +103,7 @@ $ java --version
 **Solutions**:
 
 1. **Check version resolution**:
+
 ```bash
 # See what version Kopi thinks should be active
 kopi current --verbose
@@ -105,12 +113,14 @@ env | grep KOPI_JAVA_VERSION
 ```
 
 2. **Clear overrides**:
+
 ```bash
 # Clear environment override
 unset KOPI_JAVA_VERSION
 ```
 
 3. **Verify version files**:
+
 ```bash
 # Check current directory
 cat .kopi-version .java-version 2>/dev/null
@@ -120,6 +130,7 @@ find . -name ".kopi-version" -o -name ".java-version"
 ```
 
 4. **Set correct version**:
+
 ```bash
 # For project
 kopi local 21
@@ -138,12 +149,14 @@ kopi shell 21
 **Solutions**:
 
 1. **Check file exists and is readable**:
+
 ```bash
 ls -la .kopi-version .java-version
 # Check permissions
 ```
 
 2. **Verify file contents**:
+
 ```bash
 cat .kopi-version
 # Should contain: temurin@21 or similar
@@ -153,6 +166,7 @@ dos2unix .kopi-version
 ```
 
 3. **Create new version file**:
+
 ```bash
 # Remove old file
 rm .kopi-version
@@ -175,35 +189,41 @@ Error: Failed to install JDK
 **Solutions**:
 
 1. **Update metadata cache**:
+
 ```bash
 kopi cache refresh
 ```
 
 2. **Check available versions**:
+
 ```bash
 kopi search 21
 # Verify version exists
 ```
 
 3. **Clear cache and retry**:
+
 ```bash
 kopi cache clear
 kopi install 21
 ```
 
 4. **Try different distribution**:
+
 ```bash
 # If temurin fails, try corretto
 kopi install corretto@21
 ```
 
 5. **Check disk space**:
+
 ```bash
 df -h ~/.kopi
 # Need ~500MB per JDK
 ```
 
 6. **Enable verbose mode**:
+
 ```bash
 kopi -v install 21
 ```
@@ -215,11 +235,13 @@ kopi -v install 21
 **Solutions**:
 
 1. **Increase timeout**:
+
 ```bash
 kopi install --timeout 600 21
 ```
 
 2. **Configure proxy** (if behind firewall):
+
 ```bash
 export HTTP_PROXY=http://proxy:8080
 export HTTPS_PROXY=http://proxy:8080
@@ -227,6 +249,7 @@ kopi install 21
 ```
 
 3. **Try with increased timeout**:
+
 ```bash
 kopi install --timeout 600 21
 ```
@@ -238,12 +261,14 @@ kopi install --timeout 600 21
 **Solutions**:
 
 1. **Clear cache and retry**:
+
 ```bash
 kopi cache clear
 kopi install 21
 ```
 
 2. **Update metadata** (checksums might be outdated):
+
 ```bash
 kopi cache refresh
 kopi install 21
@@ -258,6 +283,7 @@ kopi install 21
 **Solutions**:
 
 1. **Configure proxy settings**:
+
 ```bash
 # Set proxy
 export HTTP_PROXY=http://user:pass@proxy.corp.com:8080
@@ -274,6 +300,7 @@ export NO_PROXY=localhost,*.corp.com,10.0.0.0/8
 **Solutions**:
 
 1. **Update system certificates**:
+
 ```bash
 # Ubuntu/Debian
 sudo apt-get update && sudo apt-get install ca-certificates
@@ -283,6 +310,7 @@ brew install ca-certificates
 ```
 
 2. **Use system certificates**:
+
 ```bash
 # The system certificates should be configured correctly
 ```
@@ -296,6 +324,7 @@ brew install ca-certificates
 **Solutions**:
 
 1. **Check shim performance**:
+
 ```bash
 time kopi current
 # Should be < 50ms
@@ -305,11 +334,13 @@ time java --version
 ```
 
 2. **Update cache**:
+
 ```bash
 kopi cache refresh
 ```
 
 3. **Profile execution**:
+
 ```bash
 kopi -vvv current
 ```
@@ -321,12 +352,14 @@ kopi -vvv current
 **Solutions**:
 
 1. **Check disk usage**:
+
 ```bash
 du -sh ~/.kopi/*
 du -sh ~/.kopi/jdks/*
 ```
 
 2. **Remove unused JDKs**:
+
 ```bash
 # List installed
 kopi list
@@ -339,10 +372,10 @@ kopi uninstall --all
 ```
 
 3. **Clear cache**:
+
 ```bash
 kopi cache clear
 ```
-
 
 ## Platform-Specific Issues
 
@@ -355,6 +388,7 @@ kopi cache clear
 **Solutions**:
 
 1. **Use appropriate initialization**:
+
 ```powershell
 # PowerShell
 kopi init powershell | Invoke-Expression
@@ -364,6 +398,7 @@ kopi init cmd
 ```
 
 2. **Check PATH format**:
+
 ```powershell
 # PowerShell uses semicolon
 $env:Path = "$env:USERPROFILE\.kopi\shims;$env:Path"
@@ -379,11 +414,13 @@ set PATH=%USERPROFILE%\.kopi\shims;%PATH%
 **Solutions**:
 
 1. **Use shorter KOPI_HOME**:
+
 ```powershell
 $env:KOPI_HOME = "C:\kopi"
 ```
 
 2. **Enable long path support** (Windows 10+):
+
 ```powershell
 # Run as Administrator
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
@@ -399,11 +436,13 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
 **Solutions**:
 
 1. **Remove quarantine**:
+
 ```bash
 xattr -r -d com.apple.quarantine ~/.kopi/jdks/
 ```
 
 2. **Configure auto-removal**:
+
 ```toml
 # ~/.kopi/config.toml
 [platform.macos]
@@ -417,11 +456,13 @@ remove_quarantine = true
 **Solutions**:
 
 1. **Install Rosetta**:
+
 ```bash
 softwareupdate --install-rosetta
 ```
 
 2. **Install x64 JDK**:
+
 ```bash
 kopi install --arch x64 temurin@21
 ```
@@ -435,16 +476,19 @@ kopi install --arch x64 temurin@21
 **Solutions**:
 
 1. **Fix ownership**:
+
 ```bash
 sudo chown -R $USER:$USER ~/.kopi
 ```
 
 2. **Check directory permissions**:
+
 ```bash
 chmod -R u+rwX ~/.kopi
 ```
 
 3. **SELinux/AppArmor**:
+
 ```bash
 # Check SELinux
 getenforce
@@ -460,6 +504,7 @@ sudo setenforce 0
 **Solutions**:
 
 1. **Check system library**:
+
 ```bash
 ldd --version  # Shows glibc version
 # or
@@ -467,6 +512,7 @@ apk info musl  # On Alpine
 ```
 
 2. **Configure preference**:
+
 ```toml
 # ~/.kopi/config.toml
 [preferences]
@@ -541,13 +587,13 @@ Understanding error messages:
 # Error format
 Error: <error type>
   <detailed message>
-  
+
 Suggestion: <helpful hint>
 
 # Example
 Error: JDK not found: temurin@25
   The requested JDK version is not available.
-  
+
 Suggestion: Run 'kopi search 25' to see available versions
 ```
 
@@ -556,21 +602,25 @@ Suggestion: Run 'kopi search 25' to see available versions
 When reporting issues, include:
 
 1. **System information**:
+
 ```bash
 kopi doctor --system-info
 ```
 
 2. **Error output**:
+
 ```bash
 RUST_LOG=debug kopi [command] 2>&1 | tee error.log
 ```
 
 3. **Cache information**:
+
 ```bash
 kopi cache info
 ```
 
 4. **Reproduction steps**:
+
 - Exact commands run
 - Expected behavior
 - Actual behavior

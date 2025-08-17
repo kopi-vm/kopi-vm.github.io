@@ -8,10 +8,10 @@ Kopi's configuration is stored in `~/.kopi/config.toml` using TOML format.
 
 ### File Location
 
-| Platform | Default Location |
-|----------|-----------------|
-| Linux/macOS | `~/.kopi/config.toml` |
-| Windows | `%USERPROFILE%\.kopi\config.toml` |
+| Platform    | Default Location                  |
+| ----------- | --------------------------------- |
+| Linux/macOS | `~/.kopi/config.toml`             |
+| Windows     | `%USERPROFILE%\.kopi\config.toml` |
 
 ### Creating Configuration
 

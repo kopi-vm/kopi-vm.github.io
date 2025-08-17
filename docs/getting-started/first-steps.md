@@ -40,7 +40,7 @@ kopi install temurin@17
 kopi install graalvm@21
 
 # Install exact version
-kopi install temurin@21.0.2+13.0.LTS
+kopi install temurin@21.0.2+13
 ```
 
 ### Managing Versions

@@ -61,7 +61,7 @@ kopi install 21  # Installs corretto@21
 **Default**: `temurin`  
 **Values**: Any valid distribution name (temurin, corretto, zulu, etc.)
 
-### KOPI_STORAGE__MIN_DISK_SPACE_MB
+### KOPI_STORAGE\_\_MIN_DISK_SPACE_MB
 
 Minimum required disk space in MB for JDK installations.
 
@@ -130,6 +130,7 @@ RUST_LOG=kopi::api=debug,kopi::download=trace kopi install 21
 ```
 
 **Log Levels** (from least to most verbose):
+
 - `error` - Only errors
 - `warn` - Warnings and errors
 - `info` - Informational messages
@@ -137,6 +138,7 @@ RUST_LOG=kopi::api=debug,kopi::download=trace kopi install 21
 - `trace` - Very detailed trace information
 
 **Examples**:
+
 ```bash
 # Debug version resolution
 RUST_LOG=kopi::version::resolver=debug kopi current
@@ -192,6 +194,7 @@ export NO_PROXY=localhost,*.internal.com
 ```
 
 **Notes:**
+
 - Proxy settings are automatically detected from environment variables
 - Both uppercase and lowercase variable names are supported
 - Authentication credentials can be included in the proxy URL

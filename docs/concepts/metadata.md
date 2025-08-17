@@ -54,6 +54,7 @@ Fast, offline-capable metadata hosted at kopi-vm.github.io:
 ```
 
 **Advantages:**
+
 - Fast access (CDN-hosted)
 - Offline capability
 - Reduced API calls
@@ -78,6 +79,7 @@ struct FoojayQuery {
 ```
 
 **Advantages:**
+
 - Always up-to-date
 - Comprehensive coverage
 - Official source
@@ -156,12 +158,12 @@ async fn fetch_metadata() -> Result<Metadata> {
     if let Ok(cached) = fetch_precached().await {
         return Ok(cached);
     }
-    
+
     // Fall back to Foojay API
     if let Ok(api_data) = fetch_foojay().await {
         return Ok(api_data);
     }
-    
+
     // Use local cache as last resort
     load_local_cache()
 }
@@ -175,7 +177,7 @@ struct CacheStrategy {
     const PRECACHED_TTL: Duration = Duration::hours(24);
     const API_TTL: Duration = Duration::hours(6);
     const OFFLINE_TTL: Duration = Duration::days(30);
-    
+
     fn should_refresh(&self, cache: &Cache) -> bool {
         match cache.source {
             Source::PreCached => cache.age() > Self::PRECACHED_TTL,
@@ -191,18 +193,18 @@ struct CacheStrategy {
 ```rust
 fn merge_metadata(sources: Vec<Metadata>) -> Metadata {
     let mut merged = Metadata::new();
-    
+
     for source in sources {
         for dist in source.distributions {
             // Merge versions, preferring newer
             merged.add_or_update(dist);
         }
     }
-    
+
     // Deduplicate and sort
     merged.deduplicate();
     merged.sort_by_version();
-    
+
     merged
 }
 ```
@@ -222,7 +224,7 @@ impl Metadata {
             })
             .collect()
     }
-    
+
     fn find_best_match(&self, spec: &VersionSpec) -> Option<&Version> {
         self.versions
             .iter()
@@ -291,7 +293,7 @@ impl LazyMetadata {
     fn get_distribution(&self, name: &str) -> Option<&Distribution> {
         let index = self.index.get_or_init(|| self.build_index());
         let distributions = self.distributions.get_or_init(|| self.load());
-        
+
         index.get(name).and_then(|&i| distributions.get(i))
     }
 }
@@ -303,10 +305,10 @@ impl LazyMetadata {
 async fn update_metadata() -> Result<()> {
     let current = load_local_cache()?;
     let updates = fetch_updates_since(current.last_updated).await?;
-    
+
     let merged = merge_incremental(current, updates);
     save_cache(merged)?;
-    
+
     Ok(())
 }
 ```
@@ -317,7 +319,7 @@ async fn update_metadata() -> Result<()> {
 fn save_compressed(metadata: &Metadata) -> Result<()> {
     let json = serde_json::to_string(metadata)?;
     let compressed = compress_gzip(json.as_bytes())?;
-    
+
     fs::write(cache_path(), compressed)?;
     Ok(())
 }
@@ -344,7 +346,7 @@ fn get_metadata() -> Result<Metadata> {
         return load_local_cache()
             .context("No cached metadata available offline");
     }
-    
+
     fetch_online_metadata()
 }
 ```
@@ -368,18 +370,18 @@ fn verify_metadata(data: &[u8], checksum: &str) -> Result<()> {
 ```rust
 fn validate_schema(json: &str) -> Result<Metadata> {
     let metadata: Metadata = serde_json::from_str(json)?;
-    
+
     // Validate required fields
     for dist in &metadata.distributions {
         ensure!(!dist.name.is_empty(), "Distribution name required");
         ensure!(!dist.versions.is_empty(), "Versions required");
-        
+
         for version in &dist.versions {
             ensure!(version.url.starts_with("https://"), "HTTPS required");
             ensure!(version.size > 0, "Invalid file size");
         }
     }
-    
+
     Ok(metadata)
 }
 ```
@@ -458,7 +460,7 @@ impl RateLimiter {
         if self.is_rate_limited() {
             self.wait_for_reset().await;
         }
-        
+
         self.increment_counter();
         make_request().await
     }

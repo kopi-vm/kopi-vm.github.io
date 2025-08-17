@@ -4,20 +4,20 @@ Complete list of JDK distributions supported by Kopi.
 
 ## Distribution Overview
 
-| Distribution | Vendor | License | LTS Support | Best For |
-|-------------|--------|---------|-------------|----------|
-| **Temurin** | Eclipse Foundation | GPL v2 + CE | Yes | General use, production |
-| **Corretto** | Amazon | GPL v2 + CE | Yes | AWS deployments |
-| **Zulu** | Azul Systems | GPL v2 + CE | Yes | Enterprise applications |
-| **GraalVM** | Oracle | GPL v2 + CE | Yes | Native compilation, polyglot |
-| **Microsoft** | Microsoft | GPL v2 + CE | Yes | Azure deployments |
-| **Semeru** | IBM | GPL v2 + CE | Yes | OpenJ9 JVM, memory efficiency |
-| **Liberica** | BellSoft | GPL v2 + CE | Yes | Full JDK with JavaFX |
-| **Dragonwell** | Alibaba | GPL v2 + CE | Yes | Optimized for Alibaba Cloud |
-| **SapMachine** | SAP | GPL v2 + CE | Yes | SAP applications |
-| **Oracle OpenJDK** | Oracle | GPL v2 + CE | No (6 months) | Latest features |
+| Distribution       | Vendor             | License     | LTS Support   | Best For                      |
+| ------------------ | ------------------ | ----------- | ------------- | ----------------------------- |
+| **Temurin**        | Eclipse Foundation | GPL v2 + CE | Yes           | General use, production       |
+| **Corretto**       | Amazon             | GPL v2 + CE | Yes           | AWS deployments               |
+| **Zulu**           | Azul Systems       | GPL v2 + CE | Yes           | Enterprise applications       |
+| **GraalVM**        | Oracle             | GPL v2 + CE | Yes           | Native compilation, polyglot  |
+| **Microsoft**      | Microsoft          | GPL v2 + CE | Yes           | Azure deployments             |
+| **Semeru**         | IBM                | GPL v2 + CE | Yes           | OpenJ9 JVM, memory efficiency |
+| **Liberica**       | BellSoft           | GPL v2 + CE | Yes           | Full JDK with JavaFX          |
+| **Dragonwell**     | Alibaba            | GPL v2 + CE | Yes           | Optimized for Alibaba Cloud   |
+| **SapMachine**     | SAP                | GPL v2 + CE | Yes           | SAP applications              |
+| **Oracle OpenJDK** | Oracle             | GPL v2 + CE | No (6 months) | Latest features               |
 
-*GPL v2 + CE = GPLv2 with Classpath Exception
+\*GPL v2 + CE = GPLv2 with Classpath Exception
 
 ## Distribution Details
 
@@ -35,6 +35,7 @@ kopi install temurin@11.0.21
 ```
 
 **Features**:
+
 - High-quality TCK-tested builds
 - Wide platform support
 - Regular security updates
@@ -57,6 +58,7 @@ kopi install corretto@11.0.21.9.1
 ```
 
 **Features**:
+
 - Production-ready builds
 - Long-term support from AWS
 - Performance improvements
@@ -79,6 +81,7 @@ kopi install zulu@11.68.17
 ```
 
 **Features**:
+
 - Certified OpenJDK builds
 - Wide platform support
 - Commercial support available
@@ -101,6 +104,7 @@ kopi install graalvm@17.0.9
 ```
 
 **Features**:
+
 - Native image compilation
 - Polyglot programming (JavaScript, Python, Ruby, R)
 - Advanced JIT compiler
@@ -123,6 +127,7 @@ kopi install microsoft@11.0.21
 ```
 
 **Features**:
+
 - Optimized for Azure
 - Container-ready builds
 - Quarterly updates
@@ -145,6 +150,7 @@ kopi install semeru@11.0.21
 ```
 
 **Features**:
+
 - OpenJ9 JVM (not HotSpot)
 - Superior memory efficiency
 - Fast startup times
@@ -167,6 +173,7 @@ kopi install liberica@17.0.9
 ```
 
 **Features**:
+
 - Full JDK including JavaFX
 - Lite builds available
 - Native image kit
@@ -189,6 +196,7 @@ kopi install dragonwell@11.0.20.17
 ```
 
 **Features**:
+
 - Optimized for Alibaba Cloud
 - Enhanced for multi-tenant environments
 - Improved GC performance
@@ -211,6 +219,7 @@ kopi install sap_machine@11.0.21
 ```
 
 **Features**:
+
 - Optimized for SAP applications
 - Regular releases
 - Commercial support from SAP
@@ -233,6 +242,7 @@ kopi install oracle_open_jdk@20
 ```
 
 **Features**:
+
 - Reference implementation
 - Latest Java features first
 - Short support cycle (6 months)
@@ -297,98 +307,104 @@ kopi install kona@17
 
 ### Linux x64
 
-| Distribution | 8 | 11 | 17 | 21 | 22 |
-|-------------|---|----|----|----|----|
-| Temurin | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Corretto | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Zulu | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GraalVM | - | - | ✓ | ✓ | ✓ |
-| Microsoft | - | ✓ | ✓ | ✓ | - |
-| Semeru | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Liberica | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Dragonwell | ✓ | ✓ | ✓ | ✓ | - |
+| Distribution | 8   | 11  | 17  | 21  | 22  |
+| ------------ | --- | --- | --- | --- | --- |
+| Temurin      | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Corretto     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Zulu         | ✓   | ✓   | ✓   | ✓   | ✓   |
+| GraalVM      | -   | -   | ✓   | ✓   | ✓   |
+| Microsoft    | -   | ✓   | ✓   | ✓   | -   |
+| Semeru       | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Liberica     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Dragonwell   | ✓   | ✓   | ✓   | ✓   | -   |
 
 ### Linux ARM64
 
-| Distribution | 8 | 11 | 17 | 21 | 22 |
-|-------------|---|----|----|----|----|
-| Temurin | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Corretto | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Zulu | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GraalVM | - | - | ✓ | ✓ | ✓ |
-| Microsoft | - | ✓ | ✓ | ✓ | - |
-| Semeru | - | ✓ | ✓ | ✓ | - |
-| Liberica | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Distribution | 8   | 11  | 17  | 21  | 22  |
+| ------------ | --- | --- | --- | --- | --- |
+| Temurin      | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Corretto     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Zulu         | ✓   | ✓   | ✓   | ✓   | ✓   |
+| GraalVM      | -   | -   | ✓   | ✓   | ✓   |
+| Microsoft    | -   | ✓   | ✓   | ✓   | -   |
+| Semeru       | -   | ✓   | ✓   | ✓   | -   |
+| Liberica     | ✓   | ✓   | ✓   | ✓   | ✓   |
 
 ### macOS x64
 
-| Distribution | 8 | 11 | 17 | 21 | 22 |
-|-------------|---|----|----|----|----|
-| Temurin | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Corretto | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Zulu | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GraalVM | - | - | ✓ | ✓ | ✓ |
-| Microsoft | - | ✓ | ✓ | ✓ | - |
-| Semeru | ✓ | ✓ | ✓ | ✓ | - |
-| Liberica | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Distribution | 8   | 11  | 17  | 21  | 22  |
+| ------------ | --- | --- | --- | --- | --- |
+| Temurin      | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Corretto     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Zulu         | ✓   | ✓   | ✓   | ✓   | ✓   |
+| GraalVM      | -   | -   | ✓   | ✓   | ✓   |
+| Microsoft    | -   | ✓   | ✓   | ✓   | -   |
+| Semeru       | ✓   | ✓   | ✓   | ✓   | -   |
+| Liberica     | ✓   | ✓   | ✓   | ✓   | ✓   |
 
 ### macOS ARM64 (Apple Silicon)
 
-| Distribution | 8 | 11 | 17 | 21 | 22 |
-|-------------|---|----|----|----|----|
-| Temurin | - | ✓ | ✓ | ✓ | ✓ |
-| Corretto | - | ✓ | ✓ | ✓ | ✓ |
-| Zulu | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GraalVM | - | - | ✓ | ✓ | ✓ |
-| Microsoft | - | ✓ | ✓ | ✓ | - |
-| Semeru | - | - | ✓ | ✓ | - |
-| Liberica | - | ✓ | ✓ | ✓ | ✓ |
+| Distribution | 8   | 11  | 17  | 21  | 22  |
+| ------------ | --- | --- | --- | --- | --- |
+| Temurin      | -   | ✓   | ✓   | ✓   | ✓   |
+| Corretto     | -   | ✓   | ✓   | ✓   | ✓   |
+| Zulu         | ✓   | ✓   | ✓   | ✓   | ✓   |
+| GraalVM      | -   | -   | ✓   | ✓   | ✓   |
+| Microsoft    | -   | ✓   | ✓   | ✓   | -   |
+| Semeru       | -   | -   | ✓   | ✓   | -   |
+| Liberica     | -   | ✓   | ✓   | ✓   | ✓   |
 
 ### Windows x64
 
-| Distribution | 8 | 11 | 17 | 21 | 22 |
-|-------------|---|----|----|----|----|
-| Temurin | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Corretto | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Zulu | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GraalVM | - | - | ✓ | ✓ | ✓ |
-| Microsoft | - | ✓ | ✓ | ✓ | - |
-| Semeru | ✓ | ✓ | ✓ | ✓ | - |
-| Liberica | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Dragonwell | ✓ | ✓ | ✓ | ✓ | - |
+| Distribution | 8   | 11  | 17  | 21  | 22  |
+| ------------ | --- | --- | --- | --- | --- |
+| Temurin      | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Corretto     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Zulu         | ✓   | ✓   | ✓   | ✓   | ✓   |
+| GraalVM      | -   | -   | ✓   | ✓   | ✓   |
+| Microsoft    | -   | ✓   | ✓   | ✓   | -   |
+| Semeru       | ✓   | ✓   | ✓   | ✓   | -   |
+| Liberica     | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Dragonwell   | ✓   | ✓   | ✓   | ✓   | -   |
 
 ## Choosing a Distribution
 
 ### By Use Case
 
 **General Development**:
+
 - Temurin (recommended)
 - Oracle OpenJDK
 - Zulu
 
 **Production Deployment**:
+
 - Temurin
 - Corretto (AWS)
 - Microsoft (Azure)
 - Zulu
 
 **Memory-Constrained**:
+
 - Semeru (OpenJ9)
 - Liberica Lite
 - GraalVM Native
 
 **Native Compilation**:
+
 - GraalVM
 - Liberica Native
 - Mandrel
 
 **Full JDK with JavaFX**:
+
 - Liberica Full
 - Zulu with JavaFX
 
 ### By Platform
 
 **Cloud Providers**:
+
 - AWS → Corretto
 - Azure → Microsoft
 - Google Cloud → Temurin
@@ -396,6 +412,7 @@ kopi install kona@17
 - Tencent Cloud → Kona
 
 **Operating Systems**:
+
 - RHEL/CentOS → Red Hat
 - Ubuntu/Debian → Temurin
 - Alpine Linux → Liberica, Microsoft
@@ -404,11 +421,13 @@ kopi install kona@17
 ### By Support
 
 **Free Community Support**:
+
 - Temurin
 - Corretto
 - Oracle OpenJDK
 
 **Commercial Support Available**:
+
 - Zulu (Azul)
 - Liberica (BellSoft)
 - Semeru (IBM)
@@ -420,23 +439,23 @@ kopi install kona@17
 
 Current LTS versions with support timeline:
 
-| Version | Release | End of Support |
-|---------|---------|----------------|
-| 8 | 2014 | 2030+ |
-| 11 | 2018 | 2026+ |
-| 17 | 2021 | 2029+ |
-| 21 | 2023 | 2031+ |
-| 25 | 2025 (planned) | 2033+ |
+| Version | Release        | End of Support |
+| ------- | -------------- | -------------- |
+| 8       | 2014           | 2030+          |
+| 11      | 2018           | 2026+          |
+| 17      | 2021           | 2029+          |
+| 21      | 2023           | 2031+          |
+| 25      | 2025 (planned) | 2033+          |
 
 ### Non-LTS Versions
 
 | Version | Release | End of Support |
-|---------|---------|----------------|
-| 18 | 2022-03 | 2022-09 |
-| 19 | 2022-09 | 2023-03 |
-| 20 | 2023-03 | 2023-09 |
-| 22 | 2024-03 | 2024-09 |
-| 23 | 2024-09 | 2025-03 |
+| ------- | ------- | -------------- |
+| 18      | 2022-03 | 2022-09        |
+| 19      | 2022-09 | 2023-03        |
+| 20      | 2023-03 | 2023-09        |
+| 22      | 2024-03 | 2024-09        |
+| 23      | 2024-09 | 2025-03        |
 
 ## Searching for Distributions
 
@@ -466,7 +485,7 @@ kopi install zulu@17.0.9
 kopi install graalvm@21.0.1
 
 # Install with exact version
-kopi install temurin@21.0.2+13.0.LTS
+kopi install temurin@21.0.2+13
 
 # Install latest patch
 kopi install temurin@21

@@ -82,7 +82,7 @@ fn main() {
     let version = resolve_version();
     let jdk_path = get_jdk_path(version);
     let tool_path = format!("{}/bin/{}", jdk_path, tool);
-    
+
     exec(tool_path, args);
 }
 ```
@@ -125,7 +125,7 @@ sequenceDiagram
     participant Shim
     participant KopiShim
     participant JDK
-    
+
     User->>Shell: java MyApp
     Shell->>Shim: Execute ~/.kopi/shims/java
     Shim->>KopiShim: kopi-shim resolve
@@ -150,7 +150,7 @@ fn resolve_version() -> String {
     if let Some(cached) = check_cache() {
         return cached;
     }
-    
+
     // Full resolution (< 10ms)
     full_resolution()
 }
@@ -438,16 +438,19 @@ fn validate_jdk_path(path: &Path) -> Result<()> {
 ### vs. Symlinks
 
 Traditional symlink approach:
+
 ```bash
 ln -s /usr/lib/jvm/java-17/bin/java /usr/local/bin/java
 ```
 
 Problems:
+
 - Single version only
 - Manual management
 - No project awareness
 
 Kopi shims:
+
 - Multiple versions
 - Automatic switching
 - Project-specific
@@ -455,6 +458,7 @@ Kopi shims:
 ### vs. Shell Functions
 
 Shell function approach:
+
 ```bash
 function java() {
     /path/to/specific/java "$@"
@@ -462,11 +466,13 @@ function java() {
 ```
 
 Problems:
+
 - Shell-specific
 - Not inherited by subprocesses
 - Complex management
 
 Kopi shims:
+
 - Work in any shell
 - Inherited by all processes
 - Simple management

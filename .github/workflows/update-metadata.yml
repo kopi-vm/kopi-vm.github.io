@@ -2,7 +2,7 @@ name: Update JDK Metadata
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,39 +11,39 @@ permissions:
 jobs:
   update-metadata:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    
-    - name: Cache cargo dependencies
-      uses: actions/cache@v4
-      with:
-        path: |
-          ~/.cargo/bin/
-          ~/.cargo/registry/index/
-          ~/.cargo/registry/cache/
-          ~/.cargo/git/db/
-          target/
-        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-    
-    - name: Install Kopi
-      run: |
-        if ! command -v kopi-metadata-gen &> /dev/null
-        then
-          cargo install kopi
-        fi
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Update metadata
-      run: kopi-metadata-gen update --input docs/metadata --output docs/metadata
-    
-    - name: Git
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Cache cargo dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
-        git add docs/metadata/index.json
-        git add docs/metadata/**/*.json
-        git commit -m "Update metadata on $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+      - name: Install Kopi
+        run: |
+          if ! command -v kopi-metadata-gen &> /dev/null
+          then
+            cargo install kopi
+          fi
 
-        git push origin main
+      - name: Update metadata
+        run: kopi-metadata-gen update --input docs/metadata --output docs/metadata
+
+      - name: Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add docs/metadata/index.json
+          git add docs/metadata/**/*.json
+          git commit -m "Update metadata on $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+
+          git push origin main

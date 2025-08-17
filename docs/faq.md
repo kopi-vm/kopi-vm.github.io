@@ -7,6 +7,7 @@ Common questions about Kopi and JDK version management.
 ### What is Kopi?
 
 Kopi is a fast, lightweight JDK version manager written in Rust. It allows you to:
+
 - Install multiple JDK versions from various distributions
 - Switch between versions automatically based on project requirements
 - Manage JDKs without manual PATH configuration
@@ -14,19 +15,20 @@ Kopi is a fast, lightweight JDK version manager written in Rust. It allows you t
 
 ### How does Kopi differ from other version managers?
 
-| Feature | Kopi | SDKMAN! | jEnv | Jabba |
-|---------|------|---------|------|-------|
-| **Written in** | Rust | Bash | Bash | Go |
-| **Performance** | Very Fast | Moderate | Slow | Fast |
-| **Auto-switching** | ✓ | ✓ | ✓ | ✓ |
-| **Multiple distributions** | ✓ | ✓ | ✗ | ✓ |
-| **Windows support** | ✓ | WSL only | ✗ | ✓ |
-| **Offline mode** | ✓ | ✗ | ✓ | ✗ |
-| **Shell integration** | Native | Source | Shims | Shims |
+| Feature                    | Kopi      | SDKMAN!  | jEnv  | Jabba |
+| -------------------------- | --------- | -------- | ----- | ----- |
+| **Written in**             | Rust      | Bash     | Bash  | Go    |
+| **Performance**            | Very Fast | Moderate | Slow  | Fast  |
+| **Auto-switching**         | ✓         | ✓        | ✓     | ✓     |
+| **Multiple distributions** | ✓         | ✓        | ✗     | ✓     |
+| **Windows support**        | ✓         | WSL only | ✗     | ✓     |
+| **Offline mode**           | ✓         | ✗        | ✓     | ✗     |
+| **Shell integration**      | Native    | Source   | Shims | Shims |
 
 ### Which operating systems are supported?
 
 Kopi supports:
+
 - **Linux** (x64, ARM64, x86) - All major distributions
 - **macOS** (Intel and Apple Silicon)
 - **Windows** (x64, ARM64) - Native support, no WSL required
@@ -34,7 +36,7 @@ Kopi supports:
 ### Which shells are supported?
 
 - **Bash** - Full support
-- **Zsh** - Full support  
+- **Zsh** - Full support
 - **Fish** - Full support
 - **PowerShell** - Full support (Windows)
 - **Command Prompt** - Basic support (Windows)
@@ -62,10 +64,12 @@ cargo install kopi
 ### Where does Kopi install JDKs?
 
 By default, JDKs are installed in:
+
 - **Unix/Linux/macOS**: `~/.kopi/jdks/`
 - **Windows**: `%USERPROFILE%\.kopi\jdks\`
 
 Example structure:
+
 ```
 ~/.kopi/jdks/
 ├── temurin-21.0.2/
@@ -108,22 +112,25 @@ kopi install temurin@21
 kopi install corretto@17
 
 # Install exact version
-kopi install temurin@21.0.2+13.0.LTS
+kopi install temurin@21.0.2+13
 ```
 
 ### How do I switch between JDK versions?
 
 **Global (system-wide default)**:
+
 ```bash
 kopi use 21
 ```
 
 **Project (directory-specific)**:
+
 ```bash
 kopi pin 21  # Creates .kopi-version file
 ```
 
 **Shell (current session only)**:
+
 ```bash
 kopi shell 21
 ```
@@ -152,6 +159,7 @@ Version files tell Kopi which JDK to use in a directory:
 - **`.java-version`** - Compatible with jEnv and other tools
 
 Example `.kopi-version`:
+
 ```
 temurin@21
 ```
@@ -159,6 +167,7 @@ temurin@21
 ### How does automatic version switching work?
 
 When you run a Java command, Kopi:
+
 1. Checks for `KOPI_JAVA_VERSION` environment variable
 2. Looks for `.kopi-version` or `.java-version` in current directory
 3. Searches parent directories for version files
@@ -170,6 +179,7 @@ When you run a Java command, Kopi:
 ### Which JDK distributions are supported?
 
 Major distributions include:
+
 - **Eclipse Temurin** (default, recommended)
 - **Amazon Corretto**
 - **Azul Zulu**
@@ -184,11 +194,13 @@ See [Supported Distributions](reference/distributions.md) for complete list.
 ### Which distribution should I use?
 
 **For most users**: Eclipse Temurin (default)
+
 - High quality, TCK-tested
 - Wide platform support
 - Regular updates
 
 **Special cases**:
+
 - **AWS**: Amazon Corretto
 - **Azure**: Microsoft OpenJDK
 - **Native compilation**: GraalVM
@@ -269,12 +281,14 @@ Kopi automatically uses the closest mirrors for downloads. Download speed depend
 ### Why isn't Kopi detecting my version file?
 
 Common causes:
+
 1. **Wrong filename**: Must be `.kopi-version` or `.java-version`
 2. **Wrong format**: Check file contents
 3. **Line endings**: Use Unix line endings (LF, not CRLF)
 4. **Permissions**: File must be readable
 
 Fix:
+
 ```bash
 # Validate file
 kopi validate .kopi-version
@@ -302,6 +316,7 @@ kopi shell --unset
 ### How do I uninstall Kopi?
 
 1. **Remove Kopi binary**:
+
 ```bash
 # If installed with Cargo
 cargo uninstall kopi
@@ -314,11 +329,13 @@ rm ~/.cargo/bin/kopi
 ```
 
 2. **Remove Kopi data** (optional):
+
 ```bash
 rm -rf ~/.kopi
 ```
 
 3. **Remove shell integration**:
+
 ```bash
 # Remove from ~/.bashrc, ~/.zshrc, etc.
 # Lines containing: eval "$(kopi init ...)"
@@ -329,12 +346,14 @@ rm -rf ~/.kopi
 1. **Check existing issues**: https://github.com/kopi-vm/kopi/issues
 
 2. **Gather information**:
+
 ```bash
 kopi doctor --system-info > system-info.txt
 KOPI_DEBUG=1 kopi [command] 2>&1 > debug.log
 ```
 
 3. **Create issue** with:
+
 - System information
 - Steps to reproduce
 - Expected vs actual behavior
@@ -401,6 +420,7 @@ checksum = "sha256:..."
 ### How do I use different JDKs in CI/CD?
 
 **GitHub Actions**:
+
 ```yaml
 - name: Setup JDK
   run: |
@@ -408,12 +428,14 @@ checksum = "sha256:..."
 ```
 
 **GitLab CI**:
+
 ```yaml
 before_script:
   - kopi install $(cat .kopi-version)
 ```
 
 **Jenkins**:
+
 ```groovy
 sh 'kopi install $(cat .kopi-version)'
 ```
@@ -445,12 +467,14 @@ CMD ["java", "-jar", "app.jar"]
 
 1. **Fork repository**: https://github.com/kopi-vm/kopi
 2. **Set up development environment**:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/kopi
 cd kopi
 cargo build
 cargo test
 ```
+
 3. **Make changes** and submit pull request
 4. **See** [Contributing Guide](https://github.com/kopi-vm/kopi/blob/main/CONTRIBUTING.md)
 
@@ -467,6 +491,7 @@ cargo test
 ### How can I make Kopi even faster?
 
 **Keep cache updated**:
+
 ```bash
 kopi cache refresh
 ```
@@ -478,6 +503,7 @@ Kopi is already optimized for speed with efficient shims, smart caching, and laz
 ### Is Kopi secure?
 
 Yes, Kopi implements several security measures:
+
 - **HTTPS only** for downloads
 - **Checksum verification** for all JDKs
 - **Certificate validation**

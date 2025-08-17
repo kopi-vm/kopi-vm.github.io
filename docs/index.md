@@ -96,12 +96,12 @@ When you run a Java command, Kopi:
 
 ### vs Other Version Managers
 
-| Feature | Kopi | SDKMAN! | jEnv |
-|---------|------|---------|------|
-| Performance | ⚡ Very Fast | 🐢 Moderate | 🐌 Slow |
-| Written in | Rust | Bash | Bash |
-| Windows Support | ✅ Native | ⚠️ WSL only | ❌ No |
-| Offline Mode | ✅ Yes | ❌ No | ✅ Yes |
+| Feature         | Kopi         | SDKMAN!     | jEnv    |
+| --------------- | ------------ | ----------- | ------- |
+| Performance     | ⚡ Very Fast | 🐢 Moderate | 🐌 Slow |
+| Written in      | Rust         | Bash        | Bash    |
+| Windows Support | ✅ Native    | ⚠️ WSL only | ❌ No   |
+| Offline Mode    | ✅ Yes       | ❌ No       | ✅ Yes  |
 
 ## Supported JDK Distributions
 

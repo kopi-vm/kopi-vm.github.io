@@ -94,47 +94,6 @@ cd project-with-kopi-version
 java --version  # Should use project's JDK
 ```
 
-## Features
-
-### Automatic Version Switching
-
-Kopi automatically switches JDK when:
-
-```bash
-# Entering a directory with version file
-cd my-project  # Has .kopi-version
-java --version  # Uses project's JDK
-
-# Moving to parent directory
-cd ..
-java --version  # Uses global or inherited JDK
-```
-
-### Command Interception
-
-All JDK commands are intercepted:
-
-```bash
-# These all use Kopi's version management
-java MyApp
-javac MyApp.java
-jar cf myapp.jar *.class
-jshell
-```
-
-### Environment Variables
-
-Kopi manages these environment variables:
-
-```bash
-# Automatically set by Kopi
-echo $JAVA_HOME  # Points to active JDK
-echo $PATH       # Includes JDK bin directory
-
-# Manual override
-export KOPI_JAVA_VERSION=17  # Force JDK 17
-```
-
 ## Advanced Configuration
 
 ### Shell Hooks
@@ -256,19 +215,6 @@ unset KOPI_JAVA_VERSION
 kopi doctor
 ```
 
-### Performance Issues
-
-```bash
-# Check shim execution time
-time java --version
-
-# Update metadata cache
-kopi cache update
-
-# Optimize shell startup
-# Move Kopi init to .bashrc instead of .bash_profile
-```
-
 ### Shell-Specific Issues
 
 #### Zsh
@@ -296,52 +242,6 @@ refreshenv
 
 # Or restart PowerShell
 ```
-
-## Shell Integration Options
-
-### Minimal Setup
-
-Just add shims to PATH:
-
-```bash
-export PATH="$HOME/.kopi/shims:$PATH"
-```
-
-### With Environment Variables
-
-Add shims and set JAVA_HOME:
-
-```bash
-# Add to PATH
-export PATH="$HOME/.kopi/shims:$PATH"
-
-# Set JAVA_HOME for current JDK
-eval "$(kopi env)"
-```
-
-### Custom Integration
-
-Build your own integration:
-
-```bash
-# Get Kopi paths
-KOPI_SHIMS="$HOME/.kopi/shims"
-KOPI_JDKS="$HOME/.kopi/jdks"
-
-# Add to PATH
-export PATH="$KOPI_SHIMS:$PATH"
-
-# Set JAVA_HOME dynamically
-export JAVA_HOME=$(kopi which --home)
-```
-
-## Best Practices
-
-1. **PATH order matters** - Ensure shims come before system Java
-2. **Avoid conflicts** - Remove other JDK version managers
-3. **Use version files** - Let Kopi handle automatic switching
-4. **Set environment early** - Add PATH and JAVA_HOME near the top of shell config
-5. **Keep shells updated** - Update shell configs after Kopi updates
 
 ## Next Steps
 

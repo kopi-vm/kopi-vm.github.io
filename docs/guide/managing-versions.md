@@ -16,26 +16,27 @@ kopi install 21
 kopi install temurin@21
 
 # Exact version
-kopi install temurin@21.0.2+13.0.LTS
+kopi install temurin@21.0.2+13
 
-# Version range (finds best match)
-kopi install "corretto@>=17.0.9"
+# Latest version
+kopi install latest
+kopi install temurin@latest
+
+# Package type (JRE or JDK)
+kopi install jre@21
+kopi install jdk@temurin@21
 ```
 
 ### Distribution Selection
 
-When no distribution is specified, Kopi selects based on:
+When no distribution is specified, Kopi uses the default distribution configured in `~/.kopi/config.toml`:
 
-1. Platform availability
-2. LTS status
-3. Vendor reliability
-4. Community adoption
+```toml
+# Default configuration
+default_distribution = "temurin"
+```
 
-Default preference order:
-1. Eclipse Temurin
-2. Amazon Corretto
-3. Azul Zulu
-4. Microsoft OpenJDK
+You can change the default distribution by editing the configuration file or using environment variables.
 
 ## Version Scopes
 
@@ -71,18 +72,20 @@ rm .kopi-version
 
 ### Shell Version
 
-Temporary override for current shell:
+Launch a new shell with a specific JDK:
 
 ```bash
-# Set shell version
+# Launch new shell with JDK 11
 kopi shell 11
 
 # Or use the alias
 kopi use 11
 
-# Verify override
+# The new shell will have JAVA_HOME and PATH configured
 java --version
 ```
+
+Note: `kopi shell` and `kopi use` spawn a new subshell with the specified JDK. Exit the shell to return to your previous environment.
 
 ## Version Discovery
 
@@ -119,11 +122,9 @@ kopi search --lts-only
 Kopi resolves versions in this priority:
 
 1. Environment variable (`KOPI_JAVA_VERSION`)
-2. Shell override (`kopi shell` or `kopi use`)
-3. Project version file (`.kopi-version` or `.java-version`)
-4. Parent directory version files (recursive)
-5. Global default (`kopi global`)
-6. System JDK
+2. Project version file (`.kopi-version` takes precedence over `.java-version`)
+3. Parent directory version files (recursive up to root, checking `.kopi-version` first, then `.java-version`)
+4. Global default (`~/.kopi/version` set by `kopi global`)
 
 ### Version File Formats
 
@@ -138,18 +139,21 @@ graalvm@21.0.1
 # Version only (uses default distribution)
 21
 17.0.9
+
+# Package type prefix (JRE or JDK)
+jre@21
+jdk@temurin@21
 ```
 
 #### Compatibility Format (.java-version)
 
 ```bash
-# Simple version
+# Simple version only
 17
 21
+11.0.2
 
-# With distribution (some tools support this)
-temurin-17
-corretto-21
+# Note: .java-version does not support distribution@version format
 ```
 
 ## Advanced Usage
@@ -168,24 +172,9 @@ kopi install graalvm@21
 kopi global temurin@21
 kopi global graalvm@21
 
-# Or use in current shell
+# Or launch a new shell with specific JDK
 kopi shell temurin@21
 kopi use graalvm@21  # alias for shell
-```
-
-### Version Constraints
-
-Use semantic versioning constraints:
-
-```bash
-# Minimum version
-kopi install ">=21.0.1"
-
-# Version range
-kopi install ">=17.0.0 <18.0.0"
-
-# Specific patch level
-kopi install "~21.0.2"  # Allows 21.0.x where x >= 2
 ```
 
 ## Best Practices
@@ -194,7 +183,7 @@ kopi install "~21.0.2"  # Allows 21.0.x where x >= 2
 2. **Use LTS versions** for stability
 3. **Specify distributions** explicitly in CI/CD
 4. **Document version requirements** in README
-5. **Test with multiple JDKs** using `kopi shell` or `kopi use`
+5. **Test with multiple JDKs** using `kopi shell` or `kopi use` to launch temporary test shells
 
 ## Troubleshooting
 

@@ -36,6 +36,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/kopi-vm/kopi
+
 nav:
   - Home: index.md
   - Getting Started:
@@ -45,12 +46,9 @@ nav:
   - Guide:
       - Managing JDK Versions: guide/managing-versions.md
       - Working with Projects: guide/projects.md
-      - JDK Distributions: guide/distributions.md
       - Shell Integration: guide/shell-integration.md
-      - CI/CD Integration: guide/ci-cd.md
-      - Migrating from Other Tools: guide/migration.md
   - Concepts:
-      - How Kopi Works: concepts/how-it-works.md
+      - Architecture: concepts/architecture.md
       - Version Files: concepts/version-files.md
       - Shims: concepts/shims.md
       - Metadata System: concepts/metadata.md

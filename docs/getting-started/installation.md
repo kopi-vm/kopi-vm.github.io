@@ -70,16 +70,6 @@ After installing Kopi, you need to set up shell integration:
 ```bash
 # Initialize Kopi
 kopi setup
-
-# Add to your shell configuration
-# For Bash (~/.bashrc)
-eval "$(kopi init bash)"
-
-# For Zsh (~/.zshrc)
-eval "$(kopi init zsh)"
-
-# For Fish (~/.config/fish/config.fish)
-kopi init fish | source
 ```
 
 ## Verify Installation

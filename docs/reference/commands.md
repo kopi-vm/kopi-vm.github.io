@@ -375,17 +375,17 @@ Examples:
 
 Many Kopi commands have shorter aliases for convenience:
 
-| Standard Command | Alias | Description |
-|-----------------|-------|-------------|
-| `kopi install` | `kopi i` | Install a JDK version |
-| `kopi list` | `kopi ls` | List installed JDK versions |
-| `kopi shell` | `kopi use` | Set JDK for current shell session |
-| `kopi global` | `kopi g`, `kopi default` | Set global default JDK |
-| `kopi local` | `kopi l`, `kopi pin` | Set project-specific JDK |
-| `kopi which` | `kopi w` | Show JDK installation path |
-| `kopi search` | `kopi s` | Search available JDK versions |
-| `kopi refresh` | `kopi r` | Refresh metadata cache (hidden) |
-| `kopi uninstall` | `kopi u`, `kopi remove` | Uninstall a JDK |
+| Standard Command | Alias                    | Description                       |
+| ---------------- | ------------------------ | --------------------------------- |
+| `kopi install`   | `kopi i`                 | Install a JDK version             |
+| `kopi list`      | `kopi ls`                | List installed JDK versions       |
+| `kopi shell`     | `kopi use`               | Set JDK for current shell session |
+| `kopi global`    | `kopi g`, `kopi default` | Set global default JDK            |
+| `kopi local`     | `kopi l`, `kopi pin`     | Set project-specific JDK          |
+| `kopi which`     | `kopi w`                 | Show JDK installation path        |
+| `kopi search`    | `kopi s`                 | Search available JDK versions     |
+| `kopi refresh`   | `kopi r`                 | Refresh metadata cache (hidden)   |
+| `kopi uninstall` | `kopi u`, `kopi remove`  | Uninstall a JDK                   |
 
 ## Environment Variables
 
@@ -414,19 +414,19 @@ See [Environment Variables](environment.md) for complete reference.
 
 Kopi uses specific exit codes for different error conditions:
 
-| Code | Description |
-|------|-------------|
-| 0    | Success |
-| 1    | General error |
+| Code | Description                  |
+| ---- | ---------------------------- |
+| 0    | Success                      |
+| 1    | General error                |
 | 2    | Invalid command or arguments |
-| 3    | Version file not found |
-| 4    | JDK not installed |
-| 5    | Installation failed |
-| 10   | Configuration error |
-| 13   | Permission denied |
-| 20   | Network error |
-| 28   | Insufficient disk space |
-| 127  | Command not found |
+| 3    | Version file not found       |
+| 4    | JDK not installed            |
+| 5    | Installation failed          |
+| 10   | Configuration error          |
+| 13   | Permission denied            |
+| 20   | Network error                |
+| 28   | Insufficient disk space      |
+| 127  | Command not found            |
 
 ## Examples
 

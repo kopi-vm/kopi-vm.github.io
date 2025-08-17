@@ -23,11 +23,13 @@ echo $?  # 1
 ```
 
 **Common causes**:
+
 - Unknown error
 - Unhandled exception
 - Generic failure
 
 **Resolution**:
+
 - Check error message
 - Enable debug mode (`KOPI_DEBUG=1`)
 - Report issue if persistent
@@ -49,12 +51,14 @@ echo $?  # 2
 ```
 
 **Common causes**:
+
 - Missing required arguments
 - Unknown command
 - Invalid option flags
 - Incorrect argument format
 
 **Resolution**:
+
 - Check command syntax with `--help`
 - Verify argument format
 - Update Kopi if command should exist
@@ -71,11 +75,13 @@ echo $?  # 3
 ```
 
 **Common causes**:
+
 - No `.kopi-version` or `.java-version` file
 - Not in a project directory
 - File deleted or renamed
 
 **Resolution**:
+
 - Create version file: `kopi pin 21`
 - Navigate to project directory
 - Set global default: `kopi use 21`
@@ -91,11 +97,13 @@ echo $?  # 4
 ```
 
 **Common causes**:
+
 - JDK not yet installed
 - Typo in version specification
 - JDK was uninstalled
 
 **Resolution**:
+
 - Install JDK: `kopi install <version>`
 - List installed: `kopi list`
 - Check available: `kopi search`
@@ -113,12 +121,14 @@ echo $?  # 5
 ```
 
 **Common causes**:
+
 - Invalid version specified
 - Download failed
 - Extraction failed
 - Verification failed
 
 **Resolution**:
+
 - Verify version exists: `kopi search`
 - Check network connection
 - Clear cache: `kopi cache clear`
@@ -136,12 +146,14 @@ echo $?  # 6
 ```
 
 **Common causes**:
+
 - Network connectivity issues
 - Proxy configuration problems
 - Server unavailable
 - Timeout
 
 **Resolution**:
+
 - Check internet connection
 - Configure proxy if needed
 - Increase timeout: `KOPI_NETWORK_TIMEOUT=300`
@@ -158,11 +170,13 @@ echo $?  # 7
 ```
 
 **Common causes**:
+
 - Corrupted download
 - Man-in-the-middle attack
 - Wrong checksum in metadata
 
 **Resolution**:
+
 - Retry download
 - Clear downloads: `kopi cache clear --downloads`
 - Update metadata: `kopi cache update`
@@ -179,12 +193,14 @@ echo $?  # 8
 ```
 
 **Common causes**:
+
 - Corrupted archive
 - Insufficient disk space
 - Permission issues
 - Unsupported archive format
 
 **Resolution**:
+
 - Check disk space: `df -h`
 - Clear downloads and retry
 - Check permissions
@@ -203,12 +219,14 @@ echo $?  # 10
 ```
 
 **Common causes**:
+
 - Syntax error in config file
 - Invalid values
 - Missing required fields
 - Corrupted file
 
 **Resolution**:
+
 - Fix syntax errors
 - Reset config: `kopi config reset`
 - Check with: `kopi config validate`
@@ -225,11 +243,13 @@ echo $?  # 11
 ```
 
 **Common causes**:
+
 - Corrupted cache
 - Network issues
 - Invalid metadata format
 
 **Resolution**:
+
 - Update metadata: `kopi cache update --force`
 - Clear cache: `kopi cache clear`
 - Check network connectivity
@@ -246,12 +266,14 @@ echo $?  # 12
 ```
 
 **Common causes**:
+
 - Permission issues
 - Disk full
 - Corrupted cache
 - I/O errors
 
 **Resolution**:
+
 - Check permissions on `~/.kopi/cache`
 - Free disk space
 - Clear cache: `kopi cache clear --all`
@@ -270,12 +292,14 @@ echo $?  # 13
 ```
 
 **Common causes**:
+
 - Protected directories
 - File ownership issues
 - Read-only filesystem
 - SELinux/AppArmor restrictions
 
 **Resolution**:
+
 - Check file permissions
 - Use user installation (not root)
 - Fix ownership: `chown -R $USER ~/.kopi`
@@ -292,11 +316,13 @@ echo $?  # 14
 ```
 
 **Common causes**:
+
 - KOPI_HOME misconfigured
 - Directory deleted
 - Mount point not available
 
 **Resolution**:
+
 - Create directory: `mkdir -p ~/.kopi`
 - Fix KOPI_HOME variable
 - Run setup: `kopi setup`
@@ -312,11 +338,13 @@ echo $?  # 15
 ```
 
 **Common causes**:
+
 - File deleted
 - Wrong path specified
 - File not created yet
 
 **Resolution**:
+
 - Verify file path
 - Create file if needed
 - Check working directory
@@ -335,12 +363,14 @@ echo $?  # 20
 ```
 
 **Common causes**:
+
 - No internet connection
 - DNS resolution failure
 - Firewall blocking
 - SSL/TLS issues
 
 **Resolution**:
+
 - Check connectivity: `ping api.foojay.io`
 - Check DNS: `nslookup api.foojay.io`
 - Configure proxy if needed
@@ -357,11 +387,13 @@ echo $?  # 21
 ```
 
 **Common causes**:
+
 - Slow network
 - Server not responding
 - Timeout too short
 
 **Resolution**:
+
 - Increase timeout: `KOPI_NETWORK_TIMEOUT=300`
 - Try again later
 - Use different mirror
@@ -378,11 +410,13 @@ echo $?  # 22
 ```
 
 **Common causes**:
+
 - Invalid proxy settings
 - Proxy authentication required
 - Proxy server down
 
 **Resolution**:
+
 - Verify proxy settings
 - Include authentication: `http://user:pass@proxy:port`
 - Test proxy: `curl -x $KOPI_HTTP_PROXY https://api.foojay.io`
@@ -402,11 +436,13 @@ echo $?  # 28
 ```
 
 **Common causes**:
+
 - Disk full
 - Quota exceeded
 - Temporary directory full
 
 **Resolution**:
+
 - Free disk space
 - Clean downloads: `kopi cache clear --downloads`
 - Prune old JDKs: `kopi prune`
@@ -424,11 +460,13 @@ echo $?  # 29
 ```
 
 **Common causes**:
+
 - System out of memory
 - Process limits too low
 - Memory leak
 
 **Resolution**:
+
 - Free memory
 - Increase limits: `ulimit -m unlimited`
 - Reduce parallel downloads: `KOPI_PARALLEL_DOWNLOADS=1`
@@ -448,11 +486,13 @@ echo $?  # 126
 ```
 
 **Common causes**:
+
 - Missing execute permission
 - Wrong file type
 - Corrupted shim
 
 **Resolution**:
+
 - Fix permissions: `chmod +x ~/.kopi/shims/*`
 - Regenerate shims: `kopi setup --regenerate-shims`
 - Check file type: `file ~/.kopi/shims/java`
@@ -469,11 +509,13 @@ echo $?  # 127
 ```
 
 **Common causes**:
+
 - Shims not in PATH
 - Shell not configured
 - Required tool missing
 
 **Resolution**:
+
 - Add to PATH: `export PATH="$HOME/.kopi/shims:$PATH"`
 - Configure shell: `eval "$(kopi init bash)"`
 - Install missing tools
@@ -490,10 +532,12 @@ echo $?  # 130
 ```
 
 **Common causes**:
+
 - User pressed Ctrl+C
 - SIGINT signal received
 
 **Resolution**:
+
 - Retry operation
 - Clean partial downloads
 - Use `--force` to restart
@@ -508,7 +552,7 @@ set -e  # Exit on error
 
 install_jdk() {
     local version=$1
-    
+
     if kopi install "$version"; then
         echo "Successfully installed $version"
     else
@@ -562,7 +606,7 @@ install_jdk "21"
 ```bash
 handle_kopi_error() {
     local exit_code=$1
-    
+
     case $exit_code in
         0) return 0 ;;
         2) echo "Check command syntax with: kopi --help" ;;
@@ -574,7 +618,7 @@ handle_kopi_error() {
         127) echo "Configure shell: eval \"\$(kopi init bash)\"" ;;
         *) echo "Error code $exit_code - check logs" ;;
     esac
-    
+
     return $exit_code
 }
 

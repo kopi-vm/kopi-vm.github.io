@@ -55,6 +55,7 @@ corretto-21
 ```
 
 **Kopi's interpretation:**
+
 - Reads numeric versions
 - Auto-selects best distribution
 - Maintains compatibility with jEnv
@@ -136,7 +137,7 @@ corretto@17
 graalvm@21
 
 # Distribution with full version
-temurin@21.0.2+13.0.LTS
+temurin@21.0.2+13
 corretto@17.0.9.8.1
 graalvm@21.0.1+12.1
 ```
@@ -268,7 +269,7 @@ corretto@17.0.9
 
 ```bash
 # Good for production
-temurin@21.0.2+13.0.LTS
+temurin@21.0.2+13
 
 # Good for development
 temurin@21
@@ -278,12 +279,14 @@ temurin@21
 
 ```markdown
 <!-- In README.md -->
+
 ## Prerequisites
 
 This project requires JDK 21 (Eclipse Temurin).
 
 The exact version is specified in `.kopi-version`:
-- Production: `temurin@21.0.2+13.0.LTS`
+
+- Production: `temurin@21.0.2+13`
 - Development: Any Temurin 21.x version
 ```
 
@@ -394,7 +397,7 @@ Generate version files based on environment:
 # generate-version.sh
 
 if [ "$ENV" = "production" ]; then
-    echo "temurin@21.0.2+13.0.LTS" > .kopi-version
+    echo "temurin@21.0.2+13" > .kopi-version
 else
     echo "temurin@22" > .kopi-version
 fi
@@ -429,7 +432,7 @@ case "$branch" in
         kopi pin temurin@22
         ;;
     release/*)
-        kopi pin temurin@21.0.2+13.0.LTS
+        kopi pin temurin@21.0.2+13
         ;;
 esac
 ```
