@@ -58,4 +58,3 @@ nav:
       - Environment Variables: reference/environment.md
       - Exit Codes: reference/exit-codes.md
   - Troubleshooting: troubleshooting.md
-  - FAQ: faq.md

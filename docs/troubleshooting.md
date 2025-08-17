@@ -444,6 +444,5 @@ Get help and support through these channels:
 
 ## Next Steps
 
-- [FAQ](faq.md) - Frequently asked questions
 - [Commands Reference](reference/commands.md) - All commands
 - [Configuration](reference/configuration.md) - Configuration options
