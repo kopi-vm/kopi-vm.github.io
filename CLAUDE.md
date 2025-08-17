@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Documentation Language Policy
 
 All documentation output in this project must be written in English, including:
+
 - Code comments
 - Commit messages
 - README files

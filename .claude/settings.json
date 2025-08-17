@@ -35,18 +35,8 @@
       "mcp__playwright__browser_snapshot",
       "mcp__playwright__browser_press_key"
     ],
-    "deny": [
-      "Bash(sudo:*)",
-      "Bash(git push:*)",
-      "Bash(git commit:*)",
-      "Bash(git reset:*)",
-      "Bash(git rebase:*)"
-    ],
-    "additionalDirectories": [
-      "/workspaces/kopi-workspace/kopi/"
-    ]
+    "deny": ["Bash(sudo:*)", "Bash(git push:*)", "Bash(git commit:*)", "Bash(git reset:*)", "Bash(git rebase:*)"],
+    "additionalDirectories": ["/workspaces/kopi-workspace/kopi/"]
   },
-  "enabledMcpjsonServers": [
-    "playwright"
-  ]
+  "enabledMcpjsonServers": ["playwright"]
 }
