@@ -127,8 +127,6 @@ Certified OpenJDK builds for enterprise applications
 
 </div>
 
-[View all supported distributions →](reference/distributions.md)
-
 ## Getting Started
 
 <div class="grid cards" markdown>

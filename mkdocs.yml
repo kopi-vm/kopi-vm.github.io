@@ -56,7 +56,6 @@ nav:
       - Commands: reference/commands.md
       - Configuration: reference/configuration.md
       - Environment Variables: reference/environment.md
-      - Supported Distributions: reference/distributions.md
       - Exit Codes: reference/exit-codes.md
   - Troubleshooting: troubleshooting.md
   - FAQ: faq.md

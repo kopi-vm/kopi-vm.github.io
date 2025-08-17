@@ -212,4 +212,4 @@ Refer to `/workspaces/kopi-workspace/kopi/CLAUDE.md` for detailed development gu
    - Main project README at `/workspaces/kopi-workspace/kopi/README.md`
    - In-code documentation and help text
 
-4. **Version Compatibility**: Documentation should cover all supported JDK distributions and versions listed in `docs/reference/distributions.md`.
+4. **Version Compatibility**: Documentation should cover all supported JDK distributions and versions.

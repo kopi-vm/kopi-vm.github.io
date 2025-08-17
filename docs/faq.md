@@ -189,8 +189,6 @@ Major distributions include:
 - **BellSoft Liberica**
 - **Oracle OpenJDK**
 
-See [Supported Distributions](reference/distributions.md) for complete list.
-
 ### Which distribution should I use?
 
 **For most users**: Eclipse Temurin (default)

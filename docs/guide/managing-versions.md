@@ -214,5 +214,4 @@ unset KOPI_JAVA_VERSION
 ## Next Steps
 
 - [Working with Projects](projects.md) - Project configuration
-- [JDK Distributions](../reference/distributions.md) - Understanding distributions
 - [Configuration](../reference/configuration.md) - Advanced configuration
