@@ -4,481 +4,210 @@ Understanding how Kopi's shim system enables transparent JDK version management.
 
 ## What are Shims?
 
-Shims are lightweight executable scripts that act as proxies between your shell and the actual JDK binaries. When you run a Java command, you're actually running a Kopi shim that:
+Shims are lightweight executables that act as proxies between your shell and the actual JDK binaries. When you run a Java command like `java` or `javac`, you're actually running a Kopi shim that:
 
-1. Determines which JDK version to use
-2. Sets up the environment
-3. Executes the real JDK binary
+1. Determines which JDK version to use (from `.kopi-version`, environment variables, or config)
+2. Validates security and permissions
+3. Optionally auto-installs missing JDKs
+4. Executes the real JDK binary with your arguments
 
-```
-User Input:          java MyApp.java
-     ↓
-Kopi Shim:          ~/.kopi/shims/java
-     ↓
-Version Resolution:  Check .kopi-version, environment, etc.
-     ↓
-Real Binary:        ~/.kopi/jdks/temurin-21/bin/java MyApp.java
+```mermaid
+graph LR
+    A[User runs: java MyApp] --> B[Kopi Shim]
+    B --> C[Version Resolution]
+    C --> D[Find/Install JDK]
+    D --> E[Execute Real Binary]
+    E --> F[Output to User]
 ```
 
 ## How Shims Work
 
-### Unix/Linux/macOS
+### The Shim Binary
 
-On Unix-like systems, shims are shell scripts:
+At the core of Kopi's shim system is `kopi-shim`, a high-performance binary written in Rust. This binary:
 
-```bash
-#!/usr/bin/env bash
-# ~/.kopi/shims/java
+- Extracts the tool name from argv[0] (how it was invoked)
+- Resolves the appropriate JDK version to use
+- Validates security constraints
+- Finds or auto-installs the matching JDK
+- Executes the real JDK tool
 
-# Resolve JDK version
-JDK_PATH=$(kopi-shim resolve java)
+### Platform-Specific Implementation
 
-# Execute real binary
-exec "$JDK_PATH/bin/java" "$@"
-```
+#### Unix/Linux/macOS
 
-### Windows
+On Unix-like systems, shims are **symbolic links** pointing to the `kopi-shim` binary. The shims directory contains symbolic links for each JDK tool (java, javac, jar, jshell, etc.), all pointing to the same kopi-shim binary located in the bin directory.
 
-On Windows, shims are batch files and PowerShell scripts:
+When invoked, `kopi-shim` uses the exec system call to replace itself with the real JDK binary, maintaining zero overhead after resolution.
 
-```batch
-@echo off
-REM ~/.kopi/shims/java.bat
+#### Windows
 
-REM Resolve JDK version
-for /f "delims=" %%i in ('kopi-shim resolve java') do set JDK_PATH=%%i
+On Windows, shims are **copies** of `kopi-shim.exe`. The shims directory contains individual executable files (java.exe, javac.exe, jar.exe, jshell.exe, etc.), each being an identical copy of the kopi-shim.exe binary.
 
-REM Execute real binary
-"%JDK_PATH%\bin\java.exe" %*
-```
+Since Windows doesn't support process replacement, the shim spawns the JDK tool as a child process and exits with its status code.
 
-## Shim Components
+## Version Resolution
 
-### 1. Shim Scripts
+The shim resolves JDK versions using the `VersionResolver` in this priority order:
 
-Located in `~/.kopi/shims/`, one for each JDK tool:
+1. **Tool-specific environment variable** (e.g., `KOPI_JAVA_VERSION`)
+2. **General environment variable** (`KOPI_VERSION`)
+3. **Project-specific file** (`.kopi-version` in current or parent directories)
+4. **Global default** (`~/.kopi/version`)
+5. **Configuration default** (from `config.toml`)
 
-```
-~/.kopi/shims/
-├── java           # Java runtime
-├── javac          # Java compiler
-├── jar            # Archive tool
-├── javadoc        # Documentation generator
-├── jshell         # Interactive shell
-├── jlink          # Module linker
-├── jdeps          # Dependency analyzer
-├── keytool        # Key management
-└── ...           # 30+ other tools
-```
+The version resolver creates a new instance with the current configuration, then determines both the requested version and its source (environment variable, project file, or global default).
 
-### 2. Shim Binary (kopi-shim)
+## Auto-Installation
 
-The core shim engine written in Rust for performance:
+If a required JDK isn't installed, Kopi can automatically install it. When auto-install is enabled and you run a Java command with a missing JDK, Kopi will prompt you to install it immediately. After confirmation, it downloads and installs the required JDK version, then continues executing your original command.
 
-```rust
-// Simplified kopi-shim logic
-fn main() {
-    let tool = get_tool_name();
-    let version = resolve_version();
-    let jdk_path = get_jdk_path(version);
-    let tool_path = format!("{}/bin/{}", jdk_path, tool);
+This feature is controlled by the `KOPI_AUTO_INSTALL` environment variable or configuration setting.
 
-    exec(tool_path, args);
-}
-```
+## Security Features
 
-### 3. PATH Integration
+The shim system includes multiple security layers:
 
-Shims directory added to PATH:
+### Path Validation
 
-```bash
-# In ~/.bashrc or ~/.zshrc
-export PATH="$HOME/.kopi/shims:$PATH"
+Kopi validates all JDK paths to prevent directory traversal attacks and ensure security. The validation process:
 
-# Shims take precedence over system Java
-which java
-# Output: /home/user/.kopi/shims/java
-```
+- Resolves the JDK path to its canonical form, eliminating symbolic links and relative path components
+- Verifies that the resolved path is within the Kopi home directory
+- Rejects any attempts to access JDKs outside the designated installation directory
+- Prevents malicious actors from manipulating version files or environment variables to execute arbitrary binaries
 
-## Shim Lifecycle
+This sandboxing approach ensures that Kopi only executes JDK binaries from trusted locations that it manages.
 
-### Installation
+### Tool Name Validation
 
-When you install Kopi:
+Tool names are validated against known JDK tools to prevent arbitrary command execution.
 
-```mermaid
-graph LR
-    A[Install Kopi] --> B[Create shims directory]
-    B --> C[Generate shim scripts]
-    C --> D[Add to PATH]
-    D --> E[Ready to use]
-```
+### Permission Checks
 
-### Execution Flow
-
-When you run a Java command:
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Shell
-    participant Shim
-    participant KopiShim
-    participant JDK
-
-    User->>Shell: java MyApp
-    Shell->>Shim: Execute ~/.kopi/shims/java
-    Shim->>KopiShim: kopi-shim resolve
-    KopiShim->>KopiShim: Check .kopi-version
-    KopiShim->>KopiShim: Check environment
-    KopiShim-->>Shim: Return JDK path
-    Shim->>JDK: exec java MyApp
-    JDK-->>User: Output
-```
+File permissions are verified before execution to ensure binaries haven't been tampered with.
 
 ## Performance Optimization
 
-### 1. Native Binary
+### Native Binary Performance
 
-The `kopi-shim` binary is written in Rust for speed:
+The `kopi-shim` binary is written in Rust for minimal overhead:
 
-```rust
-// Fast version resolution
-#[inline(always)]
-fn resolve_version() -> String {
-    // Check cache first (< 1ms)
-    if let Some(cached) = check_cache() {
-        return cached;
-    }
+- **Version resolution**: < 10ms
+- **Tool execution**: Zero overhead (process replacement on Unix)
+- **Memory usage**: < 5MB
 
-    // Full resolution (< 10ms)
-    full_resolution()
-}
-```
+### Efficient Process Replacement
 
-### 2. Caching
-
-Recent resolutions are cached:
-
-```rust
-struct Cache {
-    version: String,
-    timestamp: Instant,
-    ttl: Duration,
-}
-
-impl Cache {
-    fn is_valid(&self) -> bool {
-        self.timestamp.elapsed() < self.ttl
-    }
-}
-```
-
-### 3. Lazy Loading
-
-Only load what's needed:
-
-```rust
-// Don't load metadata for simple execution
-if command == "exec" {
-    return exec_without_metadata();
-}
-```
+On Unix systems, the exec system call replaces the shim process entirely with the target JDK binary. This approach eliminates any runtime overhead since the shim process completely transforms into the Java process, maintaining the same process ID and system resources.
 
 ## Supported Tools
 
-### Core Java Tools
+Kopi manages shims for all standard JDK tools, organized by category:
 
-```bash
-# Compiler and runtime
-java          # Java application launcher
-javac         # Java compiler
-javap         # Class file disassembler
-javah         # C header generator (deprecated)
+### Core Tools
 
-# Packaging and deployment
-jar           # Archive tool
-jarsigner     # JAR signing tool
-pack200       # JAR compression (deprecated)
-unpack200     # JAR decompression (deprecated)
+Essential tools available in all JDK versions:
 
-# Development tools
-jshell        # Interactive Java shell
-jconsole      # Monitoring console
-jdb           # Debugger
-jdeps         # Dependency analyzer
-```
+- `java` - Java application launcher
+- `javac` - Java compiler
+- `javadoc` - Documentation generator
+- `jar` - Archive tool
+- `javap` - Class file disassembler
 
-### Documentation Tools
+### Debug Tools
 
-```bash
-javadoc       # API documentation generator
-```
+- `jdb` - Java debugger
+- `jconsole` - Monitoring console
+- `jstack` - Stack trace tool
+- `jmap` - Memory map tool
+- `jhsdb` - HotSpot debugger (JDK 9+)
+
+### Monitoring Tools
+
+- `jps` - Process status
+- `jstat` - Statistics monitoring
+- `jinfo` - Configuration info
+- `jcmd` - Diagnostic commands (JDK 7+)
+- `jfr` - Flight Recorder (JDK 11+)
 
 ### Security Tools
 
-```bash
-keytool       # Key and certificate management
-jarsigner     # JAR signing and verification
-policytool    # Policy file creation (deprecated)
-```
+- `keytool` - Key and certificate management
+- `jarsigner` - JAR signing and verification
 
-### Performance Tools
+### Utility Tools
 
-```bash
-jps           # Java process status
-jstat         # Statistics monitoring
-jstack        # Stack traces
-jmap          # Memory map
-jhat          # Heap analyzer (deprecated)
-jinfo         # Configuration info
-```
-
-### Module System Tools
-
-```bash
-jlink         # Custom runtime image creator
-jmod          # JMOD file creator
-jimage        # JIMAGE file inspector
-```
+- `jshell` - Interactive shell (JDK 9+)
+- `jlink` - Custom runtime creator (JDK 9+)
+- `jmod` - Module tool (JDK 9+)
+- `jdeps` - Dependency analyzer (JDK 8+)
+- `jpackage` - Packaging tool (JDK 14+)
+- `jwebserver` - Simple web server (JDK 18+)
 
 ### Distribution-Specific Tools
 
-Some distributions include additional tools:
+Some tools are only available in specific distributions:
 
-```bash
-# GraalVM
-native-image  # Native compilation
-gu            # GraalVM updater
+#### GraalVM
 
-# OpenJ9 (Semeru)
-jitserver     # JIT compilation server
+- `native-image` - Native compilation
+- `native-image-configure` - Configuration tool
+- `native-image-inspect` - Inspection tool
+- `js` - JavaScript interpreter (removed in GraalVM 23+)
 
-# Corretto
-jmc           # Mission Control
-```
+#### SAP Machine
+
+- `asprof` - Async profiler
 
 ## Shim Management
 
-### Listing Shims
+### Installation
 
-```bash
-# List all shims
-ls ~/.kopi/shims/
+Shims are created during Kopi setup. Running `kopi setup` creates the default shims for core tools like java, javac, javadoc, jar, and jshell.
 
-# Check shim version
-~/.kopi/shims/java --version
+### Creating Additional Shims
 
-# Verify shim installation
-kopi doctor --check shims
-```
+When you install a JDK, Kopi automatically creates shims for all its tools. The `kopi install` command detects all available tools in the JDK and creates corresponding shims.
 
-### Updating Shims
+You can manage shims using these commands:
 
-```bash
-# Regenerate all shims
-kopi setup --regenerate-shims
+- `kopi setup --force` - Force recreate all shims even if they exist
+- `kopi shim add <tool>` - Add a shim for a specific tool
+- `kopi shim remove <tool>` - Remove a specific shim
 
-# Update specific shim
-kopi setup --shim java
-```
+### Verification
 
-### Custom Shims
+Check shim integrity and functionality using these verification methods:
 
-Create custom shims for specific needs:
+- `kopi doctor --check shell` - Run shell diagnostics including shim checks
+- `kopi shim verify` - Check all shims for integrity issues
+- `kopi shim verify --fix` - Automatically repair any detected problems
+- `kopi shim list` - Display all installed shims
 
-```bash
-#!/usr/bin/env bash
-# ~/.kopi/shims/custom-java
+You can test a specific shim by running it directly with the version flag, or on Unix systems, use the readlink command to verify that the symbolic link points to the correct kopi-shim binary.
 
-# Custom logic before execution
-export CUSTOM_VAR=value
+### Repair
 
-# Call standard shim
-exec ~/.kopi/shims/java "$@"
-```
+Fix broken or corrupted shims using these repair commands:
+
+- `kopi setup --force` - Force regenerate all shims from scratch
+- `kopi shim verify --fix` - Detect and automatically repair issues
+
+The repair process performs three steps: checking all shim integrity, removing any broken shims, and recreating them correctly with proper permissions and links.
 
 ## Platform-Specific Details
 
-### macOS
+### macOS Bundle Structure
 
-- Uses `/usr/bin/env bash` for portability
-- Supports both Intel and Apple Silicon
-- Handles `.app` bundle structure
+On macOS, Kopi handles both standard and bundle JDK structures. Standard JDKs place binaries directly in the bin directory, while macOS bundle JDKs use the Contents/Home/bin path structure. Kopi automatically detects and handles both layouts.
 
-### Linux
+### Windows Path Handling
 
-- Compatible with all major distributions
-- Supports both glibc and musl
-- Works in containers
-
-### Windows
-
-- Dual shim system (batch + PowerShell)
-- Handles path separators
-- Supports both CMD and PowerShell
-
-## Troubleshooting
-
-### Shims Not Working
-
-```bash
-# Check PATH order
-echo $PATH
-# Ensure ~/.kopi/shims comes first
-
-# Verify shim exists
-ls -la ~/.kopi/shims/java
-
-# Test shim directly
-~/.kopi/shims/java --version
-
-# Regenerate shims
-kopi setup --regenerate-shims
-```
-
-### Performance Issues
-
-```bash
-# Measure shim overhead
-time ~/.kopi/shims/java --version
-
-# Check cache
-kopi cache status
-
-# Profile execution
-RUST_LOG=debug java --version
-```
-
-### Command Not Found
-
-```bash
-# Rehash (Zsh)
-rehash
-
-# Update PATH
-export PATH="$HOME/.kopi/shims:$PATH"
-
-# Verify installation
-kopi doctor
-```
-
-## Advanced Usage
-
-### Environment Variables
-
-Control shim behavior:
-
-```bash
-# Force specific version
-KOPI_JAVA_VERSION=21 java --version
-
-# Debug with Rust logging
-RUST_LOG=debug java MyApp
-```
-
-### Direct Binary Access
-
-Bypass shims when needed:
-
-```bash
-# Direct JDK access
-~/.kopi/jdks/temurin-21/bin/java --version
-
-# Alias for direct access
-alias java-direct='~/.kopi/jdks/temurin-21/bin/java'
-```
-
-### Shim Hooks
-
-Add pre/post execution hooks:
-
-```bash
-# ~/.kopi/hooks/pre-java
-#!/bin/bash
-echo "Starting Java with version $(kopi current)"
-
-# ~/.kopi/hooks/post-java
-#!/bin/bash
-echo "Java execution completed"
-```
-
-## Security Considerations
-
-### Shim Integrity
-
-Shims are protected from modification:
-
-```bash
-# Check shim checksums
-kopi verify --shims
-
-# Permissions (Unix)
-ls -la ~/.kopi/shims/java
-# -rwxr-xr-x (755)
-```
-
-### Path Injection Prevention
-
-Shims validate paths:
-
-```rust
-fn validate_jdk_path(path: &Path) -> Result<()> {
-    // Ensure path is within KOPI_HOME
-    let canonical = path.canonicalize()?;
-    if !canonical.starts_with(KOPI_HOME) {
-        return Err("Invalid JDK path");
-    }
-    Ok(())
-}
-```
-
-## Comparison with Other Approaches
-
-### vs. Symlinks
-
-Traditional symlink approach:
-
-```bash
-ln -s /usr/lib/jvm/java-17/bin/java /usr/local/bin/java
-```
-
-Problems:
-
-- Single version only
-- Manual management
-- No project awareness
-
-Kopi shims:
-
-- Multiple versions
-- Automatic switching
-- Project-specific
-
-### vs. Shell Functions
-
-Shell function approach:
-
-```bash
-function java() {
-    /path/to/specific/java "$@"
-}
-```
-
-Problems:
-
-- Shell-specific
-- Not inherited by subprocesses
-- Complex management
-
-Kopi shims:
-
-- Work in any shell
-- Inherited by all processes
-- Simple management
+Windows shims handle path separators and `.exe` extensions automatically. The tool resolution system appends the .exe extension when running on Windows, allowing you to use the same commands across all platforms without worrying about platform-specific file extensions.
 
 ## Next Steps
 
-- [Metadata System](metadata.md) - JDK discovery
-- [Caching](caching.md) - Performance optimization
-- [Shell Integration](../guide/shell-integration.md) - Shell setup
+- [Projects](../guide/projects.md) - Configure project-specific versions
+- [Shell Integration](../guide/shell-integration.md) - Set up your shell
+- [Configuration](../reference/configuration.md) - Configure Kopi settings
