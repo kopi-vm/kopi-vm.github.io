@@ -93,7 +93,8 @@ kopi-vm.github.io/
 ### Writing Style
 
 - Clear, concise technical documentation
-- Use code examples for all commands
+- Documentation should be written using natural language and Mermaid diagrams only
+- Avoid code blocks or code examples except for Mermaid diagrams
 - Include platform-specific notes where relevant
 - Link between related pages for better navigation
 - Verify implementation basis before documenting
