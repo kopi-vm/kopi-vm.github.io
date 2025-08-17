@@ -98,17 +98,21 @@ Document differences between:
 After updating documentation, always lint and format the files:
 
 1. **Format the documentation files:**
+
    ```bash
    npm run format
    ```
+
    This runs both:
    - `markdownlint-cli2 --fix` to fix Markdown formatting issues
    - `prettier --write` to format all files consistently
 
 2. **Lint the documentation to check for issues:**
+
    ```bash
    npm run lint
    ```
+
    This runs both:
    - `markdownlint-cli2` to check Markdown syntax and style
    - `prettier --check` to verify formatting consistency
