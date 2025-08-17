@@ -2,6 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Documentation Language Policy
+
+All documentation output in this project must be written in English, including:
+- Code comments
+- Commit messages
+- README files
+- API documentation
+- Error messages
+- User-facing documentation
+- Test descriptions
+- TODO comments
+- Any other written documentation
+
 ## Project Overview
 
 This is the documentation website for Kopi, a fast JDK version management tool written in Rust. The site is built with MkDocs Material and hosted on GitHub Pages at <https://kopi-vm.github.io/>.
@@ -82,6 +95,7 @@ kopi-vm.github.io/
 - Use code examples for all commands
 - Include platform-specific notes where relevant
 - Link between related pages for better navigation
+- Verify implementation basis before documenting
 
 ### Platform-Specific Content
 
