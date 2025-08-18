@@ -208,6 +208,97 @@ kopi cache refresh
 kopi install 21
 ```
 
+### Already Installed
+
+When trying to install a JDK version that's already installed, you'll see an error message.
+
+```bash
+Error: temurin 21 is already installed
+```
+
+To reinstall or update an existing JDK installation, use the `--force` flag:
+
+```bash
+kopi install 21 --force
+```
+
+### Comprehensive Uninstall Issues
+
+#### Multiple JDKs Match
+
+When multiple JDK installations match your uninstall criteria:
+
+```bash
+Error: Multiple JDKs match version '21'
+```
+
+Be more specific with your uninstall command:
+
+```bash
+kopi uninstall temurin@21.0.5+11   # Specify exact version
+kopi uninstall corretto@21          # Specify distribution
+```
+
+#### Files in Use (Windows)
+
+On Windows, antivirus software or running processes may lock JDK files:
+
+```bash
+Error: Files may be held by antivirus software
+```
+
+To resolve:
+
+- Close any running Java applications
+- Temporarily disable real-time antivirus protection
+- Add kopi directory to antivirus exclusions
+- Use `--force` flag to attempt forced removal
+
+#### Permission Errors
+
+When you lack permissions to remove JDK files:
+
+```bash
+Error: Permission denied removing JDK
+```
+
+Solutions:
+
+- Run as Administrator (Windows) or with sudo (Unix)
+- Check file permissions in `~/.kopi/jdks/`
+- Ensure no files are read-only or locked
+
+#### Partial Removal Cleanup
+
+If a previous uninstall was interrupted:
+
+```bash
+Error: Partial removal detected
+```
+
+Clean up partial removals:
+
+```bash
+kopi uninstall --cleanup
+kopi uninstall --cleanup --force  # For stubborn files
+```
+
+Check for orphaned temporary directories and metadata files.
+
+#### Orphaned Symlinks (Unix)
+
+Broken symbolic links may be left behind:
+
+```bash
+Warning: Orphaned symlinks found
+```
+
+Symlinks are cleaned up automatically during uninstall. For manual cleanup:
+
+```bash
+find ~/.kopi -type l ! -exec test -e {} \; -delete
+```
+
 ## Network and Proxy Issues
 
 ### Behind Corporate Proxy
@@ -283,6 +374,138 @@ Clear the download cache:
 kopi cache clear
 ```
 
+## Shim-Specific Issues
+
+### Shim Not Working
+
+If a tool like `java` isn't found in the JDK:
+
+```bash
+Error: Tool 'java' not found in JDK
+```
+
+Solutions:
+
+- Ensure `~/.kopi/shims` is in your PATH
+- Run `kopi shim verify` to check shim integrity
+- Recreate the shim: `kopi shim add java --force`
+
+### Version Not Switching
+
+When the wrong Java version is used despite having a `.kopi-version` file:
+
+Solutions:
+
+- Check version file location: must be in current or parent directory
+- Verify version format: `temurin@21` or just `21`
+- Check environment variable: `KOPI_JAVA_VERSION` overrides files
+- Enable debug logging: `RUST_LOG=kopi::shim=debug java -version`
+
+### Performance Issues
+
+If shim execution is slow:
+
+Solutions:
+
+- Run benchmarks: `cargo bench --bench shim_bench`
+- Check for antivirus interference on Windows
+- Ensure shims are built with release profile
+- Verify no network delays in version resolution
+
+### Security Validation Errors
+
+When encountering security-related errors:
+
+```bash
+Error: Security error: Path contains directory traversal
+```
+
+Solutions:
+
+- Check for suspicious patterns in version files
+- Ensure no malformed symlinks in kopi directories
+- Run `kopi shim verify --fix` to repair issues
+
+## Shell Integration Problems
+
+### PATH Not Updated
+
+**Symptoms:**
+
+- `java -version` shows wrong version
+- `which java` doesn't point to kopi shims
+- `kopi` command not found
+
+**Solutions:**
+
+1. Verify shims in PATH:
+
+   ```bash
+   echo $PATH | grep kopi/shims
+   ```
+
+2. Ensure correct PATH order:
+
+   ```bash
+   export PATH="$HOME/.kopi/shims:$PATH"
+   ```
+
+3. Check if kopi is installed:
+   ```bash
+   which kopi
+   ```
+
+### Version Not Detected
+
+**Symptoms:**
+
+- Kopi doesn't detect project version files
+- Wrong version is used despite having `.kopi-version` or `.java-version`
+
+**Solutions:**
+
+1. Check file permissions:
+
+   ```bash
+   ls -la .kopi-version .java-version
+   ```
+
+2. Verify version format:
+
+   ```bash
+   cat .kopi-version  # Should be like: temurin@21
+   cat .java-version  # Should be like: 21
+   ```
+
+3. Check version resolution:
+   ```bash
+   kopi current  # Shows which version is currently active
+   kopi env  # Outputs environment variables for the current version
+   ```
+
+### Shell Detection Issues
+
+**Symptoms:**
+
+- `kopi env` fails to detect shell type
+- Wrong shell syntax is generated
+
+**Solutions:**
+
+1. Explicitly specify shell:
+
+   ```bash
+   eval "$(kopi env --shell bash)"    # For bash
+   kopi env --shell fish | source      # For fish
+   kopi env --shell powershell | Invoke-Expression  # For PowerShell
+   ```
+
+2. Check your current shell:
+   ```bash
+   echo $SHELL
+   echo $0
+   ```
+
 ## Platform-Specific Issues
 
 ### Windows Issues
@@ -327,6 +550,67 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
   -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
 
+#### PowerShell Execution Policy
+
+Scripts may fail to execute in PowerShell due to execution policy restrictions:
+
+```bash
+Error: Scripts cannot execute in PowerShell
+```
+
+Check and update the execution policy:
+
+```powershell
+# Check current policy
+Get-ExecutionPolicy
+
+# Set policy for current user
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+### macOS Issues
+
+#### Gatekeeper Issues
+
+When macOS prevents Kopi from running due to unverified developer:
+
+```bash
+Error: "kopi" cannot be opened because the developer cannot be verified
+```
+
+Remove the quarantine attribute:
+
+```bash
+xattr -d com.apple.quarantine ~/.kopi/bin/kopi
+```
+
+#### Shell Configuration
+
+On macOS, ensure proper shell configuration:
+
+- If using bash, ensure `.bash_profile` sources `.bashrc`
+- For zsh (default on macOS 10.15+), use `~/.zshrc`
+
+### Linux Issues
+
+#### SELinux Contexts
+
+Permission denied errors despite correct file permissions may be due to SELinux:
+
+```bash
+Error: Permission denied (even with correct file permissions)
+```
+
+Check and fix SELinux contexts:
+
+```bash
+# Check SELinux status
+sestatus
+
+# Set correct context
+restorecon -Rv ~/.kopi
+```
+
 ## Diagnostic Tools
 
 ### Kopi Doctor
@@ -369,6 +653,24 @@ RUST_LOG=trace kopi current
 # Component-specific debugging
 RUST_LOG=kopi::cache=debug kopi cache refresh
 RUST_LOG=kopi::shim=trace kopi shim list
+```
+
+## Enhanced Error Messages
+
+Kopi provides comprehensive error messages with helpful suggestions when something goes wrong. Error messages follow this structured format:
+
+- Error type and brief description
+- Detailed explanation of what went wrong
+- Suggestion for how to fix the issue
+
+```bash
+# Example: Version not found
+$ kopi install 999
+Error: JDK version 'temurin 999' is not available
+
+Details: Version lookup failed: temurin 999 not found
+
+Suggestion: Run 'kopi cache search' to see available versions or 'kopi cache refresh' to update the list.
 ```
 
 ### Manual Checks
