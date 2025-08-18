@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,10 +23,27 @@ jobs:
       - name: Install mkdocs
         run: pip install mkdocs-material mike
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Build
+        run: mkdocs build --verbose
 
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v4.0.0
+        with:
+          path: site/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
       - name: Deploy
-        run: mkdocs gh-deploy --force 
+        id: deployment
+        uses: actions/deploy-pages@v4
