@@ -100,32 +100,64 @@ java --version  # Should use project's JDK
 
 #### Bash/Zsh - Directory Change Hook
 
+For automatic Java version switching when entering project directories:
+
 ```bash
-# Auto-switch on directory change
-kopi_auto_switch() {
-    if [ -f .kopi-version ] || [ -f .java-version ]; then
-        kopi shell $(cat .kopi-version 2>/dev/null || cat .java-version)
-    fi
+# Add to ~/.bashrc or ~/.zshrc
+kopi_auto_env() {
+    eval "$(kopi env)"
 }
 
-# Add to PROMPT_COMMAND (Bash)
-PROMPT_COMMAND="kopi_auto_switch; $PROMPT_COMMAND"
-
-# Or use chpwd hook (Zsh)
-autoload -U add-zsh-hook
-add-zsh-hook chpwd kopi_auto_switch
+# Hook into directory changes
+if [[ -n "$ZSH_VERSION" ]]; then
+    # Zsh
+    autoload -U add-zsh-hook
+    add-zsh-hook chpwd kopi_auto_env
+    kopi_auto_env  # Run on shell start
+else
+    # Bash
+    PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}kopi_auto_env"
+fi
 ```
 
 #### Fish - Directory Change Event
 
 ```fish
-function kopi_auto_switch --on-variable PWD
-    if test -f .kopi-version
-        kopi shell (cat .kopi-version)
-    else if test -f .java-version
-        kopi shell (cat .java-version)
-    end
+# Add to ~/.config/fish/functions/kopi_auto_env.fish
+function kopi_auto_env --on-variable PWD
+    kopi env | source
 end
+
+# Run on shell start
+kopi_auto_env
+```
+
+#### PowerShell - Directory Detection
+
+```powershell
+# Add to your PowerShell profile ($PROFILE)
+# Auto-switch Java version on directory change
+$global:KopiLastPwd = $PWD
+
+function Invoke-KopiAutoEnv {
+    if ($PWD.Path -ne $global:KopiLastPwd) {
+        $global:KopiLastPwd = $PWD.Path
+        if (Get-Command kopi -ErrorAction SilentlyContinue) {
+            kopi env | Invoke-Expression
+        }
+    }
+}
+
+# Hook into prompt function for directory change detection
+$global:OriginalPromptFunction = $function:prompt
+
+function prompt {
+    Invoke-KopiAutoEnv
+    & $global:OriginalPromptFunction
+}
+
+# Run on shell start
+Invoke-KopiAutoEnv
 ```
 
 ### Custom Prompts
@@ -135,24 +167,57 @@ Show active JDK in your prompt:
 #### Bash
 
 ```bash
+# Function to get current Java version
+kopi_version() {
+    if command -v kopi &> /dev/null; then
+        kopi current 2>/dev/null | grep -oE '[0-9]+(\.[0-9]+)*' | head -1
+    fi
+}
+
 # Add to PS1
-PS1='[$(kopi current --short)] \u@\h:\w\$ '
+PS1='[\u@\h \W$(kopi_version && echo " java:$(kopi_version)")]$ '
 ```
 
 #### Zsh
 
 ```zsh
+# Function to get current Java version
+kopi_version() {
+    if command -v kopi &> /dev/null; then
+        kopi current 2>/dev/null | grep -oE '[0-9]+(\.[0-9]+)*' | head -1
+    fi
+}
+
 # Add to PROMPT
-PROMPT='[$(kopi current --short)] %n@%m:%~%# '
+PROMPT='%n@%m %1~ $(kopi_version >/dev/null && echo "java:$(kopi_version) ")%# '
 ```
 
 #### Fish
 
 ```fish
 function fish_prompt
-    echo -n "[$(kopi current --short)] "
+    set -l java_version (kopi current 2>/dev/null | string match -r '\d+(\.\d+)*' | head -1)
+    if test -n "$java_version"
+        set_color yellow
+        echo -n "java:$java_version "
+        set_color normal
+    end
+    # ... rest of your prompt
     echo -n (whoami)@(hostname):$(pwd)'$ '
 end
+```
+
+#### PowerShell
+
+```powershell
+function prompt {
+    $javaVersion = & kopi current 2>$null | Select-String -Pattern '\d+(\.\d+)*' | ForEach-Object { $_.Matches[0].Value }
+    if ($javaVersion) {
+        Write-Host "[java:$javaVersion] " -NoNewline -ForegroundColor Yellow
+    }
+    # ... rest of your prompt
+    return "> "
+}
 ```
 
 ### Aliases and Functions
@@ -183,64 +248,6 @@ java_ps() {
         fi
     done
 }
-```
-
-## Troubleshooting
-
-### Shims Not Working
-
-```bash
-# Check PATH order
-echo $PATH
-# Ensure ~/.kopi/shims comes before system Java
-
-# Verify shim installation
-ls -la ~/.kopi/shims/
-
-# Reinstall shims
-kopi setup
-```
-
-### Wrong JDK Version
-
-```bash
-# Check version resolution
-kopi current --verbose
-
-# Clear any overrides
-unset JAVA_HOME
-unset KOPI_JAVA_VERSION
-
-# Verify shell integration
-kopi doctor
-```
-
-### Shell-Specific Issues
-
-#### Zsh
-
-```bash
-# If commands are not found
-rehash
-
-# For oh-my-zsh compatibility
-# Add Kopi init after oh-my-zsh
-```
-
-#### Fish
-
-```fish
-# Update universal variables
-set -U fish_user_paths $HOME/.kopi/shims $fish_user_paths
-```
-
-#### Windows
-
-```powershell
-# Refresh environment variables
-refreshenv
-
-# Or restart PowerShell
 ```
 
 ## Next Steps
