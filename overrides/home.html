@@ -313,57 +313,62 @@
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  function initializeTabs() {
     const tabButtons = document.querySelectorAll(".tab-button");
     const tabPanes = document.querySelectorAll(".tab-pane");
+
+    // Skip if tabs are not present on the page
+    if (tabButtons.length === 0 || tabPanes.length === 0) {
+      return;
+    }
 
     // Function to detect OS and return appropriate tab
     function detectOS() {
       const platform = navigator.platform.toLowerCase();
       const userAgent = navigator.userAgent.toLowerCase();
-      
+
       // Check for Windows
-      if (platform.includes('win') || userAgent.includes('windows')) {
-        return 'windows';
+      if (platform.includes("win") || userAgent.includes("windows")) {
+        return "windows";
       }
-      
+
       // Check for macOS
-      if (platform.includes('mac') || userAgent.includes('mac os')) {
-        return 'macos';
+      if (platform.includes("mac") || userAgent.includes("mac os")) {
+        return "macos";
       }
-      
+
       // Check for Linux (Debian/Ubuntu)
-      if (platform.includes('linux') || userAgent.includes('linux')) {
+      if (platform.includes("linux") || userAgent.includes("linux")) {
         // Try to detect if it's specifically Debian/Ubuntu
-        if (userAgent.includes('ubuntu') || userAgent.includes('debian')) {
-          return 'debian';
+        if (userAgent.includes("ubuntu") || userAgent.includes("debian")) {
+          return "debian";
         }
         // For other Linux distros, default to "other"
-        return 'other';
+        return "other";
       }
-      
+
       // Default to "other" for unknown OS
-      return 'other';
+      return "other";
     }
 
     // Set initial active tab based on detected OS
     const detectedOS = detectOS();
-    
+
     // Remove default active classes
     tabButtons.forEach((btn) => btn.classList.remove("active"));
     tabPanes.forEach((pane) => pane.classList.remove("active"));
-    
+
     // Set the detected OS tab as active
     const activeButton = document.querySelector(`.tab-button[data-tab="${detectedOS}"]`);
     const activePane = document.getElementById(detectedOS);
-    
+
     if (activeButton && activePane) {
       activeButton.classList.add("active");
       activePane.classList.add("active");
     } else {
       // Fallback to "other" if something goes wrong
       const otherButton = document.querySelector('.tab-button[data-tab="other"]');
-      const otherPane = document.getElementById('other');
+      const otherPane = document.getElementById("other");
       if (otherButton && otherPane) {
         otherButton.classList.add("active");
         otherPane.classList.add("active");
@@ -384,6 +389,55 @@
         document.getElementById(targetTab).classList.add("active");
       });
     });
+  }
+
+  // Initialize on DOMContentLoaded for normal page loads
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeTabs);
+  } else {
+    // DOM is already loaded, initialize immediately
+    initializeTabs();
+  }
+
+  // Handle MkDocs Material instant navigation
+  // Use MutationObserver to detect when the main content changes
+  const observer = new MutationObserver(function (mutations) {
+    // Check if the tab elements are present in the mutations
+    for (let mutation of mutations) {
+      for (let node of mutation.addedNodes) {
+        if (node.nodeType === 1) {
+          // Element node
+          // Check if this node or its descendants contain tab elements
+          if (
+            node.querySelector &&
+            (node.querySelector(".tab-button") || (node.classList && node.classList.contains("tab-button")))
+          ) {
+            // Small delay to ensure DOM is fully updated
+            setTimeout(initializeTabs, 10);
+            return;
+          }
+        }
+      }
+    }
   });
+
+  // Start observing the document body for changes
+  // Wait for body to be available before starting observer
+  if (document.body) {
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  } else {
+    // If body is not ready yet, wait for it
+    document.addEventListener("DOMContentLoaded", function () {
+      if (document.body) {
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }
+    });
+  }
 </script>
 {% endblock %}
