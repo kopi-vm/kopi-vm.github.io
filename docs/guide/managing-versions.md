@@ -177,40 +177,6 @@ kopi shell temurin@21
 kopi use graalvm@21  # alias for shell
 ```
 
-## Best Practices
-
-1. **Always set versions** in production projects using `kopi local`
-2. **Use LTS versions** for stability
-3. **Specify distributions** explicitly in CI/CD
-4. **Document version requirements** in README
-5. **Test with multiple JDKs** using `kopi shell` or `kopi use` to launch temporary test shells
-
-## Troubleshooting
-
-### Version Not Found
-
-```bash
-# Update metadata cache
-kopi cache refresh
-
-# Search with different criteria
-kopi search
-```
-
-### Version Conflicts
-
-```bash
-# Check current version
-kopi current
-
-# Verify environment
-env | grep JAVA
-env | grep KOPI
-
-# Clear environment override
-unset KOPI_JAVA_VERSION
-```
-
 ## Next Steps
 
 - [Working with Projects](projects.md) - Project configuration
