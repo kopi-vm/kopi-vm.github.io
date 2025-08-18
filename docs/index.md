@@ -26,6 +26,10 @@ template: home.html
   </div>
 </div>
 
+<div class="try-it-out">
+  <h2>Try it out!</h2>
+</div>
+
 <div class="code-example">
   <div class="tab-container">
     <div class="tab-buttons">
