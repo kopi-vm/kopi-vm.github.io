@@ -6,9 +6,23 @@ template: home.html
   <img src="assets/logo_black.svg" alt="Kopi Logo" class="hero-logo">
   <div class="hero-content">
     <h1>Kopi</h1>
-    <p class="tagline">Lightning-fast JDK version manager</p>
-    <p class="sub-tagline">Automatic version switching · Supports all major JDK distributions · Works seamlessly across bash, zsh, and fish shells</p>
+    <p class="tagline">⚡Lightning-fast JDK version manager</p>
     <a href="getting-started/installation.html" class="cta-button">Get Started →</a>
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>🚀 Automatic Version Switching</h3>
+    <p>Seamlessly switches JDK versions based on your project configuration</p>
+  </div>
+  <div class="feature">
+    <h3>☕ All Major JDK Distributions</h3>
+    <p>Supports Oracle, OpenJDK, Amazon Corretto, Eclipse Temurin, and more</p>
+  </div>
+  <div class="feature">
+    <h3>🐚 Universal Shell Support</h3>
+    <p>Works seamlessly across all major shells including bash, zsh, fish, cmd, and PowerShell</p>
   </div>
 </div>
 
