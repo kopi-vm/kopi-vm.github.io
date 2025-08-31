@@ -22,9 +22,14 @@ kopi install temurin@21.0.2+13
 kopi install latest
 kopi install temurin@latest
 
-# Package type (JRE or JDK)
+# JRE package type (JDK is default)
 kopi install jre@21
-kopi install jdk@temurin@21
+kopi install jre@temurin@21
+
+# JavaFX bundled versions (+fx suffix)
+kopi install 21+fx
+kopi install zulu@21+fx
+kopi install jre@liberica@17+fx
 ```
 
 ### Distribution Selection
@@ -48,11 +53,11 @@ Set the system-wide default JDK:
 # Set global version
 kopi global 21
 
+# Set with distribution
+kopi global temurin@21
+
 # View current version
 kopi current
-
-# Reset to system JDK
-kopi global system
 ```
 
 ### Project Version
@@ -122,9 +127,10 @@ kopi search --lts-only
 Kopi resolves versions in this priority:
 
 1. Environment variable (`KOPI_JAVA_VERSION`)
-2. Project version file (`.kopi-version` takes precedence over `.java-version`)
-3. Parent directory version files (recursive up to root, checking `.kopi-version` first, then `.java-version`)
-4. Global default (`~/.kopi/version` set by `kopi global`)
+2. Project version files searched from current directory up to root:
+   - `.kopi-version` takes precedence over `.java-version` in the same directory
+   - Search stops when the first version file is found
+3. Global default (`~/.kopi/version` set by `kopi global`)
 
 ### Version File Formats
 
@@ -140,20 +146,27 @@ graalvm@21.0.1
 21
 17.0.9
 
-# Package type prefix (JRE or JDK)
-jre@21
-jdk@temurin@21
+# JRE package type (JDK is default)
+jre@temurin@21   # JRE with distribution
+jre@21           # JRE without distribution
+
+# JavaFX bundled versions (+fx suffix)
+21+fx            # JDK with JavaFX
+zulu@17+fx       # Zulu JDK with JavaFX
+jre@liberica@21+fx  # Liberica JRE with JavaFX
 ```
 
 #### Compatibility Format (.java-version)
 
 ```bash
-# Simple version only
+# Simple version numbers only
 17
 21
 11.0.2
 
-# Note: .java-version does not support distribution@version format
+# Note: .java-version does not support:
+# - Distribution specification (no temurin@21)
+# - Package type specification (no jre@ prefix)
 ```
 
 ## Advanced Usage
@@ -176,6 +189,31 @@ kopi global graalvm@21
 kopi shell temurin@21
 kopi use graalvm@21  # alias for shell
 ```
+
+### JavaFX Support
+
+Install JDKs with JavaFX bundled using the `+fx` suffix:
+
+```bash
+# Install JDK with JavaFX
+kopi install 21+fx
+kopi install zulu@17+fx
+kopi install liberica@21.0.2+fx
+
+# Set JavaFX version for project
+kopi local zulu@21+fx
+
+# Use JavaFX version in new shell
+kopi shell liberica@17+fx
+```
+
+**Available distributions with JavaFX:**
+
+- **Zulu** (Azul) - Provides JavaFX builds
+- **Liberica** (BellSoft) - Full edition includes JavaFX
+- **Oracle** - Some versions include JavaFX
+
+**Note:** Not all distributions provide JavaFX-bundled builds. If a JavaFX build is not available for your requested version, Kopi will show available alternatives.
 
 ## Next Steps
 
