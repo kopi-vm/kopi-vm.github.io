@@ -6,11 +6,12 @@ Complete reference for all Kopi commands and options.
 
 Kopi supports several global options that can be used with any command:
 
-| Option      | Short | Description                                                |
-| ----------- | ----- | ---------------------------------------------------------- |
-| `--help`    | `-h`  | Display help information for any command                   |
-| `--version` | `-V`  | Show the current Kopi version                              |
-| `--verbose` | `-v`  | Increase output verbosity (-v info, -vv debug, -vvv trace) |
+| Option          | Short | Description                                                |
+| --------------- | ----- | ---------------------------------------------------------- |
+| `--help`        | `-h`  | Display help information for any command                   |
+| `--version`     | `-V`  | Show the current Kopi version                              |
+| `--verbose`     | `-v`  | Increase output verbosity (-v info, -vv debug, -vvv trace) |
+| `--no-progress` |       | Disable progress indicators                                |
 
 ## Core Commands
 
@@ -22,9 +23,7 @@ Install a JDK version. The install command accepts a version specification such 
 | --------------------- | ----- | -------------------------------------------------------------------------- |
 | `--force`             | `-f`  | Force reinstall even if the version already exists                         |
 | `--dry-run`           |       | Preview what would be installed without performing the actual installation |
-| `--no-progress`       |       | Disable progress indicators during download                                |
 | `--timeout <SECONDS>` |       | Specify download timeout in seconds                                        |
-| `--javafx-bundled`    |       | Include packages regardless of JavaFX bundled status                       |
 
 The command has an alias "i" for convenience.
 
@@ -288,17 +287,16 @@ kopi ls
 
 ### kopi search
 
-Search for available JDK versions in the metadata cache. This is an alias for the cache search command. You can search by version number, distribution name, or combined specifications like "corretto@21".
+Search for available JDK versions in the metadata cache. This is a hidden alias for the cache search command. You can search by version number, distribution name, or combined specifications like "corretto@21".
 
-| Option             | Short | Description                                          |
-| ------------------ | ----- | ---------------------------------------------------- |
-| `--compact`        | `-c`  | Minimal output showing only version numbers          |
-| `--detailed`       | `-d`  | Comprehensive information including download URLs    |
-| `--json`           |       | Machine-readable output                              |
-| `--lts-only`       |       | Show only Long Term Support versions                 |
-| `--javafx-bundled` |       | Include packages regardless of JavaFX bundled status |
+| Option       | Short | Description                                       |
+| ------------ | ----- | ------------------------------------------------- |
+| `--compact`  | `-c`  | Minimal output showing only version numbers       |
+| `--detailed` | `-d`  | Comprehensive information including download URLs |
+| `--json`     |       | Machine-readable output                           |
+| `--lts-only` |       | Show only Long Term Support versions              |
 
-The command has aliases "s", "ls-remote", and "list-remote" for convenience.
+The command has a visible alias "s" and hidden aliases "ls-remote" and "list-remote" for convenience.
 
 #### Examples
 
@@ -330,12 +328,6 @@ kopi search -c temurin
 
 ```bash
 kopi search --detailed graalvm@21
-```
-
-**Search with JavaFX:**
-
-```bash
-kopi search --javafx-bundled zulu
 ```
 
 ## Utility Commands
@@ -457,22 +449,12 @@ Manage the JDK metadata cache. This command has several subcommands for differen
 
 Refresh metadata from the foojay.io API. This updates the local cache with the latest available JDK versions and distributions.
 
-| Option             | Short | Description                                          |
-| ------------------ | ----- | ---------------------------------------------------- |
-| `--javafx-bundled` |       | Include packages regardless of JavaFX bundled status |
-
 ##### Examples
 
 **Update cache:**
 
 ```bash
 kopi cache refresh
-```
-
-**Include JavaFX packages:**
-
-```bash
-kopi cache refresh --javafx-bundled
 ```
 
 #### kopi cache info
@@ -503,15 +485,14 @@ kopi cache clear
 
 Search for available JDK versions in the cache. Accepts a query string to search for specific versions or distributions.
 
-| Option                   | Short | Description                                          |
-| ------------------------ | ----- | ---------------------------------------------------- |
-| `--compact`              |       | Minimal output                                       |
-| `--detailed`             |       | Comprehensive information                            |
-| `--json`                 |       | Machine-readable output                              |
-| `--lts-only`             |       | Show only Long Term Support versions                 |
-| `--javafx-bundled`       |       | Include packages regardless of JavaFX bundled status |
-| `--java-version`         |       | Force searching by java_version field                |
-| `--distribution-version` |       | Force searching by distribution_version field        |
+| Option                   | Short | Description                                   |
+| ------------------------ | ----- | --------------------------------------------- |
+| `--compact`              |       | Minimal output                                |
+| `--detailed`             |       | Comprehensive information                     |
+| `--json`                 |       | Machine-readable output                       |
+| `--lts-only`             |       | Show only Long Term Support versions          |
+| `--java-version`         |       | Force searching by java_version field         |
+| `--distribution-version` |       | Force searching by distribution_version field |
 
 ##### Examples
 
@@ -549,7 +530,7 @@ kopi cache list-distributions
 
 Hidden command that serves as an alias for cache refresh. Refreshes the JDK metadata from the foojay.io API.
 
-The command has an alias "r" for convenience.
+The command has a visible alias "r" for convenience.
 
 #### Examples
 
@@ -682,4 +663,4 @@ Many Kopi commands have shorter aliases for convenience:
 | `local`     | `l`, `pin`                      | Set project-specific JDK          |
 | `shell`     | `use`                           | Set JDK for current shell session |
 | `which`     | `w`                             | Show JDK installation path        |
-| `refresh`   | `r` (hidden)                    | Refresh metadata cache            |
+| `refresh`   | `r`                             | Refresh metadata cache            |
