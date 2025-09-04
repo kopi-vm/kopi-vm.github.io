@@ -30,13 +30,6 @@ The main Kopi application source code is located at `/workspaces/kopi-workspace/
 - `mkdocs build` - Build static site to `site/` directory
 - `mkdocs serve --dev-addr 0.0.0.0:8000` - Serve on all interfaces
 
-### Metadata Management
-
-The site hosts pre-generated JDK metadata files that are automatically updated daily via GitHub Actions:
-
-- Manual update: `kopi-metadata-gen update --input docs/metadata --output docs/metadata`
-- Metadata location: `docs/metadata/` (JSON files organized by platform)
-
 ## Architecture
 
 ### Directory Structure
@@ -51,10 +44,9 @@ kopi-vm.github.io/
 │   ├── guide/             # User guides for managing JDKs
 │   ├── concepts/          # Architecture and technical concepts
 │   ├── reference/         # Command and API reference
-│   ├── metadata/          # Pre-generated JDK metadata (auto-updated)
 │   ├── troubleshooting.md # Common issues and solutions
 │   └── faq.md            # Frequently asked questions
-└── .github/workflows/     # GitHub Actions for automated updates
+└── .github/workflows/     # GitHub Actions for deployment
 ```
 
 ### Key Components
@@ -66,20 +58,11 @@ kopi-vm.github.io/
 - Automatic search indexing and offline support
 - Responsive navigation with tabs and sections
 
-**Metadata System:**
-
-- Pre-generated JSON files for each platform/vendor combination
-- Organized by: `<os>-<arch>-<libc>/<vendor>.json`
-- Index file at `metadata/index.json` listing all platforms
-- Updated daily via GitHub Actions cron job
-- Serves as primary metadata source for Kopi CLI performance
-
 **GitHub Actions Workflow:**
 
-- File: `.github/workflows/update-metadata.yml`
-- Runs daily at midnight UTC
-- Uses `kopi-metadata-gen` binary from main Kopi project
-- Automatically commits updated metadata files
+- File: `.github/workflows/deploy.yml`
+- Automatically builds and deploys site to GitHub Pages on push to main branch
+- Uses MkDocs Material and Mike for versioned documentation
 
 ## Content Guidelines
 
@@ -116,34 +99,37 @@ After updating documentation, always lint and format the files:
 1. **Format the documentation files:**
 
    ```bash
-   npm run format
+   bun run format
    ```
 
    This runs both:
-   - `markdownlint-cli2 --fix` to fix Markdown formatting issues
+   - `remark --output` to format and fix Markdown issues
    - `prettier --write` to format all files consistently
 
 2. **Lint the documentation to check for issues:**
 
    ```bash
-   npm run lint
+   bun run lint
    ```
 
    This runs both:
-   - `markdownlint-cli2` to check Markdown syntax and style
+   - `remark --frail` to check Markdown syntax, style, and validate links
    - `prettier --check` to verify formatting consistency
 
 3. **Common linting errors and solutions:**
-   - **MD001-MD048**: Various Markdown style violations (e.g., heading levels, list formatting)
-   - **Line length violations**: Lines exceeding 120 characters (configured in package.json)
-   - **Trailing whitespace**: Remove spaces at end of lines
-   - **Inconsistent indentation**: Use 2 spaces for indentation (configured in prettier)
+   - **Heading violations**: Maximum heading length is 80 characters
+   - **List formatting**: Use `-` for bullets, proper indentation required
+   - **Link validation**: Broken internal links will be caught by remark-validate-links
+   - **Dead URLs**: External links are checked with 3-second timeout
+   - **Line length violations**: Lines exceeding 120 characters (configured in prettier)
+   - **Inconsistent formatting**: Use emphasis with `_` and rules with `-`
    - **Missing newline at EOF**: Ensure files end with a newline
 
 4. **If linting errors occur:**
-   - Run `npm run format` first to auto-fix most issues
-   - For remaining errors, check the specific error codes and fix manually
-   - Re-run `npm run lint` to verify all issues are resolved
+   - Run `bun run format` first to auto-fix most issues
+   - For remaining errors, check the specific error messages from remark
+   - Fix link errors by verifying paths and URLs
+   - Re-run `bun run lint` to verify all issues are resolved
 
 ### Build Validation
 
@@ -203,13 +189,11 @@ Refer to `/workspaces/kopi-workspace/kopi/CLAUDE.md` for detailed development gu
 
 ## Important Notes
 
-1. **Metadata Updates**: The metadata files in `docs/metadata/` are automatically generated. Manual edits will be overwritten by the daily GitHub Actions workflow.
+1. **Documentation Deployment**: The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-2. **Documentation Deployment**: The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
-
-3. **Cross-References**: When updating documentation, ensure consistency between:
+2. **Cross-References**: When updating documentation, ensure consistency between:
    - This documentation site
    - Main project README at `/workspaces/kopi-workspace/kopi/README.md`
    - In-code documentation and help text
 
-4. **Version Compatibility**: Documentation should cover all supported JDK distributions and versions.
+3. **Version Compatibility**: Documentation should cover all supported JDK distributions and versions.

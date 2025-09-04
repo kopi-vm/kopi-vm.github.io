@@ -24,6 +24,7 @@
       "Bash(kill:*)",
       "Bash(chmod:*)",
       "Bash(npm run:*)",
+      "Bash(bun run:*)",
       "Bash(mkdocs:*)",
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_install",
@@ -43,9 +44,13 @@
       "Bash(git reset:*)",
       "Bash(git rebase:*)"
     ],
-    "additionalDirectories": ["/workspaces/kopi-workspace/kopi/"]
+    "additionalDirectories": [
+      "/workspaces/kopi-workspace/kopi/"
+    ]
   },
-  "enabledMcpjsonServers": ["playwright"],
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
   "statusLine": {
     "type": "command",
     "command": "npx -y ccusage statusline --visual-burn-rate emoji",
