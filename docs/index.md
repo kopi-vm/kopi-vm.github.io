@@ -40,47 +40,38 @@ template: home.html
     </div>
     <div class="tab-content">
       <div class="tab-pane" id="windows">
-
-```text
-winget install kopi
+<pre><code>winget install kopi
 
 kopi local 21
 
-java --version
-```
+java --version</code></pre>
 
-      </div>
-      <div class="tab-pane" id="macos">
+</div>
+<div class="tab-pane" id="macos">
 
-```text
-brew install kopi-vm/tap/kopi
+<pre><code>brew install kopi-vm/tap/kopi
 
 kopi local 21
 
-java --version
-```
+java --version</code></pre>
 
       </div>
       <div class="tab-pane" id="debian">
 
-```text
-curl -fsSL https://kopi-vm.github.io/install.sh | bash
+<pre><code>curl -fsSL https://kopi-vm.github.io/install.sh | bash
 
 kopi local 21
 
-java --version
-```
+java --version</code></pre>
 
       </div>
       <div class="tab-pane" id="other">
 
-```text
-cargo install kopi
+<pre><code>cargo install kopi
 
 kopi local 21
 
-java --version
-```
+java --version</code></pre>
 
       </div>
     </div>

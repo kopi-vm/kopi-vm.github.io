@@ -27,7 +27,7 @@ Install a JDK version. The install command accepts a version specification such 
 
 The command has an alias "i" for convenience.
 
-#### Examples
+#### Install Examples
 
 **Install latest JDK 21:**
 
@@ -78,7 +78,7 @@ Remove an installed JDK. Optionally specify a version to uninstall, or use witho
 
 The command has aliases "u" and "remove" for convenience.
 
-#### Examples
+#### Uninstall Examples
 
 **Uninstall specific version:**
 
@@ -116,7 +116,7 @@ Set the global default JDK version that will be used system-wide. Pass a version
 
 The command has aliases "g" and "default" for convenience.
 
-#### Examples
+#### Global Examples
 
 **Set JDK 21 as global default:**
 
@@ -142,7 +142,7 @@ Set the JDK version for the current project by creating a .kopi-version file in 
 
 The command has aliases "l" and "pin" for convenience.
 
-#### Examples
+#### Local Examples
 
 **Set project to use JDK 21:**
 
@@ -172,7 +172,7 @@ Set the JDK version for the current shell session only. This temporary override 
 
 The command has an alias "use" for convenience.
 
-#### Examples
+#### Shell Examples
 
 **Temporarily use JDK 17:**
 
@@ -201,7 +201,7 @@ Display the currently active JDK version and its source (shell, local, global, o
 | `--quiet` | `-q`  | Show only the version number      |
 | `--json`  |       | Output information in JSON format |
 
-#### Examples
+#### Current Examples
 
 **Check current JDK:**
 
@@ -237,7 +237,7 @@ Usage varies by shell:
 - For Fish, pipe the output to source
 - For PowerShell, pipe the output to Invoke-Expression
 
-#### Examples
+#### Env Examples
 
 **Set environment for current JDK (Bash/Zsh):**
 
@@ -271,7 +271,7 @@ List all installed JDK versions. Shows the distribution, version, and installati
 
 The command has an alias "ls" for convenience.
 
-#### Examples
+#### List Examples
 
 **List all installed JDKs:**
 
@@ -298,7 +298,7 @@ Search for available JDK versions in the metadata cache. This is a hidden alias 
 
 The command has a visible alias "s" and hidden aliases "ls-remote" and "list-remote" for convenience.
 
-#### Examples
+#### Search Examples
 
 **Search for JDK 21 versions:**
 
@@ -344,7 +344,7 @@ Show the installation path for a JDK version. Without arguments, shows the path 
 
 The command has an alias "w" for convenience.
 
-#### Examples
+#### Which Examples
 
 **Find current JDK path:**
 
@@ -394,7 +394,7 @@ Available check categories:
 - **network**: Tests API connectivity, DNS resolution, proxy configuration, and TLS verification
 - **cache**: Inspects cache files, permissions, format validity, staleness, and size
 
-#### Examples
+#### Doctor Examples
 
 **Run full diagnostic:**
 
@@ -425,7 +425,7 @@ Perform initial setup and configuration of Kopi. This command creates necessary 
 | --------- | ----- | ----------------------------------------- |
 | `--force` | `-f`  | Recreate shims even if they already exist |
 
-#### Examples
+#### Setup Examples
 
 **Initial Kopi setup:**
 
@@ -449,7 +449,7 @@ Manage the JDK metadata cache. This command has several subcommands for differen
 
 Refresh metadata from the foojay.io API. This updates the local cache with the latest available JDK versions and distributions.
 
-##### Examples
+##### Cache Refresh Examples
 
 **Update cache:**
 
@@ -461,7 +461,7 @@ kopi cache refresh
 
 Display information about the current cache state, including last update time, cache location, and statistics.
 
-##### Examples
+##### Cache Info Examples
 
 **Check cache status:**
 
@@ -473,7 +473,7 @@ kopi cache info
 
 Clear all cached metadata. This removes all cached data and forces a fresh download on the next operation that requires metadata.
 
-##### Examples
+##### Cache Clear Examples
 
 **Clear entire cache:**
 
@@ -494,7 +494,7 @@ Search for available JDK versions in the cache. Accepts a query string to search
 | `--java-version`         |       | Force searching by java_version field         |
 | `--distribution-version` |       | Force searching by distribution_version field |
 
-##### Examples
+##### Cache Search Examples
 
 **Search cached versions:**
 
@@ -518,7 +518,7 @@ kopi cache search --distribution-version 17.0.9+9
 
 List all available distributions in the cache, showing which vendors and versions are available for installation.
 
-##### Examples
+##### Cache List-Distributions Examples
 
 **List all distributions:**
 
@@ -532,7 +532,7 @@ Hidden command that serves as an alias for cache refresh. Refreshes the JDK meta
 
 The command has a visible alias "r" for convenience.
 
-#### Examples
+#### Refresh Examples
 
 **Quick cache refresh:**
 
@@ -560,7 +560,7 @@ Add a shim for a specific JDK tool. Pass the tool name (such as "java", "javac",
 | --------- | ----- | ------------------------------------------ |
 | `--force` | `-f`  | Force creation even if shim already exists |
 
-##### Examples
+##### Shim Add Examples
 
 **Add java shim:**
 
@@ -584,7 +584,7 @@ kopi shim add --force jar
 
 Remove a shim for a specific JDK tool. Pass the tool name to remove its shim.
 
-##### Examples
+##### Shim Remove Examples
 
 **Remove javadoc shim:**
 
@@ -607,7 +607,7 @@ List all installed shims.
 | `--available`           |       | Show available tools that could have shims created |
 | `--distribution <DIST>` | `-d`  | Filter by distribution                             |
 
-##### Examples
+##### Shim List Examples
 
 **List installed shims:**
 
@@ -635,7 +635,7 @@ Verify and repair shims. Checks that all shims are properly installed and functi
 | ------- | ----- | ------------------------------------- |
 | `--fix` |       | Automatically repair any issues found |
 
-##### Examples
+##### Shim Verify Examples
 
 **Check shim integrity:**
 
