@@ -55,7 +55,7 @@ corretto-21
 
 Kopi searches for version files up the directory tree:
 
-```
+```text
 /home/user/
 ├── .kopi-version (21)
 └── projects/
@@ -70,7 +70,7 @@ Kopi searches for version files up the directory tree:
 
 Configure different JDK versions for different parts of a monorepo:
 
-```
+```text
 monorepo/
 ├── .kopi-version (21)          # Default for monorepo
 ├── services/

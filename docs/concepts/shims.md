@@ -26,7 +26,7 @@ graph LR
 
 At the core of Kopi's shim system is `kopi-shim`, a high-performance binary written in Rust. This binary:
 
-- Extracts the tool name from argv[0] (how it was invoked)
+- Extracts the tool name from argv\[0] (how it was invoked)
 - Resolves the appropriate JDK version to use
 - Validates security constraints
 - Finds or auto-installs the matching JDK

@@ -210,7 +210,7 @@ graph TD
 
 ### 5. Storage Layout
 
-```
+```text
 ~/.kopi/                        # KOPI_HOME
 ├── shims/                      # Executable shims
 │   ├── java                    # Shim for java command

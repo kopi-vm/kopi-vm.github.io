@@ -81,7 +81,7 @@ Kopi resolves the JDK version to use in this order:
 
 **Note:** When both `.kopi-version` and `.java-version` exist in the same directory, `.kopi-version` takes precedence.
 
-```
+```text
 project/
 ├── .kopi-version (temurin@21)  # Takes priority
 ├── .java-version (17)           # Ignored when .kopi-version exists
@@ -196,7 +196,7 @@ jre@liberica@21+fx  # Liberica JRE with JavaFX
 
 Version files are inherited from parent directories:
 
-```
+```text
 workspace/
 ├── .kopi-version (21)              # Workspace default
 ├── project-a/
@@ -241,7 +241,7 @@ Kopi searches for version files from the current directory up to the root:
 
 Structure for different JDK requirements:
 
-```
+```text
 monorepo/
 ├── .kopi-version (21)              # Default for monorepo
 ├── services/
@@ -262,7 +262,7 @@ monorepo/
 
 Maven/Gradle multi-module setup:
 
-```
+```text
 my-app/
 ├── .kopi-version (17)              # Project default
 ├── modules/
@@ -281,7 +281,7 @@ my-app/
 
 Different versions for different environments:
 
-```
+```text
 project/
 ├── .kopi-version (21)              # Production version
 ├── dev/

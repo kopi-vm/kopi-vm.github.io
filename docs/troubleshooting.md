@@ -401,7 +401,7 @@ Solutions:
 - Check environment variable: `KOPI_JAVA_VERSION` overrides files
 - Enable debug logging: `RUST_LOG=kopi::shim=debug java -version`
 
-### Performance Issues
+### Shim Performance
 
 If shim execution is slow:
 
@@ -539,13 +539,13 @@ Windows has a path length limit that can cause issues with deeply nested directo
 
 Use a shorter KOPI_HOME location:
 
-```bash
+```powershell
 $env:KOPI_HOME = "C:\kopi"
 ```
 
 On Windows 10 and later, enable long path support (requires Administrator):
 
-```bash
+```powershell
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
   -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```

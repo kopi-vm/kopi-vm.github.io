@@ -43,7 +43,7 @@ The command received invalid input or configuration.
 
 **Resolution**:
 
-- Check the version format (use proper syntax like "21", "temurin@21", etc.)
+- Check the version format (use proper syntax like "21", "temurin\@21", etc.)
 - Verify configuration file syntax and values
 - Review command arguments for correct format
 

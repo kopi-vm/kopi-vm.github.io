@@ -164,7 +164,7 @@ Invoke-KopiAutoEnv
 
 Show active JDK in your prompt:
 
-#### Bash
+#### Bash Prompt
 
 ```bash
 # Function to get current Java version
@@ -178,7 +178,7 @@ kopi_version() {
 PS1='[\u@\h \W$(kopi_version && echo " java:$(kopi_version)")]$ '
 ```
 
-#### Zsh
+#### Zsh Prompt
 
 ```zsh
 # Function to get current Java version
@@ -192,7 +192,7 @@ kopi_version() {
 PROMPT='%n@%m %1~ $(kopi_version >/dev/null && echo "java:$(kopi_version) ")%# '
 ```
 
-#### Fish
+#### Fish Prompt
 
 ```fish
 function fish_prompt
@@ -207,7 +207,7 @@ function fish_prompt
 end
 ```
 
-#### PowerShell
+#### PowerShell Prompt
 
 ```powershell
 function prompt {

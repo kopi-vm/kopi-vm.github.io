@@ -17,7 +17,7 @@ The configuration file is optional. If it doesn't exist, Kopi uses sensible defa
 
 ### Home Directory
 
-The Kopi home directory can be customized using the KOPI_HOME environment variable. If set to an absolute path, Kopi will use that directory instead of the default ~/.kopi location. Relative paths in the KOPI_HOME variable are ignored and Kopi falls back to the default location.
+The Kopi home directory can be customized using the KOPI_HOME environment variable. If set to an absolute path, Kopi will use that directory instead of the default \~/.kopi location. Relative paths in the KOPI_HOME variable are ignored and Kopi falls back to the default location.
 
 ## Configuration Sections
 
