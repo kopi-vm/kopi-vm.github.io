@@ -21,9 +21,9 @@ java --version  # Uses Temurin 21.0.2
 unset KOPI_JAVA_VERSION
 ```
 
-**Priority**: Highest (overrides all other settings)  
-**Scope**: Current shell and child processes  
-**Use case**: Testing, CI/CD, temporary overrides
+- **Priority**: Highest (overrides all other settings)
+- **Scope**: Current shell and child processes
+- **Use case**: Testing, CI/CD, temporary overrides
 
 ### KOPI_HOME
 
@@ -40,9 +40,9 @@ export KOPI_HOME=/opt/kopi
 # /opt/kopi/config.toml
 ```
 
-**Default**: `~/.kopi`  
-**Scope**: All Kopi operations  
-**Use case**: Shared installations, custom locations
+- **Default**: `~/.kopi`
+- **Scope**: All Kopi operations
+- **Use case**: Shared installations, custom locations
 
 ## Configuration Override Variables
 

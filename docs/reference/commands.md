@@ -17,7 +17,7 @@ Kopi supports several global options that can be used with any command:
 
 ### kopi install
 
-Install a JDK version. The install command accepts a version specification such as "21" for the latest JDK 21, "temurin@21" for a specific distribution, or "corretto@17.0.9" for an exact version.
+Install a JDK version. The install command accepts a version specification such as "21" for the latest JDK 21, "temurin\@21" for a specific distribution, or "corretto\@17.0.9" for an exact version.
 
 | Option                | Short | Description                                                                |
 | --------------------- | ----- | -------------------------------------------------------------------------- |
@@ -112,7 +112,7 @@ kopi uninstall --cleanup
 
 ### kopi global
 
-Set the global default JDK version that will be used system-wide. Pass a version specification such as "21" or "temurin@17".
+Set the global default JDK version that will be used system-wide. Pass a version specification such as "21" or "temurin\@17".
 
 The command has aliases "g" and "default" for convenience.
 
@@ -287,7 +287,7 @@ kopi ls
 
 ### kopi search
 
-Search for available JDK versions in the metadata cache. This is a hidden alias for the cache search command. You can search by version number, distribution name, or combined specifications like "corretto@21".
+Search for available JDK versions in the metadata cache. This is a hidden alias for the cache search command. You can search by version number, distribution name, or combined specifications like "corretto\@21".
 
 | Option       | Short | Description                                       |
 | ------------ | ----- | ------------------------------------------------- |
