@@ -13,15 +13,15 @@ template: home.html
 
 <div class="features">
   <div class="feature">
-    <h3>🚀 Automatic Version Switching</h3>
+    <h2>🚀 Automatic Version Switching</h2>
     <p>Seamlessly switches JDK versions based on your project configuration</p>
   </div>
   <div class="feature">
-    <h3>☕ All Major JDK Distributions</h3>
+    <h2>☕ All Major JDK Distributions</h2>
     <p>Supports Oracle, OpenJDK, Amazon Corretto, Eclipse Temurin, and more</p>
   </div>
   <div class="feature">
-    <h3>🐚 Universal Shell Support</h3>
+    <h2>🐚 Universal Shell Support</h2>
     <p>Works seamlessly across all major shells including bash, zsh, fish, cmd, and PowerShell</p>
   </div>
 </div>
