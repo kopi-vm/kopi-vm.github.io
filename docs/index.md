@@ -55,8 +55,8 @@ kopi local 21
 
 java --version</code></pre>
 
-      </div>
-      <div class="tab-pane" id="debian">
+</div>
+<div class="tab-pane" id="debian">
 
 <pre><code>curl -fsSL https://kopi-vm.github.io/install.sh | bash
 
@@ -64,8 +64,8 @@ kopi local 21
 
 java --version</code></pre>
 
-      </div>
-      <div class="tab-pane" id="other">
+</div>
+<div class="tab-pane" id="other">
 
 <pre><code>cargo install kopi
 
@@ -73,8 +73,8 @@ kopi local 21
 
 java --version</code></pre>
 
-      </div>
-    </div>
+</div>
+</div>
 
   </div>
 </div>
