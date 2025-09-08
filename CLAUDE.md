@@ -102,9 +102,11 @@ After updating documentation, always lint and format the files:
    bun run format
    ```
 
-   This runs both:
-   - `remark --output` to format and fix Markdown issues
-   - `prettier --write` to format all files consistently
+   This runs remark with:
+   - `config/remark-format.json` configuration
+   - Formats Markdown files according to style settings
+   - Applies Prettier formatting through integrated plugins (`remark-preset-prettier` and `unified-prettier`)
+   - Auto-fixes formatting issues and outputs the results
 
 2. **Lint the documentation to check for issues:**
 
@@ -112,15 +114,18 @@ After updating documentation, always lint and format the files:
    bun run lint
    ```
 
-   This runs both:
-   - `remark --frail` to check Markdown syntax, style, and validate links
-   - `prettier --check` to verify formatting consistency
+   This runs remark with:
+   - `config/remark-lint.json` configuration
+   - Checks Markdown syntax and style
+   - Validates internal links with `remark-validate-links`
+   - Checks for dead URLs with `remark-lint-no-dead-urls` (10-second timeout)
+   - Applies Prettier formatting rules through `remark-preset-prettier`
 
 3. **Common linting errors and solutions:**
    - **Heading violations**: Maximum heading length is 80 characters
    - **List formatting**: Use `-` for bullets, proper indentation required
    - **Link validation**: Broken internal links will be caught by remark-validate-links
-   - **Dead URLs**: External links are checked with 3-second timeout
+   - **Dead URLs**: External links are checked with 10-second timeout
    - **Line length violations**: Lines exceeding 120 characters (configured in prettier)
    - **Inconsistent formatting**: Use emphasis with `_` and rules with `-`
    - **Missing newline at EOF**: Ensure files end with a newline
