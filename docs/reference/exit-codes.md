@@ -26,7 +26,7 @@ An unspecified error occurred during command execution. This is the default exit
 **Resolution**:
 
 - Check the error message for specific details
-- Enable debug mode by setting KOPI_DEBUG environment variable to 1
+- Increase verbosity with `-v`, `-vv`, or `-vvv`, or set `RUST_LOG=debug` for additional context
 - Report the issue if it persists
 
 ## Command and Configuration Errors
@@ -58,9 +58,9 @@ No JDK version configured for the current project.
 
 **Resolution**:
 
-- Create a version file using the pin command
-- Navigate to a project directory with a version file
-- Set a global default using the use command
+- Create a version file with `kopi local <version>` (alias `kopi pin`)
+- Navigate to a project directory that already contains a version file
+- Set a global default using `kopi global <version>`
 
 ### 4 - JDK Not Installed
 
@@ -205,8 +205,35 @@ Not enough disk space available for the operation.
 
 - Free disk space on the system
 - Clean downloads using cache clear command
-- Remove old JDKs using the prune command
+- Remove old JDKs with targeted `kopi uninstall` commands (for example, `kopi uninstall temurin@11` or `kopi uninstall --all temurin`)
 - Use different disk by setting KOPI_HOME environment variable
+
+## Locking Errors
+
+### 75 - Lock Wait Cancelled
+
+User cancelled the lock acquisition by pressing Ctrl-C while waiting for another operation to complete.
+
+**Common causes**:
+
+- User interrupted lock wait by pressing Ctrl-C
+- User decided not to wait for another Kopi process
+- Script or automation sent SIGINT signal
+- User cancelled to adjust timeout or check other process
+
+**Resolution**:
+
+- Wait for the other operation to complete and retry
+- Increase lock timeout using --lock-timeout flag or KOPI_LOCK_TIMEOUT environment variable
+- Check for stuck Kopi processes using process monitoring tools
+- Run any Kopi command to trigger automatic lock cleanup (hygiene)
+- If necessary, manually remove stale lock files from \~/.kopi/locks/ (only when no Kopi processes are running)
+
+**Distinguishing from timeout**:
+
+Exit code 75 specifically indicates user cancellation (Ctrl-C), while exit code 1 may indicate a lock acquisition timeout. This distinction helps scripts differentiate intentional interruptions from timeout errors.
+
+For more information about the locking system, see the [Locking concept page](../concepts/locking.md).
 
 ## Command Not Found Errors
 
@@ -225,5 +252,5 @@ Standard POSIX exit code for command not found.
 
 - Ensure Kopi is properly installed
 - Add Kopi to PATH environment variable
-- Configure shell using the init command
+- Configure shell using `kopi setup`
 - Reinstall Kopi if necessary

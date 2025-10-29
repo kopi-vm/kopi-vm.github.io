@@ -92,6 +92,84 @@ auto_install_prompt = true
 install_timeout = 300
 ```
 
+### Locking Configuration
+
+The locking section controls how Kopi coordinates concurrent operations to prevent conflicts during installations, uninstalls, and cache updates:
+
+| Setting | Type          | Default | Description                                                      |
+| ------- | ------------- | ------- | ---------------------------------------------------------------- |
+| mode    | String        | `auto`  | Lock strategy: "auto", "advisory", or "fallback"                 |
+| timeout | Int or String | `600`   | Lock acquisition timeout in seconds or "infinite" for no timeout |
+
+**Lock Modes:**
+
+- **auto** (recommended): Attempts advisory locks first, automatically downgrades to fallback locks if advisory locks are unavailable or unsupported by the filesystem. This mode provides the best balance of performance and compatibility.
+- **advisory**: Uses only operating system-level locks (fcntl on Unix, file locks on Windows). Fails if the filesystem doesn't support advisory locks. Provides the best performance but may not work on network filesystems.
+- **fallback**: Uses only file-based marker locks with atomic create_new semantics. Works on all filesystems but requires periodic cleanup of stale lock files through automatic hygiene processes.
+
+**Timeout Values:**
+
+- **Seconds** (integer): Number of seconds to wait for lock acquisition (e.g., `30`, `600`, `3600`)
+- **"infinite"** (string): Wait indefinitely without timeout
+
+**Timeout Precedence:**
+
+The lock timeout can be configured in multiple places with the following precedence order (highest to lowest):
+
+1. CLI flag: `--lock-timeout <DURATION>`
+2. Environment variable: `KOPI_LOCK_TIMEOUT`
+3. Configuration file: `locking.timeout`
+4. Built-in default: 600 seconds (10 minutes)
+
+```toml
+# Example locking configuration
+[locking]
+# Use automatic lock strategy (recommended)
+mode = "auto"
+
+# Wait up to 10 minutes for lock acquisition
+timeout = 600
+
+# Alternative: wait indefinitely
+# timeout = "infinite"
+
+# Alternative: use only advisory locks (for local filesystems)
+# mode = "advisory"
+
+# Alternative: use only fallback locks (for network filesystems)
+# mode = "fallback"
+```
+
+**Lock Scopes:**
+
+Kopi uses different locks for different operations:
+
+- **Installation locks**: One lock per JDK being installed (e.g., `temurin-21.0.5+11`)
+- **Cache writer lock**: Serializes metadata cache updates
+- **Global config lock**: Protects configuration file updates
+
+This fine-grained locking allows multiple operations to proceed concurrently when they don't conflict. For example, installing two different JDK versions can happen simultaneously.
+
+**Lock Hygiene:**
+
+Kopi automatically cleans up stale lock files on startup through a hygiene process. This cleanup:
+
+- Scans fallback lock, marker, and staging files and removes those older than the derived stale-time threshold
+- Leaves active or recently created locks in place so running operations continue uninterrupted
+- Emits a debug-level summary of removals and only warns when cleanup encounters an error
+- Never blocks normal operations
+
+**Network Filesystem Considerations:**
+
+When using Kopi on network filesystems like NFS or SMB:
+
+- Advisory locks may not be supported, causing automatic downgrade to fallback mode
+- Lock operations may be slower due to network latency
+- Stale locks may accumulate more frequently
+- Consider using local storage for `KOPI_HOME` when possible for better performance
+
+For detailed information about the locking system, see the [Locking concept page](../concepts/locking.md).
+
 ### Metadata Configuration
 
 The metadata section controls how Kopi fetches and caches JDK metadata:
@@ -204,6 +282,11 @@ exclude_tools = ["jshell"]
 auto_install = false
 auto_install_prompt = true
 install_timeout = 600
+
+# Locking settings
+[locking]
+mode = "auto"
+timeout = 600
 
 # Metadata cache settings
 [metadata.cache]

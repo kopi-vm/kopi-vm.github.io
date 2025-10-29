@@ -49,6 +49,7 @@ nav:
       - Shell Integration: guide/shell-integration.md
   - Concepts:
       - Architecture: concepts/architecture.md
+      - Locking System: concepts/locking.md
       - Version Files: concepts/version-files.md
       - Shims: concepts/shims.md
       - Metadata System: concepts/metadata.md

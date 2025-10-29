@@ -365,7 +365,7 @@ Remove unused JDK installations:
 ```bash
 kopi list
 kopi uninstall temurin@11
-kopi uninstall --all
+kopi uninstall --all temurin
 ```
 
 Clear the download cache:

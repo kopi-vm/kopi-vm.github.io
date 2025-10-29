@@ -6,12 +6,48 @@ Complete reference for all Kopi commands and options.
 
 Kopi supports several global options that can be used with any command:
 
-| Option          | Short | Description                                                |
-| --------------- | ----- | ---------------------------------------------------------- |
-| `--help`        | `-h`  | Display help information for any command                   |
-| `--version`     | `-V`  | Show the current Kopi version                              |
-| `--verbose`     | `-v`  | Increase output verbosity (-v info, -vv debug, -vvv trace) |
-| `--no-progress` |       | Disable progress indicators                                |
+| Option                      | Short | Description                                                |
+| --------------------------- | ----- | ---------------------------------------------------------- |
+| `--help`                    | `-h`  | Display help information for any command                   |
+| `--version`                 | `-V`  | Show the current Kopi version                              |
+| `--verbose`                 | `-v`  | Increase output verbosity (-v info, -vv debug, -vvv trace) |
+| `--no-progress`             |       | Disable progress indicators                                |
+| `--lock-timeout <DURATION>` |       | Override lock acquisition timeout (seconds or "infinite")  |
+
+### Lock Timeout Configuration
+
+The `--lock-timeout` flag controls how long Kopi waits to acquire locks before timing out. This global flag overrides all other timeout sources including environment variables and configuration files.
+
+**Accepted values:**
+
+- Positive integers representing seconds: `30`, `120`, `600`
+- The literal string `infinite` to wait indefinitely
+
+**Timeout resolution order (highest to lowest precedence):**
+
+1. CLI flag: `--lock-timeout`
+2. Environment variable: `KOPI_LOCK_TIMEOUT`
+3. Configuration file: `locking.timeout` in `~/.kopi/config.toml`
+4. Built-in default: 600 seconds (10 minutes)
+
+**Usage examples:**
+
+```bash
+# Wait up to 30 seconds for installation lock
+kopi --lock-timeout 30 install temurin@21
+
+# Wait indefinitely for cache refresh
+kopi --lock-timeout infinite cache refresh
+
+# Apply to any operation that acquires locks
+kopi --lock-timeout 120 uninstall corretto@17
+```
+
+**When timeout errors occur:**
+
+Kopi reports the effective timeout value and where it was configured, making it easy to adjust settings. Lock timeouts indicate another Kopi process is holding the lock. Common solutions include waiting for the other operation to complete, increasing the timeout value, or checking for stuck processes.
+
+For more details about the locking system, see the [Locking concept page](../concepts/locking.md).
 
 ## Core Commands
 
@@ -67,7 +103,7 @@ kopi install --timeout 300 graalvm@21
 
 ### kopi uninstall
 
-Remove an installed JDK. Optionally specify a version to uninstall, or use without arguments for interactive selection.
+Remove an installed JDK. Provide a version or distribution filter to decide what gets removed. Use `--cleanup` on its own only when you want to clean up partial uninstall artifacts; running the command with no version and no cleanup flag results in an error.
 
 | Option      | Short | Description                                           |
 | ----------- | ----- | ----------------------------------------------------- |
@@ -267,7 +303,7 @@ kopi env --export false
 
 ### kopi list
 
-List all installed JDK versions. Shows the distribution, version, and installation status of each JDK, with the active version marked.
+List all installed JDK versions along with their disk usage. Each entry reports the distribution and version (including any `+fx` suffix) and the size of that installation. The command does not highlight which JDK is currently active; use `kopi current` for that information.
 
 The command has an alias "ls" for convenience.
 
@@ -393,6 +429,86 @@ Available check categories:
 - **permissions**: Examines directory and binary file permissions
 - **network**: Tests API connectivity, DNS resolution, proxy configuration, and TLS verification
 - **cache**: Inspects cache files, permissions, format validity, staleness, and size
+
+#### Detailed Check Information
+
+**Installation Checks:**
+
+- Kopi Binary Check: Verifies the kopi executable exists and is accessible
+- Installation Directory Check: Confirms all required Kopi directories exist and are writable
+- Config File Check: Validates configuration file syntax and contents
+- Shims In Path Check: Ensures the shims directory is in your PATH
+
+**Shell Checks:**
+
+- Shell Detection Check: Verifies Kopi can detect your current shell
+- Path Check: Confirms PATH variable contains the shims directory
+- Shell Configuration Check: Validates shell-specific setup
+- Shim Functionality Check: Tests that shims can execute successfully
+
+**JDK Checks:**
+
+- JDK Installation Check: Verifies all installed JDKs have valid directory structures
+- JDK Integrity Check: Confirms JDK binaries are present and executable
+- JDK Version Consistency Check: Validates version metadata matches actual installations
+- JDK Disk Space Check: Reports disk usage for each installed JDK
+
+**Permission Checks:**
+
+- Directory Permissions Check: Validates Kopi directories have correct permissions
+- Binary Permissions Check: Ensures executables have appropriate execute permissions
+
+**Network Checks:**
+
+- API Connectivity Check: Tests connection to metadata sources
+- DNS Resolution Check: Verifies DNS can resolve required hostnames
+- Proxy Configuration Check: Validates proxy settings if configured
+- TLS Verification Check: Tests HTTPS certificate validation
+
+**Cache Checks:**
+
+- Cache File Check: Verifies cache files exist and are accessible
+- Cache Permissions Check: Confirms cache files have correct permissions
+- Cache Format Check: Validates cache file structure and format
+- Cache Staleness Check: Reports cache age and staleness
+- Cache Size Check: Reports disk space used by cache
+
+#### Performance Characteristics
+
+The doctor command is designed for predictable execution:
+
+- **Sequential execution**: Runs checks category by category while updating progress output
+- **Network timeouts**: Network probes use a 5-second timeout per request to avoid long stalls
+- **Progress indicator**: Shows check progress in interactive terminals
+- **Resilient reporting**: Continues even if individual checks fail so you see every result
+
+#### Result Interpretation
+
+Check results are displayed with color coding:
+
+- **Green (Pass)**: Check completed successfully, no issues found
+- **Yellow (Warning)**: Check completed but found potential issues
+- **Red (Fail)**: Check failed or found critical problems
+
+Each failed or warning check includes:
+
+- Description of what was checked
+- Specific issue(s) found
+- Actionable recommendations for resolution
+
+#### Exit Codes
+
+- `0`: All checks passed
+- `1`: One or more checks failed
+- `2`: Warnings detected (no failures)
+
+Use verbose mode for detailed diagnostic information:
+
+```bash
+kopi -v doctor         # Show info-level logs
+kopi -vv doctor        # Show debug-level logs
+kopi -vvv doctor       # Show trace-level logs
+```
 
 #### Doctor Examples
 
